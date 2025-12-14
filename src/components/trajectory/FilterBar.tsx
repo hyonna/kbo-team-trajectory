@@ -79,9 +79,9 @@ export default function FilterBar({
   }
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 space-y-4">
+    <div className="card-sporty animate-fade-in">
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-2">
+        <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
           팀 선택 (최대 4개)
         </label>
         <div className="flex flex-wrap gap-2">
@@ -91,10 +91,10 @@ export default function FilterBar({
               type="button"
               onClick={() => handleTeamToggle(team)}
               disabled={!teams.includes(team) && teams.length >= 4}
-              className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+              className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all transform ${
                 teams.includes(team)
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed'
+                  ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg shadow-blue-500/50 scale-105'
+                  : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100'
               }`}
             >
               {team}
@@ -105,13 +105,13 @@ export default function FilterBar({
 
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
+          <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
             시작 연도
           </label>
           <select
             value={yearFrom}
             onChange={e => setYearFrom(Number(e.target.value))}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-2.5 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 transition-all"
           >
             {availableYears.map(year => (
               <option key={year} value={year}>
@@ -122,13 +122,13 @@ export default function FilterBar({
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
+          <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
             종료 연도
           </label>
           <select
             value={yearTo}
             onChange={e => setYearTo(Number(e.target.value))}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-2.5 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 transition-all"
           >
             {availableYears.map(year => (
               <option key={year} value={year}>
@@ -140,13 +140,13 @@ export default function FilterBar({
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-2">
+        <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
           지표 선택
         </label>
         <select
           value={metric}
           onChange={e => setMetric(e.target.value as MetricKey)}
-          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-4 py-2.5 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 transition-all"
         >
           {METRICS.map(m => (
             <option key={m.value} value={m.value}>

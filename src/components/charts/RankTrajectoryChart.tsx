@@ -9,6 +9,7 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
+  ReferenceLine,
 } from 'recharts'
 import type { TrajectoryData } from '@/lib/chart/transform'
 import type { TeamSeason } from '@/lib/chart/types'
@@ -30,6 +31,7 @@ interface CustomTooltipProps {
     dataKey: string
     value: number
     payload: Record<string, number | string | null | TeamSeason>
+    color?: string
   }>
   label?: number
 }
@@ -39,39 +41,61 @@ function CustomTooltip({ active, payload, label }: CustomTooltipProps) {
     return null
   }
 
-  // 첫 번째 유효한 데이터 포인트 찾기
-  const firstPayload = payload.find(p => p.value !== null)
-  if (!firstPayload) {
+  // 모든 유효한 데이터 포인트 수집
+  const validPayloads = payload.filter(
+    p => p.value !== null && p.payload[`${p.dataKey}_raw`]
+  )
+
+  if (validPayloads.length === 0) {
     return null
   }
 
-  const team = firstPayload.dataKey as string
-  // payload에서 raw 데이터 찾기
-  const rawData = firstPayload.payload[`${team}_raw`] as unknown as
-    | TeamSeason
-    | undefined
-
-  if (!rawData) {
-    return null
-  }
-
+  // 여러 팀이 같은 연도에 있을 수 있으므로 모두 표시
   return (
-    <TooltipCard title={`${team} (${label})`}>
-      <TooltipRow
-        label="순위"
-        value={formatNumber(rawData.powerRank, { decimals: 0, unit: '위' })}
-      />
-      <TooltipRow
-        label="Power Score"
-        value={formatNumber(rawData.powerScore)}
-      />
+    <TooltipCard title={`${label}년`}>
+      {validPayloads.map(p => {
+        const team = p.dataKey as string
+        const rawData = p.payload[`${team}_raw`] as TeamSeason
+        if (!rawData) return null
+
+        return (
+          <div key={team} className="mb-2 last:mb-0">
+            <div className="flex items-center gap-2 mb-1">
+              <div
+                className="w-3 h-3 rounded-full"
+                style={{ backgroundColor: p.color || getTeamColor(team, 0) }}
+              />
+              <span className="font-bold text-gray-900 dark:text-gray-100">
+                {team}
+              </span>
+            </div>
+            <div className="ml-5 space-y-0.5">
+              <TooltipRow
+                label="순위"
+                value={formatNumber(rawData.powerRank, {
+                  decimals: 0,
+                  unit: '위',
+                })}
+              />
+              <TooltipRow
+                label="Power Score"
+                value={formatNumber(rawData.powerScore)}
+              />
+              <TooltipRow
+                label="Total WAR"
+                value={formatNumber(rawData.totalWar)}
+              />
+            </div>
+          </div>
+        )
+      })}
     </TooltipCard>
   )
 }
 
 export default function RankTrajectoryChart({
   data,
-  height = 500,
+  height = 600,
   maxRank = 10,
 }: RankTrajectoryChartProps) {
   // Recharts용 데이터 포맷으로 변환
@@ -105,6 +129,10 @@ export default function RankTrajectoryChart({
   // Y 도메인: [1, maxRank], 반전되어 1이 위로
   const yDomain: [number, number] = [1, maxRank]
 
+  // 순위 구간별 배경색 (1-3위: 상위권, 4-7위: 중위권, 8-10위: 하위권)
+  const topZone = maxRank >= 3 ? 3 : maxRank
+  const midZone = maxRank >= 7 ? 7 : maxRank
+
   return (
     <ChartContainer
       title="팀 순위 추이"
@@ -113,53 +141,161 @@ export default function RankTrajectoryChart({
       <ResponsiveContainer width="100%" height={height}>
         <LineChart
           data={chartData}
-          margin={{ top: 20, right: 30, left: 20, bottom: 20 }}
+          margin={{ top: 20, right: 30, left: 40, bottom: 40 }}
         >
-          <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+          <defs>
+            {/* 상위권 배경 그라데이션 */}
+            <linearGradient id="topZone" x1="0" y1="0" x2="0" y2="1">
+              <stop
+                offset="0%"
+                stopColor="rgba(34, 197, 94, 0.1)"
+                stopOpacity={1}
+              />
+              <stop
+                offset="100%"
+                stopColor="rgba(34, 197, 94, 0.05)"
+                stopOpacity={1}
+              />
+            </linearGradient>
+            {/* 중위권 배경 그라데이션 */}
+            <linearGradient id="midZone" x1="0" y1="0" x2="0" y2="1">
+              <stop
+                offset="0%"
+                stopColor="rgba(251, 191, 36, 0.1)"
+                stopOpacity={1}
+              />
+              <stop
+                offset="100%"
+                stopColor="rgba(251, 191, 36, 0.05)"
+                stopOpacity={1}
+              />
+            </linearGradient>
+            {/* 하위권 배경 그라데이션 */}
+            <linearGradient id="bottomZone" x1="0" y1="0" x2="0" y2="1">
+              <stop
+                offset="0%"
+                stopColor="rgba(239, 68, 68, 0.1)"
+                stopOpacity={1}
+              />
+              <stop
+                offset="100%"
+                stopColor="rgba(239, 68, 68, 0.05)"
+                stopOpacity={1}
+              />
+            </linearGradient>
+          </defs>
+
+          {/* 순위 구간 배경 */}
+          {maxRank >= 3 && (
+            <ReferenceLine
+              y={topZone + 0.5}
+              stroke="rgba(34, 197, 94, 0.3)"
+              strokeWidth={2}
+              strokeDasharray="5 5"
+              label={{ value: '상위권', position: 'right', fill: '#22c55e' }}
+            />
+          )}
+          {maxRank >= 7 && (
+            <ReferenceLine
+              y={midZone + 0.5}
+              stroke="rgba(251, 191, 36, 0.3)"
+              strokeWidth={2}
+              strokeDasharray="5 5"
+              label={{ value: '중위권', position: 'right', fill: '#fbbf24' }}
+            />
+          )}
+
+          <CartesianGrid
+            strokeDasharray="3 3"
+            stroke="#e5e7eb"
+            strokeOpacity={0.5}
+            vertical={false}
+            className="dark:stroke-gray-700"
+          />
           <XAxis
             dataKey="year"
             stroke="#6b7280"
-            tick={{ fill: '#6b7280' }}
+            tick={{ fill: '#6b7280', fontSize: 12, fontWeight: 500 }}
+            tickLine={{ stroke: '#6b7280' }}
             label={{
               value: '연도',
               position: 'insideBottom',
               offset: -10,
-              style: { fill: '#6b7280' },
+              style: {
+                fill: '#6b7280',
+                fontSize: 14,
+                fontWeight: 600,
+              },
             }}
+            className="dark:text-gray-400"
           />
           <YAxis
             stroke="#6b7280"
-            tick={{ fill: '#6b7280' }}
+            tick={{ fill: '#6b7280', fontSize: 12, fontWeight: 600 }}
+            tickLine={{ stroke: '#6b7280' }}
             reversed
             domain={yDomain}
+            ticks={Array.from({ length: maxRank }, (_, i) => i + 1)}
             label={{
               value: '순위',
               angle: -90,
               position: 'insideLeft',
-              style: { fill: '#6b7280' },
+              style: {
+                fill: '#6b7280',
+                fontSize: 14,
+                fontWeight: 600,
+              },
+            }}
+            className="dark:text-gray-400"
+          />
+          <Tooltip
+            content={<CustomTooltip />}
+            cursor={{
+              stroke: '#94a3b8',
+              strokeWidth: 1,
+              strokeDasharray: '5 5',
             }}
           />
-          <Tooltip content={<CustomTooltip />} />
           <Legend
             wrapperStyle={{ paddingTop: '20px' }}
             iconType="line"
             formatter={value => value}
+            iconSize={16}
           />
-          {data.series.map((series, index) => (
-            <Line
-              key={series.team}
-              type="monotone"
-              dataKey={series.team}
-              stroke={getTeamColor(series.team, index)}
-              strokeWidth={2}
-              dot={{ r: 4 }}
-              activeDot={{ r: 6 }}
-              connectNulls={false}
-            />
-          ))}
+          {data.series.map((series, index) => {
+            const teamColor = getTeamColor(series.team, index)
+            return (
+              <Line
+                key={series.team}
+                type="monotone"
+                dataKey={series.team}
+                stroke={teamColor}
+                strokeWidth={3}
+                dot={{
+                  r: 5,
+                  fill: teamColor,
+                  strokeWidth: 2,
+                  stroke: '#fff',
+                }}
+                activeDot={{
+                  r: 8,
+                  fill: teamColor,
+                  strokeWidth: 3,
+                  stroke: '#fff',
+                  style: { filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.2))' },
+                }}
+                connectNulls={false}
+                isAnimationActive={true}
+                animationDuration={500}
+              />
+            )
+          })}
         </LineChart>
       </ResponsiveContainer>
-      <LegendChips items={legendItems} className="mt-4" />
+      <LegendChips
+        items={legendItems}
+        className="mt-6 flex-wrap gap-3 justify-center"
+      />
     </ChartContainer>
   )
 }

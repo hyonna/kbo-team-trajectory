@@ -66,13 +66,13 @@ async function TrajectoryContent({ searchParams }: TrajectoryContentProps) {
   )
 
   return (
-    <div className="min-h-screen bg-gray-50 p-8">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50/30 to-purple-50/30 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 p-8">
       <div className="max-w-7xl mx-auto space-y-8">
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">
+        <div className="text-center mb-12 animate-fade-in">
+          <h1 className="text-5xl font-extrabold gradient-text mb-4">
             팀 추이 분석
           </h1>
-          <p className="text-gray-600">
+          <p className="text-lg text-gray-600 dark:text-gray-400">
             팀별 성적 추이를 시각화하고 비교합니다
           </p>
         </div>

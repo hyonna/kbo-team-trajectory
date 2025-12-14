@@ -12,10 +12,14 @@ export default function ChartContainer({
   children,
 }: ChartContainerProps) {
   return (
-    <div className="w-full p-6 bg-white rounded-lg shadow-sm border border-gray-200">
-      <div className="mb-4">
-        <h2 className="text-2xl font-bold text-gray-900 mb-2">{title}</h2>
-        {description && <p className="text-sm text-gray-600">{description}</p>}
+    <div className="card-sporty animate-fade-in">
+      <div className="mb-6">
+        <h2 className="text-2xl font-bold gradient-text mb-2">{title}</h2>
+        {description && (
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            {description}
+          </p>
+        )}
       </div>
       <div className="w-full">{children}</div>
     </div>
