@@ -1,9 +1,112 @@
-import RankTrajectoryChart from '@/components/charts/RankTrajectoryChart'
-import SnapshotBarChart from '@/components/charts/SnapshotBarChart'
-import TrajectoryLineChart from '@/components/charts/TrajectoryLineChart'
+import { Suspense } from 'react'
+import dynamic from 'next/dynamic'
 import teamSeasonData from '@/data/derived/team-season.json'
 import { buildTrajectoryData } from '@/lib/chart/transform'
 import type { TeamSeason } from '@/lib/chart/types'
+
+// 차트 컴포넌트 동적 임포트 (코드 스플리팅)
+const RankTrajectoryChart = dynamic(
+  () => import('@/components/charts/RankTrajectoryChart'),
+  {
+    loading: () => (
+      <div className="card-sporty h-[500px] flex items-center justify-center">
+        <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+      </div>
+    ),
+    ssr: true,
+  }
+)
+
+const TrajectoryLineChart = dynamic(
+  () => import('@/components/charts/TrajectoryLineChart'),
+  {
+    loading: () => (
+      <div className="card-sporty h-[500px] flex items-center justify-center">
+        <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+      </div>
+    ),
+    ssr: true,
+  }
+)
+
+const SnapshotBarChart = dynamic(
+  () => import('@/components/charts/SnapshotBarChart'),
+  {
+    loading: () => (
+      <div className="card-sporty h-[500px] flex items-center justify-center">
+        <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+      </div>
+    ),
+    ssr: true,
+  }
+)
+
+function ChartSection({
+  rankDataAll,
+  rankDataCurrent,
+  totalWarData,
+  rows,
+  currentTeams,
+}: {
+  rankDataAll: ReturnType<typeof buildTrajectoryData>
+  rankDataCurrent: ReturnType<typeof buildTrajectoryData>
+  totalWarData: ReturnType<typeof buildTrajectoryData>
+  rows: TeamSeason[]
+  currentTeams: string[]
+}) {
+  return (
+    <>
+      <Suspense
+        fallback={
+          <div className="card-sporty h-[500px] flex items-center justify-center">
+            <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+          </div>
+        }
+      >
+        <RankTrajectoryChart data={rankDataAll} maxRank={10} />
+      </Suspense>
+
+      <Suspense
+        fallback={
+          <div className="card-sporty h-[500px] flex items-center justify-center">
+            <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+          </div>
+        }
+      >
+        <RankTrajectoryChart data={rankDataCurrent} maxRank={10} />
+      </Suspense>
+
+      <Suspense
+        fallback={
+          <div className="card-sporty h-[500px] flex items-center justify-center">
+            <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+          </div>
+        }
+      >
+        <TrajectoryLineChart
+          data={totalWarData}
+          metric="totalWar"
+          yDomain="auto"
+        />
+      </Suspense>
+
+      <Suspense
+        fallback={
+          <div className="card-sporty h-[500px] flex items-center justify-center">
+            <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+          </div>
+        }
+      >
+        <SnapshotBarChart
+          rows={rows}
+          year={2025}
+          metric="powerScore"
+          teams={currentTeams}
+        />
+      </Suspense>
+    </>
+  )
+}
 
 export default function Home() {
   const rows = teamSeasonData as TeamSeason[]
@@ -57,21 +160,12 @@ export default function Home() {
           </p>
         </div>
 
-        <RankTrajectoryChart data={rankDataAll} maxRank={10} />
-
-        <RankTrajectoryChart data={rankDataCurrent} maxRank={10} />
-
-        <TrajectoryLineChart
-          data={totalWarData}
-          metric="totalWar"
-          yDomain="auto"
-        />
-
-        <SnapshotBarChart
+        <ChartSection
+          rankDataAll={rankDataAll}
+          rankDataCurrent={rankDataCurrent}
+          totalWarData={totalWarData}
           rows={rows}
-          year={2025}
-          metric="powerScore"
-          teams={currentTeams}
+          currentTeams={currentTeams}
         />
       </div>
     </main>

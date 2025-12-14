@@ -1,5 +1,6 @@
 'use client'
 
+import { memo } from 'react'
 import {
   LineChart,
   Line,
@@ -85,7 +86,7 @@ function CustomTooltip({
   )
 }
 
-export default function TrajectoryLineChart({
+function TrajectoryLineChart({
   data,
   metric,
   height = 500,
@@ -187,3 +188,5 @@ export default function TrajectoryLineChart({
     </ChartContainer>
   )
 }
+
+export default memo(TrajectoryLineChart)

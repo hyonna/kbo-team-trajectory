@@ -1,10 +1,23 @@
 import { Suspense } from 'react'
+import dynamic from 'next/dynamic'
 import YearSelector from '@/components/team/YearSelector'
 import PlayerList from '@/components/team/PlayerList'
-import TrajectoryLineChart from '@/components/charts/TrajectoryLineChart'
 import { loadTeamSeasons, getTeamSeasons } from '@/lib/dataset/loadTeamSeason'
 import { getTopBatters, getTopPitchers } from '@/lib/dataset/loadRawStats'
 import { buildTrajectoryData } from '@/lib/chart/transform'
+
+// 차트 컴포넌트 동적 임포트
+const TrajectoryLineChart = dynamic(
+  () => import('@/components/charts/TrajectoryLineChart'),
+  {
+    loading: () => (
+      <div className="card-sporty h-[500px] flex items-center justify-center">
+        <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+      </div>
+    ),
+    ssr: true,
+  }
+)
 
 interface TeamPageProps {
   params: Promise<{ team: string }>
@@ -99,21 +112,37 @@ async function TeamContent({ team, searchParams }: TeamContentProps) {
 
         {/* 연도별 트렌드 차트 */}
         <div className="space-y-6">
-          <TrajectoryLineChart
-            data={trajectoryData}
-            metric="powerScore"
-            yDomain="auto"
-            title={`${team} Power Score 추이`}
-            description={`${teamYears[0]}년부터 ${teamYears[teamYears.length - 1]}년까지의 Power Score 변화입니다.`}
-          />
+          <Suspense
+            fallback={
+              <div className="card-sporty h-[500px] flex items-center justify-center">
+                <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+              </div>
+            }
+          >
+            <TrajectoryLineChart
+              data={trajectoryData}
+              metric="powerScore"
+              yDomain="auto"
+              title={`${team} Power Score 추이`}
+              description={`${teamYears[0]}년부터 ${teamYears[teamYears.length - 1]}년까지의 Power Score 변화입니다.`}
+            />
+          </Suspense>
 
-          <TrajectoryLineChart
-            data={totalWarData}
-            metric="totalWar"
-            yDomain="auto"
-            title={`${team} Total WAR 추이`}
-            description={`${teamYears[0]}년부터 ${teamYears[teamYears.length - 1]}년까지의 Total WAR 변화입니다.`}
-          />
+          <Suspense
+            fallback={
+              <div className="card-sporty h-[500px] flex items-center justify-center">
+                <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+              </div>
+            }
+          >
+            <TrajectoryLineChart
+              data={totalWarData}
+              metric="totalWar"
+              yDomain="auto"
+              title={`${team} Total WAR 추이`}
+              description={`${teamYears[0]}년부터 ${teamYears[teamYears.length - 1]}년까지의 Total WAR 변화입니다.`}
+            />
+          </Suspense>
         </div>
 
         {/* 연도 선택 및 선수 리스트 */}

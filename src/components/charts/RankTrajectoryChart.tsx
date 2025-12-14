@@ -1,5 +1,6 @@
 'use client'
 
+import { memo } from 'react'
 import {
   LineChart,
   Line,
@@ -93,7 +94,7 @@ function CustomTooltip({ active, payload, label }: CustomTooltipProps) {
   )
 }
 
-export default function RankTrajectoryChart({
+function RankTrajectoryChart({
   data,
   height = 600,
   maxRank = 10,
@@ -299,3 +300,5 @@ export default function RankTrajectoryChart({
     </ChartContainer>
   )
 }
+
+export default memo(RankTrajectoryChart)

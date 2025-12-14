@@ -1,7 +1,7 @@
 'use client'
 
-import { useRouter } from 'next/navigation'
-import { useState, useEffect } from 'react'
+import { useRouter, useSearchParams } from 'next/navigation'
+import { useState, useEffect, useCallback, memo, useRef } from 'react'
 import type { MetricKey } from '@/lib/chart/types'
 
 interface FilterBarProps {
@@ -25,7 +25,7 @@ const METRICS: Array<{ value: MetricKey; label: string }> = [
   { value: 'pitching.war', label: 'Pitching WAR' },
 ]
 
-export default function FilterBar({
+function FilterBar({
   availableTeams,
   availableYears,
   initialTeams = [],
@@ -33,6 +33,8 @@ export default function FilterBar({
   initialMetric = 'powerRank',
 }: FilterBarProps) {
   const router = useRouter()
+  const searchParams = useSearchParams()
+  const isInitialMount = useRef(true)
 
   const [teams, setTeams] = useState<string[]>(initialTeams)
   const [yearFrom, setYearFrom] = useState<number>(
@@ -43,8 +45,25 @@ export default function FilterBar({
   )
   const [metric, setMetric] = useState<MetricKey>(initialMetric)
 
-  // URL search params 동기화
+  // initialProps가 변경될 때 state 동기화 (URL 변경으로 인한 리렌더링 대응)
   useEffect(() => {
+    if (isInitialMount.current) {
+      isInitialMount.current = false
+      return
+    }
+
+    setTeams(initialTeams)
+    setYearFrom(initialYearRange?.from || availableYears[0])
+    setYearTo(initialYearRange?.to || availableYears[availableYears.length - 1])
+    setMetric(initialMetric)
+  }, [initialTeams, initialYearRange, initialMetric, availableYears])
+
+  // URL search params 동기화 (실제 변경이 있을 때만)
+  useEffect(() => {
+    if (isInitialMount.current) {
+      return
+    }
+
     const params = new URLSearchParams()
 
     if (teams.length > 0) {
@@ -64,10 +83,16 @@ export default function FilterBar({
       ? `/trajectory?${params.toString()}`
       : '/trajectory'
 
-    router.replace(newUrl, { scroll: false })
-  }, [teams, yearFrom, yearTo, metric, router, availableYears])
+    // 현재 URL과 비교하여 실제로 변경이 있을 때만 호출
+    const currentUrl = searchParams.toString()
+    const newUrlParams = params.toString()
 
-  const handleTeamToggle = (team: string) => {
+    if (currentUrl !== newUrlParams) {
+      router.replace(newUrl, { scroll: false })
+    }
+  }, [teams, yearFrom, yearTo, metric, router, availableYears, searchParams])
+
+  const handleTeamToggle = useCallback((team: string) => {
     setTeams(prev => {
       if (prev.includes(team)) {
         return prev.filter(t => t !== team)
@@ -76,7 +101,7 @@ export default function FilterBar({
       }
       return prev
     })
-  }
+  }, [])
 
   return (
     <div className="card-sporty animate-fade-in">
@@ -158,3 +183,5 @@ export default function FilterBar({
     </div>
   )
 }
+
+export default memo(FilterBar)

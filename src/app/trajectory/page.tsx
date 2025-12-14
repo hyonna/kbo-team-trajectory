@@ -1,5 +1,5 @@
-import RankTrajectoryChart from '@/components/charts/RankTrajectoryChart'
-import TrajectoryLineChart from '@/components/charts/TrajectoryLineChart'
+import { Suspense } from 'react'
+import dynamic from 'next/dynamic'
 import FilterBar from '@/components/trajectory/FilterBar'
 import TeamSummaryCards from '@/components/trajectory/TeamSummaryCards'
 import { buildTrajectoryData } from '@/lib/chart/transform'
@@ -9,7 +9,31 @@ import {
   getYears,
   loadTeamSeasons,
 } from '@/lib/dataset/loadTeamSeason'
-import { Suspense } from 'react'
+
+// 차트 컴포넌트 동적 임포트
+const RankTrajectoryChart = dynamic(
+  () => import('@/components/charts/RankTrajectoryChart'),
+  {
+    loading: () => (
+      <div className="card-sporty h-[500px] flex items-center justify-center">
+        <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+      </div>
+    ),
+    ssr: true,
+  }
+)
+
+const TrajectoryLineChart = dynamic(
+  () => import('@/components/charts/TrajectoryLineChart'),
+  {
+    loading: () => (
+      <div className="card-sporty h-[500px] flex items-center justify-center">
+        <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+      </div>
+    ),
+    ssr: true,
+  }
+)
 
 interface TrajectoryPageProps {
   searchParams: Promise<{
@@ -85,15 +109,23 @@ async function TrajectoryContent({ searchParams }: TrajectoryContentProps) {
           initialMetric={metric}
         />
 
-        {metric === 'powerRank' ? (
-          <RankTrajectoryChart data={trajectoryData} maxRank={10} />
-        ) : (
-          <TrajectoryLineChart
-            data={trajectoryData}
-            metric={metric}
-            yDomain="auto"
-          />
-        )}
+        <Suspense
+          fallback={
+            <div className="card-sporty h-[500px] flex items-center justify-center">
+              <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+            </div>
+          }
+        >
+          {metric === 'powerRank' ? (
+            <RankTrajectoryChart data={trajectoryData} maxRank={10} />
+          ) : (
+            <TrajectoryLineChart
+              data={trajectoryData}
+              metric={metric}
+              yDomain="auto"
+            />
+          )}
+        </Suspense>
 
         {selectedTeams.length > 0 && (
           <div>

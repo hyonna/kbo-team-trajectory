@@ -1,5 +1,6 @@
 'use client'
 
+import { useMemo, memo } from 'react'
 import type { TeamSeason } from '@/lib/chart/types'
 import { formatNumber } from '@/lib/chart/format'
 
@@ -8,19 +9,18 @@ interface TeamSummaryCardsProps {
   teams: string[]
 }
 
-export default function TeamSummaryCards({
-  data,
-  teams,
-}: TeamSummaryCardsProps) {
-  // 각 팀의 마지막 연도 데이터 찾기
-  const latestData = teams
-    .map(team => {
-      const teamData = data
-        .filter(row => row.team === team)
-        .sort((a, b) => b.year - a.year)
-      return teamData.length > 0 ? teamData[0] : null
-    })
-    .filter((item): item is TeamSeason => item !== null)
+function TeamSummaryCards({ data, teams }: TeamSummaryCardsProps) {
+  // 각 팀의 마지막 연도 데이터 찾기 (메모이제이션)
+  const latestData = useMemo(() => {
+    return teams
+      .map(team => {
+        const teamData = data
+          .filter(row => row.team === team)
+          .sort((a, b) => b.year - a.year)
+        return teamData.length > 0 ? teamData[0] : null
+      })
+      .filter((item): item is TeamSeason => item !== null)
+  }, [data, teams])
 
   if (latestData.length === 0) {
     return null
@@ -132,3 +132,5 @@ export default function TeamSummaryCards({
     </div>
   )
 }
+
+export default memo(TeamSummaryCards)

@@ -1,7 +1,7 @@
 'use client'
 
-import { useRouter } from 'next/navigation'
-import { useState, useEffect } from 'react'
+import { useRouter, useSearchParams } from 'next/navigation'
+import { useState, useEffect, useRef } from 'react'
 
 interface YearSelectorProps {
   availableYears: number[]
@@ -13,23 +13,51 @@ export default function YearSelector({
   initialYear,
 }: YearSelectorProps) {
   const router = useRouter()
+  const searchParams = useSearchParams()
+  const isInitialMount = useRef(true)
+
   const [year, setYear] = useState<number>(
     initialYear || availableYears[availableYears.length - 1]
   )
 
-  // URL search params 동기화
+  // initialYear이 변경될 때 state 동기화
   useEffect(() => {
+    if (isInitialMount.current) {
+      isInitialMount.current = false
+      return
+    }
+
+    if (initialYear !== undefined) {
+      setYear(initialYear)
+    }
+  }, [initialYear])
+
+  // URL search params 동기화 (실제 변경이 있을 때만)
+  useEffect(() => {
+    if (isInitialMount.current) {
+      return
+    }
+
     const params = new URLSearchParams()
-    if (year !== availableYears[availableYears.length - 1]) {
+    const currentYear = searchParams.get('year')
+    const defaultYear = availableYears[availableYears.length - 1]
+
+    if (year !== defaultYear) {
       params.set('year', year.toString())
     }
 
-    const currentPath = window.location.pathname
-    const newUrl = params.toString()
-      ? `${currentPath}?${params.toString()}`
-      : currentPath
-    router.replace(newUrl, { scroll: false })
-  }, [year, router, availableYears])
+    // 현재 URL과 비교하여 실제로 변경이 있을 때만 호출
+    const newUrlParams = params.toString()
+    const currentUrlParams = currentYear ? `year=${currentYear}` : ''
+
+    if (currentUrlParams !== newUrlParams) {
+      const currentPath = window.location.pathname
+      const newUrl = newUrlParams
+        ? `${currentPath}?${newUrlParams}`
+        : currentPath
+      router.replace(newUrl, { scroll: false })
+    }
+  }, [year, router, availableYears, searchParams])
 
   return (
     <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">

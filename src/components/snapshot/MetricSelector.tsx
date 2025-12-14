@@ -1,7 +1,7 @@
 'use client'
 
-import { useRouter } from 'next/navigation'
-import { useState, useEffect } from 'react'
+import { useRouter, useSearchParams } from 'next/navigation'
+import { useState, useEffect, useRef } from 'react'
 
 interface MetricSelectorProps {
   initialMetric?: 'powerScore' | 'totalWar'
@@ -11,20 +11,43 @@ export default function MetricSelector({
   initialMetric = 'powerScore',
 }: MetricSelectorProps) {
   const router = useRouter()
+  const searchParams = useSearchParams()
+  const isInitialMount = useRef(true)
+
   const [metric, setMetric] = useState<'powerScore' | 'totalWar'>(initialMetric)
 
-  // URL search params 동기화
+  // initialMetric이 변경될 때 state 동기화
   useEffect(() => {
+    if (isInitialMount.current) {
+      isInitialMount.current = false
+      return
+    }
+
+    setMetric(initialMetric)
+  }, [initialMetric])
+
+  // URL search params 동기화 (실제 변경이 있을 때만)
+  useEffect(() => {
+    if (isInitialMount.current) {
+      return
+    }
+
     const params = new URLSearchParams()
+    const currentMetric = searchParams.get('metric')
+
     if (metric !== 'powerScore') {
       params.set('metric', metric)
     }
 
-    const newUrl = params.toString()
-      ? `/snapshot?${params.toString()}`
-      : '/snapshot'
-    router.replace(newUrl, { scroll: false })
-  }, [metric, router])
+    // 현재 URL과 비교하여 실제로 변경이 있을 때만 호출
+    const newUrlParams = params.toString()
+    const currentUrlParams = currentMetric ? `metric=${currentMetric}` : ''
+
+    if (currentUrlParams !== newUrlParams) {
+      const newUrl = newUrlParams ? `/snapshot?${newUrlParams}` : '/snapshot'
+      router.replace(newUrl, { scroll: false })
+    }
+  }, [metric, router, searchParams])
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
