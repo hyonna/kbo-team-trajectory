@@ -1,0 +1,7302 @@
+[
+  {
+    "year": 1982,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.75,
+      "hr": 56,
+      "battingWar": 18.89,
+      "wrcPlus": 111.4
+    },
+    "pitching": {
+      "era": 2.7,
+      "fip": 3.5,
+      "whip": 1.144,
+      "pitchingWar": 22.14,
+      "ip": 703.4
+    },
+    "totalWar": 41.03,
+    "powerScore": 20.35,
+    "powerRank": 1
+  },
+  {
+    "year": 1982,
+    "team": "OB",
+    "batting": {
+      "ops": 0.762,
+      "hr": 57,
+      "battingWar": 16.03,
+      "wrcPlus": 110.1
+    },
+    "pitching": {
+      "era": 3.2,
+      "fip": 3.63,
+      "whip": 1.263,
+      "pitchingWar": 17.34,
+      "ip": 723.7
+    },
+    "totalWar": 33.37,
+    "powerScore": 16.62,
+    "powerRank": 2
+  },
+  {
+    "year": 1982,
+    "team": "MBC",
+    "batting": {
+      "ops": 0.764,
+      "hr": 65,
+      "battingWar": 12.89,
+      "wrcPlus": 110.8
+    },
+    "pitching": {
+      "era": 3.52,
+      "fip": 3.47,
+      "whip": 1.303,
+      "pitchingWar": 14.44,
+      "ip": 705.2
+    },
+    "totalWar": 27.33,
+    "powerScore": 13.59,
+    "powerRank": 3
+  },
+  {
+    "year": 1982,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.718,
+      "hr": 58,
+      "battingWar": 14.43,
+      "wrcPlus": 100.9
+    },
+    "pitching": {
+      "era": 3.96,
+      "fip": 3.71,
+      "whip": 1.44,
+      "pitchingWar": 9.65,
+      "ip": 711.1
+    },
+    "totalWar": 24.08,
+    "powerScore": 12.28,
+    "powerRank": 4
+  },
+  {
+    "year": 1982,
+    "team": "해태",
+    "batting": {
+      "ops": 0.738,
+      "hr": 84,
+      "battingWar": 13.69,
+      "wrcPlus": 98.8
+    },
+    "pitching": {
+      "era": 3.94,
+      "fip": 3.75,
+      "whip": 1.43,
+      "pitchingWar": 6.81,
+      "ip": 601.2
+    },
+    "totalWar": 20.5,
+    "powerScore": 10.59,
+    "powerRank": 5
+  },
+  {
+    "year": 1982,
+    "team": "삼미",
+    "batting": {
+      "ops": 0.648,
+      "hr": 40,
+      "battingWar": 5.82,
+      "wrcPlus": 75.6
+    },
+    "pitching": {
+      "era": 6.24,
+      "fip": 5.25,
+      "whip": 1.728,
+      "pitchingWar": -6.75,
+      "ip": 687.6
+    },
+    "totalWar": -0.93,
+    "powerScore": 0.16,
+    "powerRank": 6
+  },
+  {
+    "year": 1983,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.726,
+      "hr": 90,
+      "battingWar": 22.6,
+      "wrcPlus": 111.5
+    },
+    "pitching": {
+      "era": 3.43,
+      "fip": 3.4,
+      "whip": 1.3,
+      "pitchingWar": 13.29,
+      "ip": 898.4
+    },
+    "totalWar": 35.89,
+    "powerScore": 18.41,
+    "powerRank": 1
+  },
+  {
+    "year": 1983,
+    "team": "삼미",
+    "batting": {
+      "ops": 0.654,
+      "hr": 62,
+      "battingWar": 16.6,
+      "wrcPlus": 88.3
+    },
+    "pitching": {
+      "era": 3.06,
+      "fip": 3.12,
+      "whip": 1.225,
+      "pitchingWar": 15.37,
+      "ip": 906.9
+    },
+    "totalWar": 31.97,
+    "powerScore": 16.05,
+    "powerRank": 2
+  },
+  {
+    "year": 1983,
+    "team": "MBC",
+    "batting": {
+      "ops": 0.674,
+      "hr": 46,
+      "battingWar": 16.37,
+      "wrcPlus": 94.3
+    },
+    "pitching": {
+      "era": 2.73,
+      "fip": 3.05,
+      "whip": 1.197,
+      "pitchingWar": 15.35,
+      "ip": 906.8
+    },
+    "totalWar": 31.72,
+    "powerScore": 15.91,
+    "powerRank": 3
+  },
+  {
+    "year": 1983,
+    "team": "해태",
+    "batting": {
+      "ops": 0.722,
+      "hr": 78,
+      "battingWar": 13.47,
+      "wrcPlus": 111.2
+    },
+    "pitching": {
+      "era": 3.18,
+      "fip": 2.93,
+      "whip": 1.239,
+      "pitchingWar": 15.89,
+      "ip": 864.7
+    },
+    "totalWar": 29.36,
+    "powerScore": 14.56,
+    "powerRank": 4
+  },
+  {
+    "year": 1983,
+    "team": "OB",
+    "batting": {
+      "ops": 0.686,
+      "hr": 50,
+      "battingWar": 16.25,
+      "wrcPlus": 100.2
+    },
+    "pitching": {
+      "era": 3.55,
+      "fip": 3.77,
+      "whip": 1.362,
+      "pitchingWar": 9.79,
+      "ip": 890
+    },
+    "totalWar": 26.04,
+    "powerScore": 13.34,
+    "powerRank": 5
+  },
+  {
+    "year": 1983,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.679,
+      "hr": 77,
+      "battingWar": 16.32,
+      "wrcPlus": 97.2
+    },
+    "pitching": {
+      "era": 3.8,
+      "fip": 3.4,
+      "whip": 1.336,
+      "pitchingWar": 7.44,
+      "ip": 894.4
+    },
+    "totalWar": 23.76,
+    "powerScore": 12.32,
+    "powerRank": 6
+  },
+  {
+    "year": 1984,
+    "team": "OB",
+    "batting": {
+      "ops": 0.693,
+      "hr": 53,
+      "battingWar": 18.53,
+      "wrcPlus": 101.9
+    },
+    "pitching": {
+      "era": 2.55,
+      "fip": 3.13,
+      "whip": 1.189,
+      "pitchingWar": 21.54,
+      "ip": 883.7
+    },
+    "totalWar": 40.07,
+    "powerScore": 19.88,
+    "powerRank": 1
+  },
+  {
+    "year": 1984,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.739,
+      "hr": 78,
+      "battingWar": 22.55,
+      "wrcPlus": 114
+    },
+    "pitching": {
+      "era": 3.35,
+      "fip": 3.14,
+      "whip": 1.339,
+      "pitchingWar": 14.89,
+      "ip": 885.5
+    },
+    "totalWar": 37.44,
+    "powerScore": 19.1,
+    "powerRank": 2
+  },
+  {
+    "year": 1984,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.708,
+      "hr": 71,
+      "battingWar": 17.19,
+      "wrcPlus": 104.6
+    },
+    "pitching": {
+      "era": 3.32,
+      "fip": 3.33,
+      "whip": 1.326,
+      "pitchingWar": 13.09,
+      "ip": 878.8
+    },
+    "totalWar": 30.28,
+    "powerScore": 15.35,
+    "powerRank": 3
+  },
+  {
+    "year": 1984,
+    "team": "삼미",
+    "batting": {
+      "ops": 0.651,
+      "hr": 58,
+      "battingWar": 19.37,
+      "wrcPlus": 88.3
+    },
+    "pitching": {
+      "era": 4.06,
+      "fip": 3.66,
+      "whip": 1.412,
+      "pitchingWar": 5.39,
+      "ip": 897
+    },
+    "totalWar": 24.76,
+    "powerScore": 13.08,
+    "powerRank": 4
+  },
+  {
+    "year": 1984,
+    "team": "해태",
+    "batting": {
+      "ops": 0.682,
+      "hr": 76,
+      "battingWar": 12.07,
+      "wrcPlus": 97.1
+    },
+    "pitching": {
+      "era": 3.18,
+      "fip": 3.08,
+      "whip": 1.245,
+      "pitchingWar": 13.35,
+      "ip": 893.3
+    },
+    "totalWar": 25.42,
+    "powerScore": 12.65,
+    "powerRank": 5
+  },
+  {
+    "year": 1984,
+    "team": "MBC",
+    "batting": {
+      "ops": 0.678,
+      "hr": 47,
+      "battingWar": 15.17,
+      "wrcPlus": 95.1
+    },
+    "pitching": {
+      "era": 3.2,
+      "fip": 3.29,
+      "whip": 1.286,
+      "pitchingWar": 9.29,
+      "ip": 894.9
+    },
+    "totalWar": 24.46,
+    "powerScore": 12.52,
+    "powerRank": 6
+  },
+  {
+    "year": 1985,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.771,
+      "hr": 97,
+      "battingWar": 24.08,
+      "wrcPlus": 118.6
+    },
+    "pitching": {
+      "era": 2.98,
+      "fip": 3.15,
+      "whip": 1.241,
+      "pitchingWar": 23.53,
+      "ip": 998.3
+    },
+    "totalWar": 47.61,
+    "powerScore": 23.83,
+    "powerRank": 1
+  },
+  {
+    "year": 1985,
+    "team": "OB",
+    "batting": {
+      "ops": 0.7,
+      "hr": 67,
+      "battingWar": 18.65,
+      "wrcPlus": 96.4
+    },
+    "pitching": {
+      "era": 3.14,
+      "fip": 3.45,
+      "whip": 1.28,
+      "pitchingWar": 17.37,
+      "ip": 990.9
+    },
+    "totalWar": 36.02,
+    "powerScore": 18.07,
+    "powerRank": 2
+  },
+  {
+    "year": 1985,
+    "team": "해태",
+    "batting": {
+      "ops": 0.74,
+      "hr": 99,
+      "battingWar": 20.22,
+      "wrcPlus": 110
+    },
+    "pitching": {
+      "era": 3.67,
+      "fip": 3.36,
+      "whip": 1.294,
+      "pitchingWar": 12.42,
+      "ip": 944.6
+    },
+    "totalWar": 32.64,
+    "powerScore": 16.71,
+    "powerRank": 3
+  },
+  {
+    "year": 1985,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.704,
+      "hr": 77,
+      "battingWar": 16.77,
+      "wrcPlus": 97.3
+    },
+    "pitching": {
+      "era": 3.05,
+      "fip": 3.02,
+      "whip": 1.272,
+      "pitchingWar": 16.15,
+      "ip": 990.7
+    },
+    "totalWar": 32.92,
+    "powerScore": 16.49,
+    "powerRank": 4
+  },
+  {
+    "year": 1985,
+    "team": "MBC",
+    "batting": {
+      "ops": 0.635,
+      "hr": 37,
+      "battingWar": 6.31,
+      "wrcPlus": 73.7
+    },
+    "pitching": {
+      "era": 3.2,
+      "fip": 3.64,
+      "whip": 1.295,
+      "pitchingWar": 12.71,
+      "ip": 904
+    },
+    "totalWar": 19.02,
+    "powerScore": 9.19,
+    "powerRank": 5
+  },
+  {
+    "year": 1985,
+    "team": "청보",
+    "batting": {
+      "ops": 0.674,
+      "hr": 36,
+      "battingWar": 9.38,
+      "wrcPlus": 90.3
+    },
+    "pitching": {
+      "era": 4.08,
+      "fip": 3.96,
+      "whip": 1.398,
+      "pitchingWar": 4.59,
+      "ip": 498.7
+    },
+    "totalWar": 13.97,
+    "powerScore": 7.22,
+    "powerRank": 6
+  },
+  {
+    "year": 1985,
+    "team": "삼미",
+    "batting": {
+      "ops": 0.703,
+      "hr": 37,
+      "battingWar": 7.18,
+      "wrcPlus": 99.9
+    },
+    "pitching": {
+      "era": 5.75,
+      "fip": 4.65,
+      "whip": 1.748,
+      "pitchingWar": -3.11,
+      "ip": 475.9
+    },
+    "totalWar": 4.07,
+    "powerScore": 2.55,
+    "powerRank": 7
+  },
+  {
+    "year": 1986,
+    "team": "해태",
+    "batting": {
+      "ops": 0.715,
+      "hr": 99,
+      "battingWar": 23.57,
+      "wrcPlus": 111
+    },
+    "pitching": {
+      "era": 2.85,
+      "fip": 2.58,
+      "whip": 1.215,
+      "pitchingWar": 18.89,
+      "ip": 976.4
+    },
+    "totalWar": 42.46,
+    "powerScore": 21.46,
+    "powerRank": 1
+  },
+  {
+    "year": 1986,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.744,
+      "hr": 74,
+      "battingWar": 22.76,
+      "wrcPlus": 123.9
+    },
+    "pitching": {
+      "era": 2.97,
+      "fip": 3.35,
+      "whip": 1.282,
+      "pitchingWar": 19.56,
+      "ip": 961.8
+    },
+    "totalWar": 42.32,
+    "powerScore": 21.32,
+    "powerRank": 2
+  },
+  {
+    "year": 1986,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.649,
+      "hr": 37,
+      "battingWar": 17.76,
+      "wrcPlus": 93.7
+    },
+    "pitching": {
+      "era": 2.74,
+      "fip": 2.73,
+      "whip": 1.244,
+      "pitchingWar": 19.19,
+      "ip": 981.8
+    },
+    "totalWar": 36.95,
+    "powerScore": 18.4,
+    "powerRank": 3
+  },
+  {
+    "year": 1986,
+    "team": "MBC",
+    "batting": {
+      "ops": 0.682,
+      "hr": 37,
+      "battingWar": 17.3,
+      "wrcPlus": 102.8
+    },
+    "pitching": {
+      "era": 2.79,
+      "fip": 2.93,
+      "whip": 1.243,
+      "pitchingWar": 17.79,
+      "ip": 982
+    },
+    "totalWar": 35.09,
+    "powerScore": 17.52,
+    "powerRank": 4
+  },
+  {
+    "year": 1986,
+    "team": "OB",
+    "batting": {
+      "ops": 0.651,
+      "hr": 38,
+      "battingWar": 18.2,
+      "wrcPlus": 92.4
+    },
+    "pitching": {
+      "era": 2.66,
+      "fip": 3.25,
+      "whip": 1.256,
+      "pitchingWar": 15.27,
+      "ip": 862.3
+    },
+    "totalWar": 33.47,
+    "powerScore": 16.88,
+    "powerRank": 5
+  },
+  {
+    "year": 1986,
+    "team": "빙그레",
+    "batting": {
+      "ops": 0.647,
+      "hr": 46,
+      "battingWar": 18.01,
+      "wrcPlus": 95.8
+    },
+    "pitching": {
+      "era": 3.66,
+      "fip": 3.43,
+      "whip": 1.275,
+      "pitchingWar": 6.74,
+      "ip": 953.9
+    },
+    "totalWar": 24.75,
+    "powerScore": 12.94,
+    "powerRank": 6
+  },
+  {
+    "year": 1986,
+    "team": "청보",
+    "batting": {
+      "ops": 0.615,
+      "hr": 66,
+      "battingWar": 17.9,
+      "wrcPlus": 78
+    },
+    "pitching": {
+      "era": 3.99,
+      "fip": 3.37,
+      "whip": 1.41,
+      "pitchingWar": 2.98,
+      "ip": 951.5
+    },
+    "totalWar": 20.88,
+    "powerScore": 11.19,
+    "powerRank": 7
+  },
+  {
+    "year": 1987,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.812,
+      "hr": 105,
+      "battingWar": 28.55,
+      "wrcPlus": 134.9
+    },
+    "pitching": {
+      "era": 3.59,
+      "fip": 3.95,
+      "whip": 1.403,
+      "pitchingWar": 17.98,
+      "ip": 956.2
+    },
+    "totalWar": 46.53,
+    "powerScore": 23.79,
+    "powerRank": 1
+  },
+  {
+    "year": 1987,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.703,
+      "hr": 40,
+      "battingWar": 21.78,
+      "wrcPlus": 102.8
+    },
+    "pitching": {
+      "era": 3.36,
+      "fip": 3.02,
+      "whip": 1.337,
+      "pitchingWar": 17.84,
+      "ip": 973.8
+    },
+    "totalWar": 39.62,
+    "powerScore": 20.01,
+    "powerRank": 2
+  },
+  {
+    "year": 1987,
+    "team": "해태",
+    "batting": {
+      "ops": 0.681,
+      "hr": 71,
+      "battingWar": 20.03,
+      "wrcPlus": 89.8
+    },
+    "pitching": {
+      "era": 3.16,
+      "fip": 3.31,
+      "whip": 1.262,
+      "pitchingWar": 16.52,
+      "ip": 979.2
+    },
+    "totalWar": 36.55,
+    "powerScore": 18.45,
+    "powerRank": 3
+  },
+  {
+    "year": 1987,
+    "team": "OB",
+    "batting": {
+      "ops": 0.669,
+      "hr": 30,
+      "battingWar": 15.45,
+      "wrcPlus": 91.3
+    },
+    "pitching": {
+      "era": 3.22,
+      "fip": 3.52,
+      "whip": 1.362,
+      "pitchingWar": 14.52,
+      "ip": 942.1
+    },
+    "totalWar": 29.97,
+    "powerScore": 15.03,
+    "powerRank": 4
+  },
+  {
+    "year": 1987,
+    "team": "MBC",
+    "batting": {
+      "ops": 0.662,
+      "hr": 36,
+      "battingWar": 15.07,
+      "wrcPlus": 84.4
+    },
+    "pitching": {
+      "era": 3.37,
+      "fip": 3.51,
+      "whip": 1.342,
+      "pitchingWar": 14.22,
+      "ip": 969.8
+    },
+    "totalWar": 29.29,
+    "powerScore": 14.69,
+    "powerRank": 5
+  },
+  {
+    "year": 1987,
+    "team": "빙그레",
+    "batting": {
+      "ops": 0.71,
+      "hr": 48,
+      "battingWar": 14.62,
+      "wrcPlus": 102.9
+    },
+    "pitching": {
+      "era": 3.79,
+      "fip": 3.69,
+      "whip": 1.314,
+      "pitchingWar": 14.74,
+      "ip": 952.3
+    },
+    "totalWar": 29.36,
+    "powerScore": 14.67,
+    "powerRank": 6
+  },
+  {
+    "year": 1987,
+    "team": "청보",
+    "batting": {
+      "ops": 0.663,
+      "hr": 54,
+      "battingWar": 19.27,
+      "wrcPlus": 89.9
+    },
+    "pitching": {
+      "era": 4.37,
+      "fip": 3.78,
+      "whip": 1.459,
+      "pitchingWar": 5.11,
+      "ip": 952.5
+    },
+    "totalWar": 24.38,
+    "powerScore": 12.9,
+    "powerRank": 7
+  },
+  {
+    "year": 1988,
+    "team": "해태",
+    "batting": {
+      "ops": 0.771,
+      "hr": 112,
+      "battingWar": 21.85,
+      "wrcPlus": 116.7
+    },
+    "pitching": {
+      "era": 2.87,
+      "fip": 3.3,
+      "whip": 1.186,
+      "pitchingWar": 24.66,
+      "ip": 966.1
+    },
+    "totalWar": 46.51,
+    "powerScore": 23.11,
+    "powerRank": 1
+  },
+  {
+    "year": 1988,
+    "team": "빙그레",
+    "batting": {
+      "ops": 0.721,
+      "hr": 73,
+      "battingWar": 18.4,
+      "wrcPlus": 101.6
+    },
+    "pitching": {
+      "era": 3.74,
+      "fip": 3.72,
+      "whip": 1.356,
+      "pitchingWar": 18,
+      "ip": 968.5
+    },
+    "totalWar": 36.4,
+    "powerScore": 18.22,
+    "powerRank": 2
+  },
+  {
+    "year": 1988,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.716,
+      "hr": 68,
+      "battingWar": 20.33,
+      "wrcPlus": 102
+    },
+    "pitching": {
+      "era": 3.61,
+      "fip": 3.39,
+      "whip": 1.329,
+      "pitchingWar": 15.39,
+      "ip": 948.5
+    },
+    "totalWar": 35.72,
+    "powerScore": 18.11,
+    "powerRank": 3
+  },
+  {
+    "year": 1988,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.75,
+      "hr": 85,
+      "battingWar": 19.47,
+      "wrcPlus": 113
+    },
+    "pitching": {
+      "era": 4.18,
+      "fip": 4.29,
+      "whip": 1.4,
+      "pitchingWar": 13.9,
+      "ip": 953.8
+    },
+    "totalWar": 33.37,
+    "powerScore": 16.96,
+    "powerRank": 4
+  },
+  {
+    "year": 1988,
+    "team": "OB",
+    "batting": {
+      "ops": 0.67,
+      "hr": 44,
+      "battingWar": 17.4,
+      "wrcPlus": 86.9
+    },
+    "pitching": {
+      "era": 3.7,
+      "fip": 3.96,
+      "whip": 1.358,
+      "pitchingWar": 13.06,
+      "ip": 963.3
+    },
+    "totalWar": 30.46,
+    "powerScore": 15.45,
+    "powerRank": 5
+  },
+  {
+    "year": 1988,
+    "team": "태평양",
+    "batting": {
+      "ops": 0.697,
+      "hr": 58,
+      "battingWar": 16.72,
+      "wrcPlus": 96.4
+    },
+    "pitching": {
+      "era": 4.58,
+      "fip": 3.88,
+      "whip": 1.401,
+      "pitchingWar": 6.86,
+      "ip": 939.9
+    },
+    "totalWar": 23.58,
+    "powerScore": 12.28,
+    "powerRank": 6
+  },
+  {
+    "year": 1988,
+    "team": "MBC",
+    "batting": {
+      "ops": 0.67,
+      "hr": 42,
+      "battingWar": 13.82,
+      "wrcPlus": 86.8
+    },
+    "pitching": {
+      "era": 3.97,
+      "fip": 4.09,
+      "whip": 1.471,
+      "pitchingWar": 7.85,
+      "ip": 959
+    },
+    "totalWar": 21.67,
+    "powerScore": 11.13,
+    "powerRank": 7
+  },
+  {
+    "year": 1989,
+    "team": "빙그레",
+    "batting": {
+      "ops": 0.757,
+      "hr": 97,
+      "battingWar": 27.49,
+      "wrcPlus": 115.6
+    },
+    "pitching": {
+      "era": 3.45,
+      "fip": 3.77,
+      "whip": 1.315,
+      "pitchingWar": 23.72,
+      "ip": 1069.6
+    },
+    "totalWar": 51.21,
+    "powerScore": 25.79,
+    "powerRank": 1
+  },
+  {
+    "year": 1989,
+    "team": "태평양",
+    "batting": {
+      "ops": 0.688,
+      "hr": 55,
+      "battingWar": 23.89,
+      "wrcPlus": 98.1
+    },
+    "pitching": {
+      "era": 3.04,
+      "fip": 3.37,
+      "whip": 1.28,
+      "pitchingWar": 21.45,
+      "ip": 1087.7
+    },
+    "totalWar": 45.34,
+    "powerScore": 22.79,
+    "powerRank": 2
+  },
+  {
+    "year": 1989,
+    "team": "해태",
+    "batting": {
+      "ops": 0.703,
+      "hr": 90,
+      "battingWar": 20.75,
+      "wrcPlus": 100.8
+    },
+    "pitching": {
+      "era": 3.35,
+      "fip": 3.19,
+      "whip": 1.234,
+      "pitchingWar": 21.9,
+      "ip": 1076.1
+    },
+    "totalWar": 42.65,
+    "powerScore": 21.27,
+    "powerRank": 3
+  },
+  {
+    "year": 1989,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.664,
+      "hr": 38,
+      "battingWar": 20.48,
+      "wrcPlus": 94.8
+    },
+    "pitching": {
+      "era": 3.91,
+      "fip": 3.65,
+      "whip": 1.362,
+      "pitchingWar": 15.04,
+      "ip": 1069.6
+    },
+    "totalWar": 35.52,
+    "powerScore": 18.03,
+    "powerRank": 4
+  },
+  {
+    "year": 1989,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.737,
+      "hr": 96,
+      "battingWar": 20.57,
+      "wrcPlus": 110
+    },
+    "pitching": {
+      "era": 4.43,
+      "fip": 4.29,
+      "whip": 1.513,
+      "pitchingWar": 13.08,
+      "ip": 1063.4
+    },
+    "totalWar": 33.65,
+    "powerScore": 17.2,
+    "powerRank": 5
+  },
+  {
+    "year": 1989,
+    "team": "OB",
+    "batting": {
+      "ops": 0.653,
+      "hr": 42,
+      "battingWar": 17.79,
+      "wrcPlus": 84.3
+    },
+    "pitching": {
+      "era": 3.71,
+      "fip": 3.87,
+      "whip": 1.4,
+      "pitchingWar": 14.21,
+      "ip": 1068.6
+    },
+    "totalWar": 32,
+    "powerScore": 16.18,
+    "powerRank": 6
+  },
+  {
+    "year": 1989,
+    "team": "MBC",
+    "batting": {
+      "ops": 0.675,
+      "hr": 42,
+      "battingWar": 18.73,
+      "wrcPlus": 94.9
+    },
+    "pitching": {
+      "era": 4.31,
+      "fip": 3.93,
+      "whip": 1.494,
+      "pitchingWar": 5.98,
+      "ip": 1055.9
+    },
+    "totalWar": 24.71,
+    "powerScore": 12.99,
+    "powerRank": 7
+  },
+  {
+    "year": 1990,
+    "team": "빙그레",
+    "batting": {
+      "ops": 0.766,
+      "hr": 112,
+      "battingWar": 26.28,
+      "wrcPlus": 116.8
+    },
+    "pitching": {
+      "era": 3.41,
+      "fip": 3.85,
+      "whip": 1.311,
+      "pitchingWar": 23.01,
+      "ip": 1060.3
+    },
+    "totalWar": 49.29,
+    "powerScore": 24.81,
+    "powerRank": 1
+  },
+  {
+    "year": 1990,
+    "team": "해태",
+    "batting": {
+      "ops": 0.744,
+      "hr": 87,
+      "battingWar": 21.73,
+      "wrcPlus": 110.9
+    },
+    "pitching": {
+      "era": 3.37,
+      "fip": 3.35,
+      "whip": 1.235,
+      "pitchingWar": 24.43,
+      "ip": 1065
+    },
+    "totalWar": 46.16,
+    "powerScore": 22.95,
+    "powerRank": 2
+  },
+  {
+    "year": 1990,
+    "team": "LG",
+    "batting": {
+      "ops": 0.726,
+      "hr": 61,
+      "battingWar": 22.1,
+      "wrcPlus": 105.9
+    },
+    "pitching": {
+      "era": 3.4,
+      "fip": 3.39,
+      "whip": 1.289,
+      "pitchingWar": 22.12,
+      "ip": 1078.8
+    },
+    "totalWar": 44.22,
+    "powerScore": 22.11,
+    "powerRank": 3
+  },
+  {
+    "year": 1990,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.752,
+      "hr": 131,
+      "battingWar": 27.77,
+      "wrcPlus": 109.6
+    },
+    "pitching": {
+      "era": 4.15,
+      "fip": 4.48,
+      "whip": 1.469,
+      "pitchingWar": 13.99,
+      "ip": 1063.8
+    },
+    "totalWar": 41.76,
+    "powerScore": 21.57,
+    "powerRank": 4
+  },
+  {
+    "year": 1990,
+    "team": "태평양",
+    "batting": {
+      "ops": 0.667,
+      "hr": 47,
+      "battingWar": 15.46,
+      "wrcPlus": 88.4
+    },
+    "pitching": {
+      "era": 3.7,
+      "fip": 3.64,
+      "whip": 1.394,
+      "pitchingWar": 16.72,
+      "ip": 1076.5
+    },
+    "totalWar": 32.18,
+    "powerScore": 16.03,
+    "powerRank": 5
+  },
+  {
+    "year": 1990,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.666,
+      "hr": 41,
+      "battingWar": 19.3,
+      "wrcPlus": 90.4
+    },
+    "pitching": {
+      "era": 4.38,
+      "fip": 3.99,
+      "whip": 1.419,
+      "pitchingWar": 11.07,
+      "ip": 1040.7
+    },
+    "totalWar": 30.37,
+    "powerScore": 15.6,
+    "powerRank": 6
+  },
+  {
+    "year": 1990,
+    "team": "OB",
+    "batting": {
+      "ops": 0.64,
+      "hr": 62,
+      "battingWar": 15.39,
+      "wrcPlus": 75.8
+    },
+    "pitching": {
+      "era": 4.74,
+      "fip": 4.33,
+      "whip": 1.53,
+      "pitchingWar": 2.48,
+      "ip": 1052.4
+    },
+    "totalWar": 17.87,
+    "powerScore": 9.58,
+    "powerRank": 7
+  },
+  {
+    "year": 1991,
+    "team": "해태",
+    "batting": {
+      "ops": 0.768,
+      "hr": 144,
+      "battingWar": 33.41,
+      "wrcPlus": 113.4
+    },
+    "pitching": {
+      "era": 2.9,
+      "fip": 3.05,
+      "whip": 1.108,
+      "pitchingWar": 31.04,
+      "ip": 1128.1
+    },
+    "totalWar": 64.45,
+    "powerScore": 32.34,
+    "powerRank": 1
+  },
+  {
+    "year": 1991,
+    "team": "빙그레",
+    "batting": {
+      "ops": 0.787,
+      "hr": 136,
+      "battingWar": 26.59,
+      "wrcPlus": 120.8
+    },
+    "pitching": {
+      "era": 3.29,
+      "fip": 3.74,
+      "whip": 1.274,
+      "pitchingWar": 25.23,
+      "ip": 1125.2
+    },
+    "totalWar": 51.82,
+    "powerScore": 25.98,
+    "powerRank": 2
+  },
+  {
+    "year": 1991,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.717,
+      "hr": 73,
+      "battingWar": 27.95,
+      "wrcPlus": 100.4
+    },
+    "pitching": {
+      "era": 4.06,
+      "fip": 3.71,
+      "whip": 1.359,
+      "pitchingWar": 18.02,
+      "ip": 1106.5
+    },
+    "totalWar": 45.97,
+    "powerScore": 23.48,
+    "powerRank": 3
+  },
+  {
+    "year": 1991,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.761,
+      "hr": 108,
+      "battingWar": 27.44,
+      "wrcPlus": 114.9
+    },
+    "pitching": {
+      "era": 4.14,
+      "fip": 4.29,
+      "whip": 1.423,
+      "pitchingWar": 17.37,
+      "ip": 1092.4
+    },
+    "totalWar": 44.81,
+    "powerScore": 22.91,
+    "powerRank": 4
+  },
+  {
+    "year": 1991,
+    "team": "태평양",
+    "batting": {
+      "ops": 0.651,
+      "hr": 51,
+      "battingWar": 18.17,
+      "wrcPlus": 80
+    },
+    "pitching": {
+      "era": 3.98,
+      "fip": 4.04,
+      "whip": 1.386,
+      "pitchingWar": 14.16,
+      "ip": 1120.6
+    },
+    "totalWar": 32.33,
+    "powerScore": 16.37,
+    "powerRank": 5
+  },
+  {
+    "year": 1991,
+    "team": "쌍방울",
+    "batting": {
+      "ops": 0.717,
+      "hr": 87,
+      "battingWar": 17.78,
+      "wrcPlus": 101.6
+    },
+    "pitching": {
+      "era": 4.71,
+      "fip": 4.66,
+      "whip": 1.512,
+      "pitchingWar": 13.43,
+      "ip": 1095
+    },
+    "totalWar": 31.21,
+    "powerScore": 15.82,
+    "powerRank": 6
+  },
+  {
+    "year": 1991,
+    "team": "OB",
+    "batting": {
+      "ops": 0.672,
+      "hr": 59,
+      "battingWar": 16.39,
+      "wrcPlus": 87
+    },
+    "pitching": {
+      "era": 4.23,
+      "fip": 4.28,
+      "whip": 1.43,
+      "pitchingWar": 11.35,
+      "ip": 1118.3
+    },
+    "totalWar": 27.74,
+    "powerScore": 14.12,
+    "powerRank": 7
+  },
+  {
+    "year": 1991,
+    "team": "LG",
+    "batting": {
+      "ops": 0.658,
+      "hr": 53,
+      "battingWar": 13.87,
+      "wrcPlus": 81.2
+    },
+    "pitching": {
+      "era": 4.37,
+      "fip": 3.92,
+      "whip": 1.402,
+      "pitchingWar": 8.41,
+      "ip": 1120.7
+    },
+    "totalWar": 22.28,
+    "powerScore": 11.41,
+    "powerRank": 8
+  },
+  {
+    "year": 1992,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.782,
+      "hr": 68,
+      "battingWar": 26.32,
+      "wrcPlus": 114.1
+    },
+    "pitching": {
+      "era": 4.28,
+      "fip": 4.08,
+      "whip": 1.406,
+      "pitchingWar": 22.76,
+      "ip": 1111.1
+    },
+    "totalWar": 49.08,
+    "powerScore": 24.72,
+    "powerRank": 1
+  },
+  {
+    "year": 1992,
+    "team": "빙그레",
+    "batting": {
+      "ops": 0.782,
+      "hr": 146,
+      "battingWar": 25.02,
+      "wrcPlus": 107.7
+    },
+    "pitching": {
+      "era": 3.69,
+      "fip": 4.05,
+      "whip": 1.29,
+      "pitchingWar": 23.89,
+      "ip": 1115.8
+    },
+    "totalWar": 48.91,
+    "powerScore": 24.51,
+    "powerRank": 2
+  },
+  {
+    "year": 1992,
+    "team": "해태",
+    "batting": {
+      "ops": 0.789,
+      "hr": 138,
+      "battingWar": 27.55,
+      "wrcPlus": 113.5
+    },
+    "pitching": {
+      "era": 4.22,
+      "fip": 4.15,
+      "whip": 1.367,
+      "pitchingWar": 20.55,
+      "ip": 1101.6
+    },
+    "totalWar": 48.1,
+    "powerScore": 24.4,
+    "powerRank": 3
+  },
+  {
+    "year": 1992,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.753,
+      "hr": 124,
+      "battingWar": 24.23,
+      "wrcPlus": 100.7
+    },
+    "pitching": {
+      "era": 4.61,
+      "fip": 4.6,
+      "whip": 1.528,
+      "pitchingWar": 13.69,
+      "ip": 994.2
+    },
+    "totalWar": 37.92,
+    "powerScore": 19.49,
+    "powerRank": 4
+  },
+  {
+    "year": 1992,
+    "team": "태평양",
+    "batting": {
+      "ops": 0.71,
+      "hr": 87,
+      "battingWar": 21.25,
+      "wrcPlus": 90.2
+    },
+    "pitching": {
+      "era": 4.5,
+      "fip": 4.46,
+      "whip": 1.48,
+      "pitchingWar": 15.23,
+      "ip": 1106.1
+    },
+    "totalWar": 36.48,
+    "powerScore": 18.54,
+    "powerRank": 5
+  },
+  {
+    "year": 1992,
+    "team": "OB",
+    "batting": {
+      "ops": 0.726,
+      "hr": 110,
+      "battingWar": 20.61,
+      "wrcPlus": 92.3
+    },
+    "pitching": {
+      "era": 4.23,
+      "fip": 4.29,
+      "whip": 1.426,
+      "pitchingWar": 14.96,
+      "ip": 1120.7
+    },
+    "totalWar": 35.57,
+    "powerScore": 18.07,
+    "powerRank": 6
+  },
+  {
+    "year": 1992,
+    "team": "LG",
+    "batting": {
+      "ops": 0.712,
+      "hr": 100,
+      "battingWar": 15.62,
+      "wrcPlus": 88.1
+    },
+    "pitching": {
+      "era": 4.3,
+      "fip": 3.97,
+      "whip": 1.468,
+      "pitchingWar": 11.86,
+      "ip": 1129.8
+    },
+    "totalWar": 27.48,
+    "powerScore": 13.93,
+    "powerRank": 7
+  },
+  {
+    "year": 1992,
+    "team": "쌍방울",
+    "batting": {
+      "ops": 0.711,
+      "hr": 90,
+      "battingWar": 10.05,
+      "wrcPlus": 92.4
+    },
+    "pitching": {
+      "era": 4.86,
+      "fip": 4.86,
+      "whip": 1.489,
+      "pitchingWar": 10.88,
+      "ip": 1089.1
+    },
+    "totalWar": 20.93,
+    "powerScore": 10.42,
+    "powerRank": 8
+  },
+  {
+    "year": 1993,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.763,
+      "hr": 133,
+      "battingWar": 30.16,
+      "wrcPlus": 130.7
+    },
+    "pitching": {
+      "era": 2.96,
+      "fip": 3.39,
+      "whip": 1.277,
+      "pitchingWar": 23.79,
+      "ip": 1133.5
+    },
+    "totalWar": 53.95,
+    "powerScore": 27.29,
+    "powerRank": 1
+  },
+  {
+    "year": 1993,
+    "team": "해태",
+    "batting": {
+      "ops": 0.698,
+      "hr": 95,
+      "battingWar": 29.36,
+      "wrcPlus": 111.6
+    },
+    "pitching": {
+      "era": 2.93,
+      "fip": 3.01,
+      "whip": 1.16,
+      "pitchingWar": 22.52,
+      "ip": 1127
+    },
+    "totalWar": 51.88,
+    "powerScore": 26.28,
+    "powerRank": 2
+  },
+  {
+    "year": 1993,
+    "team": "OB",
+    "batting": {
+      "ops": 0.688,
+      "hr": 59,
+      "battingWar": 24.39,
+      "wrcPlus": 108.3
+    },
+    "pitching": {
+      "era": 2.9,
+      "fip": 2.83,
+      "whip": 1.189,
+      "pitchingWar": 20.76,
+      "ip": 1122.4
+    },
+    "totalWar": 45.15,
+    "powerScore": 22.76,
+    "powerRank": 3
+  },
+  {
+    "year": 1993,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.647,
+      "hr": 29,
+      "battingWar": 21.71,
+      "wrcPlus": 95.3
+    },
+    "pitching": {
+      "era": 3.34,
+      "fip": 3.26,
+      "whip": 1.285,
+      "pitchingWar": 17.92,
+      "ip": 1117.4
+    },
+    "totalWar": 39.63,
+    "powerScore": 20,
+    "powerRank": 4
+  },
+  {
+    "year": 1993,
+    "team": "LG",
+    "batting": {
+      "ops": 0.691,
+      "hr": 69,
+      "battingWar": 23.6,
+      "wrcPlus": 107.2
+    },
+    "pitching": {
+      "era": 3.08,
+      "fip": 3.25,
+      "whip": 1.251,
+      "pitchingWar": 14.74,
+      "ip": 1123.4
+    },
+    "totalWar": 38.34,
+    "powerScore": 19.61,
+    "powerRank": 5
+  },
+  {
+    "year": 1993,
+    "team": "빙그레",
+    "batting": {
+      "ops": 0.664,
+      "hr": 81,
+      "battingWar": 21.47,
+      "wrcPlus": 98.3
+    },
+    "pitching": {
+      "era": 3.47,
+      "fip": 3.31,
+      "whip": 1.25,
+      "pitchingWar": 11.87,
+      "ip": 1124.4
+    },
+    "totalWar": 33.34,
+    "powerScore": 17.15,
+    "powerRank": 6
+  },
+  {
+    "year": 1993,
+    "team": "태평양",
+    "batting": {
+      "ops": 0.589,
+      "hr": 35,
+      "battingWar": 10.57,
+      "wrcPlus": 73
+    },
+    "pitching": {
+      "era": 3.59,
+      "fip": 3.24,
+      "whip": 1.332,
+      "pitchingWar": 10.62,
+      "ip": 1131.4
+    },
+    "totalWar": 21.19,
+    "powerScore": 10.59,
+    "powerRank": 7
+  },
+  {
+    "year": 1993,
+    "team": "쌍방울",
+    "batting": {
+      "ops": 0.603,
+      "hr": 46,
+      "battingWar": 13.86,
+      "wrcPlus": 78.8
+    },
+    "pitching": {
+      "era": 4.01,
+      "fip": 3.87,
+      "whip": 1.415,
+      "pitchingWar": 6.08,
+      "ip": 1102.5
+    },
+    "totalWar": 19.94,
+    "powerScore": 10.36,
+    "powerRank": 8
+  },
+  {
+    "year": 1994,
+    "team": "LG",
+    "batting": {
+      "ops": 0.767,
+      "hr": 88,
+      "battingWar": 32.67,
+      "wrcPlus": 125.6
+    },
+    "pitching": {
+      "era": 3.14,
+      "fip": 3.57,
+      "whip": 1.198,
+      "pitchingWar": 22.1,
+      "ip": 1119.2
+    },
+    "totalWar": 54.77,
+    "powerScore": 27.91,
+    "powerRank": 1
+  },
+  {
+    "year": 1994,
+    "team": "해태",
+    "batting": {
+      "ops": 0.716,
+      "hr": 93,
+      "battingWar": 24.23,
+      "wrcPlus": 105.1
+    },
+    "pitching": {
+      "era": 3.54,
+      "fip": 3.64,
+      "whip": 1.251,
+      "pitchingWar": 21.87,
+      "ip": 1104.2
+    },
+    "totalWar": 46.1,
+    "powerScore": 23.17,
+    "powerRank": 2
+  },
+  {
+    "year": 1994,
+    "team": "태평양",
+    "batting": {
+      "ops": 0.681,
+      "hr": 91,
+      "battingWar": 24.31,
+      "wrcPlus": 94.2
+    },
+    "pitching": {
+      "era": 3.51,
+      "fip": 3.39,
+      "whip": 1.315,
+      "pitchingWar": 21.47,
+      "ip": 1116.8
+    },
+    "totalWar": 45.78,
+    "powerScore": 23.03,
+    "powerRank": 3
+  },
+  {
+    "year": 1994,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.726,
+      "hr": 106,
+      "battingWar": 23.98,
+      "wrcPlus": 109
+    },
+    "pitching": {
+      "era": 3.45,
+      "fip": 3.81,
+      "whip": 1.278,
+      "pitchingWar": 21.52,
+      "ip": 1083.9
+    },
+    "totalWar": 45.5,
+    "powerScore": 22.87,
+    "powerRank": 4
+  },
+  {
+    "year": 1994,
+    "team": "한화",
+    "batting": {
+      "ops": 0.669,
+      "hr": 68,
+      "battingWar": 15.32,
+      "wrcPlus": 92
+    },
+    "pitching": {
+      "era": 3.53,
+      "fip": 3.5,
+      "whip": 1.245,
+      "pitchingWar": 18.29,
+      "ip": 1122.5
+    },
+    "totalWar": 33.61,
+    "powerScore": 16.66,
+    "powerRank": 5
+  },
+  {
+    "year": 1994,
+    "team": "OB",
+    "batting": {
+      "ops": 0.662,
+      "hr": 75,
+      "battingWar": 16.8,
+      "wrcPlus": 87.1
+    },
+    "pitching": {
+      "era": 3.47,
+      "fip": 3.45,
+      "whip": 1.31,
+      "pitchingWar": 14.3,
+      "ip": 1103.7
+    },
+    "totalWar": 31.1,
+    "powerScore": 15.68,
+    "powerRank": 6
+  },
+  {
+    "year": 1994,
+    "team": "쌍방울",
+    "batting": {
+      "ops": 0.675,
+      "hr": 87,
+      "battingWar": 24.57,
+      "wrcPlus": 92.5
+    },
+    "pitching": {
+      "era": 4.75,
+      "fip": 4.34,
+      "whip": 1.477,
+      "pitchingWar": 3.95,
+      "ip": 1111.7
+    },
+    "totalWar": 28.52,
+    "powerScore": 15.29,
+    "powerRank": 7
+  },
+  {
+    "year": 1994,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.68,
+      "hr": 58,
+      "battingWar": 17.43,
+      "wrcPlus": 95.8
+    },
+    "pitching": {
+      "era": 4.47,
+      "fip": 4.09,
+      "whip": 1.423,
+      "pitchingWar": 11.71,
+      "ip": 1106.5
+    },
+    "totalWar": 29.14,
+    "powerScore": 14.86,
+    "powerRank": 8
+  },
+  {
+    "year": 1995,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.696,
+      "hr": 65,
+      "battingWar": 25.05,
+      "wrcPlus": 104.4
+    },
+    "pitching": {
+      "era": 3.49,
+      "fip": 3.62,
+      "whip": 1.215,
+      "pitchingWar": 22.44,
+      "ip": 1132.9
+    },
+    "totalWar": 47.49,
+    "powerScore": 23.88,
+    "powerRank": 1
+  },
+  {
+    "year": 1995,
+    "team": "LG",
+    "batting": {
+      "ops": 0.706,
+      "hr": 79,
+      "battingWar": 23.97,
+      "wrcPlus": 106
+    },
+    "pitching": {
+      "era": 3.22,
+      "fip": 3.47,
+      "whip": 1.178,
+      "pitchingWar": 20.49,
+      "ip": 1118.6
+    },
+    "totalWar": 44.46,
+    "powerScore": 22.4,
+    "powerRank": 2
+  },
+  {
+    "year": 1995,
+    "team": "해태",
+    "batting": {
+      "ops": 0.654,
+      "hr": 75,
+      "battingWar": 15.9,
+      "wrcPlus": 88.1
+    },
+    "pitching": {
+      "era": 3.07,
+      "fip": 3.19,
+      "whip": 1.163,
+      "pitchingWar": 27.71,
+      "ip": 1123.7
+    },
+    "totalWar": 43.61,
+    "powerScore": 21.21,
+    "powerRank": 3
+  },
+  {
+    "year": 1995,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.699,
+      "hr": 94,
+      "battingWar": 23.95,
+      "wrcPlus": 102.1
+    },
+    "pitching": {
+      "era": 3.85,
+      "fip": 3.91,
+      "whip": 1.316,
+      "pitchingWar": 17.64,
+      "ip": 1049
+    },
+    "totalWar": 41.59,
+    "powerScore": 21.11,
+    "powerRank": 4
+  },
+  {
+    "year": 1995,
+    "team": "OB",
+    "batting": {
+      "ops": 0.725,
+      "hr": 106,
+      "battingWar": 22.33,
+      "wrcPlus": 111.2
+    },
+    "pitching": {
+      "era": 3.44,
+      "fip": 3.51,
+      "whip": 1.249,
+      "pitchingWar": 19.44,
+      "ip": 1144.6
+    },
+    "totalWar": 41.77,
+    "powerScore": 21.03,
+    "powerRank": 5
+  },
+  {
+    "year": 1995,
+    "team": "한화",
+    "batting": {
+      "ops": 0.703,
+      "hr": 96,
+      "battingWar": 23.57,
+      "wrcPlus": 103.8
+    },
+    "pitching": {
+      "era": 4.05,
+      "fip": 3.71,
+      "whip": 1.346,
+      "pitchingWar": 10.71,
+      "ip": 1116.2
+    },
+    "totalWar": 34.28,
+    "powerScore": 17.78,
+    "powerRank": 6
+  },
+  {
+    "year": 1995,
+    "team": "쌍방울",
+    "batting": {
+      "ops": 0.683,
+      "hr": 83,
+      "battingWar": 27.05,
+      "wrcPlus": 99.5
+    },
+    "pitching": {
+      "era": 4.69,
+      "fip": 4.56,
+      "whip": 1.459,
+      "pitchingWar": 4.06,
+      "ip": 1103.8
+    },
+    "totalWar": 31.11,
+    "powerScore": 16.7,
+    "powerRank": 7
+  },
+  {
+    "year": 1995,
+    "team": "태평양",
+    "batting": {
+      "ops": 0.65,
+      "hr": 82,
+      "battingWar": 16.93,
+      "wrcPlus": 88.4
+    },
+    "pitching": {
+      "era": 3.93,
+      "fip": 3.61,
+      "whip": 1.346,
+      "pitchingWar": 14.3,
+      "ip": 1108.5
+    },
+    "totalWar": 31.23,
+    "powerScore": 15.75,
+    "powerRank": 8
+  },
+  {
+    "year": 1996,
+    "team": "해태",
+    "batting": {
+      "ops": 0.695,
+      "hr": 92,
+      "battingWar": 24.5,
+      "wrcPlus": 101.5
+    },
+    "pitching": {
+      "era": 3.15,
+      "fip": 3.56,
+      "whip": 1.167,
+      "pitchingWar": 27.58,
+      "ip": 1129.7
+    },
+    "totalWar": 52.08,
+    "powerScore": 25.89,
+    "powerRank": 1
+  },
+  {
+    "year": 1996,
+    "team": "현대",
+    "batting": {
+      "ops": 0.689,
+      "hr": 106,
+      "battingWar": 23.6,
+      "wrcPlus": 95.2
+    },
+    "pitching": {
+      "era": 3.05,
+      "fip": 3.4,
+      "whip": 1.189,
+      "pitchingWar": 21.85,
+      "ip": 1137.4
+    },
+    "totalWar": 45.45,
+    "powerScore": 22.81,
+    "powerRank": 2
+  },
+  {
+    "year": 1996,
+    "team": "쌍방울",
+    "batting": {
+      "ops": 0.709,
+      "hr": 58,
+      "battingWar": 21.66,
+      "wrcPlus": 107.3
+    },
+    "pitching": {
+      "era": 3.34,
+      "fip": 3.52,
+      "whip": 1.295,
+      "pitchingWar": 24.11,
+      "ip": 1119.5
+    },
+    "totalWar": 45.77,
+    "powerScore": 22.76,
+    "powerRank": 3
+  },
+  {
+    "year": 1996,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.733,
+      "hr": 72,
+      "battingWar": 22.94,
+      "wrcPlus": 115.3
+    },
+    "pitching": {
+      "era": 4.17,
+      "fip": 3.79,
+      "whip": 1.365,
+      "pitchingWar": 15.58,
+      "ip": 1116.7
+    },
+    "totalWar": 38.52,
+    "powerScore": 19.63,
+    "powerRank": 4
+  },
+  {
+    "year": 1996,
+    "team": "한화",
+    "batting": {
+      "ops": 0.699,
+      "hr": 90,
+      "battingWar": 18.88,
+      "wrcPlus": 101.5
+    },
+    "pitching": {
+      "era": 3.81,
+      "fip": 3.14,
+      "whip": 1.22,
+      "pitchingWar": 14.77,
+      "ip": 1128
+    },
+    "totalWar": 33.65,
+    "powerScore": 17.03,
+    "powerRank": 5
+  },
+  {
+    "year": 1996,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.697,
+      "hr": 88,
+      "battingWar": 20.41,
+      "wrcPlus": 101.4
+    },
+    "pitching": {
+      "era": 4.26,
+      "fip": 4.23,
+      "whip": 1.44,
+      "pitchingWar": 12.37,
+      "ip": 1029.9
+    },
+    "totalWar": 32.78,
+    "powerScore": 16.79,
+    "powerRank": 6
+  },
+  {
+    "year": 1996,
+    "team": "LG",
+    "batting": {
+      "ops": 0.695,
+      "hr": 98,
+      "battingWar": 23.44,
+      "wrcPlus": 98.9
+    },
+    "pitching": {
+      "era": 4.13,
+      "fip": 3.96,
+      "whip": 1.361,
+      "pitchingWar": 6.79,
+      "ip": 1125.4
+    },
+    "totalWar": 30.23,
+    "powerScore": 15.95,
+    "powerRank": 7
+  },
+  {
+    "year": 1996,
+    "team": "OB",
+    "batting": {
+      "ops": 0.66,
+      "hr": 82,
+      "battingWar": 12.14,
+      "wrcPlus": 85.7
+    },
+    "pitching": {
+      "era": 3.7,
+      "fip": 3.81,
+      "whip": 1.332,
+      "pitchingWar": 12.34,
+      "ip": 1115
+    },
+    "totalWar": 24.48,
+    "powerScore": 12.23,
+    "powerRank": 8
+  },
+  {
+    "year": 1997,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.819,
+      "hr": 165,
+      "battingWar": 33.28,
+      "wrcPlus": 125.1
+    },
+    "pitching": {
+      "era": 4.28,
+      "fip": 4.25,
+      "whip": 1.419,
+      "pitchingWar": 16.11,
+      "ip": 1092.1
+    },
+    "totalWar": 49.39,
+    "powerScore": 25.55,
+    "powerRank": 1
+  },
+  {
+    "year": 1997,
+    "team": "쌍방울",
+    "batting": {
+      "ops": 0.766,
+      "hr": 110,
+      "battingWar": 27.27,
+      "wrcPlus": 115.1
+    },
+    "pitching": {
+      "era": 3.84,
+      "fip": 3.94,
+      "whip": 1.316,
+      "pitchingWar": 21.62,
+      "ip": 1104.3
+    },
+    "totalWar": 48.89,
+    "powerScore": 24.73,
+    "powerRank": 2
+  },
+  {
+    "year": 1997,
+    "team": "해태",
+    "batting": {
+      "ops": 0.748,
+      "hr": 133,
+      "battingWar": 24.78,
+      "wrcPlus": 106.6
+    },
+    "pitching": {
+      "era": 3.66,
+      "fip": 3.86,
+      "whip": 1.223,
+      "pitchingWar": 22.86,
+      "ip": 1125.5
+    },
+    "totalWar": 47.64,
+    "powerScore": 23.92,
+    "powerRank": 3
+  },
+  {
+    "year": 1997,
+    "team": "LG",
+    "batting": {
+      "ops": 0.737,
+      "hr": 83,
+      "battingWar": 26.64,
+      "wrcPlus": 105.3
+    },
+    "pitching": {
+      "era": 3.79,
+      "fip": 3.87,
+      "whip": 1.265,
+      "pitchingWar": 19.81,
+      "ip": 1117.6
+    },
+    "totalWar": 46.45,
+    "powerScore": 23.57,
+    "powerRank": 4
+  },
+  {
+    "year": 1997,
+    "team": "한화",
+    "batting": {
+      "ops": 0.707,
+      "hr": 102,
+      "battingWar": 18.6,
+      "wrcPlus": 94.2
+    },
+    "pitching": {
+      "era": 4.07,
+      "fip": 4.07,
+      "whip": 1.292,
+      "pitchingWar": 14.33,
+      "ip": 1111.5
+    },
+    "totalWar": 32.93,
+    "powerScore": 16.68,
+    "powerRank": 5
+  },
+  {
+    "year": 1997,
+    "team": "OB",
+    "batting": {
+      "ops": 0.685,
+      "hr": 84,
+      "battingWar": 13.94,
+      "wrcPlus": 88.8
+    },
+    "pitching": {
+      "era": 3.85,
+      "fip": 3.56,
+      "whip": 1.378,
+      "pitchingWar": 15.23,
+      "ip": 1119.5
+    },
+    "totalWar": 29.17,
+    "powerScore": 14.52,
+    "powerRank": 6
+  },
+  {
+    "year": 1997,
+    "team": "현대",
+    "batting": {
+      "ops": 0.688,
+      "hr": 82,
+      "battingWar": 15.62,
+      "wrcPlus": 90.3
+    },
+    "pitching": {
+      "era": 4.23,
+      "fip": 4.15,
+      "whip": 1.333,
+      "pitchingWar": 11.61,
+      "ip": 1105.2
+    },
+    "totalWar": 27.23,
+    "powerScore": 13.82,
+    "powerRank": 7
+  },
+  {
+    "year": 1997,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.65,
+      "hr": 75,
+      "battingWar": 9.84,
+      "wrcPlus": 79.4
+    },
+    "pitching": {
+      "era": 4.6,
+      "fip": 4.41,
+      "whip": 1.464,
+      "pitchingWar": 12.08,
+      "ip": 1106.2
+    },
+    "totalWar": 21.92,
+    "powerScore": 10.85,
+    "powerRank": 8
+  },
+  {
+    "year": 1998,
+    "team": "현대",
+    "batting": {
+      "ops": 0.778,
+      "hr": 142,
+      "battingWar": 27.78,
+      "wrcPlus": 114.6
+    },
+    "pitching": {
+      "era": 3.03,
+      "fip": 3.6,
+      "whip": 1.251,
+      "pitchingWar": 28.01,
+      "ip": 1118.2
+    },
+    "totalWar": 55.79,
+    "powerScore": 27.88,
+    "powerRank": 1
+  },
+  {
+    "year": 1998,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.773,
+      "hr": 143,
+      "battingWar": 25.18,
+      "wrcPlus": 111.3
+    },
+    "pitching": {
+      "era": 4.34,
+      "fip": 4.51,
+      "whip": 1.422,
+      "pitchingWar": 16.99,
+      "ip": 1123.1
+    },
+    "totalWar": 42.17,
+    "powerScore": 21.49,
+    "powerRank": 2
+  },
+  {
+    "year": 1998,
+    "team": "쌍방울",
+    "batting": {
+      "ops": 0.725,
+      "hr": 101,
+      "battingWar": 21.87,
+      "wrcPlus": 102.1
+    },
+    "pitching": {
+      "era": 4.02,
+      "fip": 4.22,
+      "whip": 1.341,
+      "pitchingWar": 17.02,
+      "ip": 1165.6
+    },
+    "totalWar": 38.89,
+    "powerScore": 19.69,
+    "powerRank": 3
+  },
+  {
+    "year": 1998,
+    "team": "LG",
+    "batting": {
+      "ops": 0.741,
+      "hr": 100,
+      "battingWar": 24.59,
+      "wrcPlus": 106.5
+    },
+    "pitching": {
+      "era": 4.2,
+      "fip": 4.08,
+      "whip": 1.327,
+      "pitchingWar": 12.69,
+      "ip": 1116.9
+    },
+    "totalWar": 37.28,
+    "powerScore": 19.23,
+    "powerRank": 4
+  },
+  {
+    "year": 1998,
+    "team": "OB",
+    "batting": {
+      "ops": 0.7,
+      "hr": 102,
+      "battingWar": 18.53,
+      "wrcPlus": 90.1
+    },
+    "pitching": {
+      "era": 3.61,
+      "fip": 3.78,
+      "whip": 1.328,
+      "pitchingWar": 19.35,
+      "ip": 1113.4
+    },
+    "totalWar": 37.88,
+    "powerScore": 18.9,
+    "powerRank": 5
+  },
+  {
+    "year": 1998,
+    "team": "해태",
+    "batting": {
+      "ops": 0.701,
+      "hr": 94,
+      "battingWar": 14.98,
+      "wrcPlus": 93.6
+    },
+    "pitching": {
+      "era": 3.92,
+      "fip": 3.75,
+      "whip": 1.281,
+      "pitchingWar": 19.69,
+      "ip": 1104.6
+    },
+    "totalWar": 34.67,
+    "powerScore": 17.1,
+    "powerRank": 6
+  },
+  {
+    "year": 1998,
+    "team": "한화",
+    "batting": {
+      "ops": 0.708,
+      "hr": 123,
+      "battingWar": 19.11,
+      "wrcPlus": 91.2
+    },
+    "pitching": {
+      "era": 4.27,
+      "fip": 3.79,
+      "whip": 1.355,
+      "pitchingWar": 12.9,
+      "ip": 1114
+    },
+    "totalWar": 32.01,
+    "powerScore": 16.32,
+    "powerRank": 7
+  },
+  {
+    "year": 1998,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.709,
+      "hr": 86,
+      "battingWar": 17.35,
+      "wrcPlus": 95.9
+    },
+    "pitching": {
+      "era": 4.62,
+      "fip": 4.17,
+      "whip": 1.378,
+      "pitchingWar": 11.04,
+      "ip": 1110.5
+    },
+    "totalWar": 28.39,
+    "powerScore": 14.51,
+    "powerRank": 8
+  },
+  {
+    "year": 1999,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.824,
+      "hr": 145,
+      "battingWar": 23.7,
+      "wrcPlus": 111.9
+    },
+    "pitching": {
+      "era": 4.19,
+      "fip": 4.63,
+      "whip": 1.325,
+      "pitchingWar": 30.77,
+      "ip": 1174.5
+    },
+    "totalWar": 54.47,
+    "powerScore": 26.88,
+    "powerRank": 1
+  },
+  {
+    "year": 1999,
+    "team": "현대",
+    "batting": {
+      "ops": 0.778,
+      "hr": 143,
+      "battingWar": 24.04,
+      "wrcPlus": 99.3
+    },
+    "pitching": {
+      "era": 4.48,
+      "fip": 4.59,
+      "whip": 1.479,
+      "pitchingWar": 22.81,
+      "ip": 1170.8
+    },
+    "totalWar": 46.85,
+    "powerScore": 23.49,
+    "powerRank": 2
+  },
+  {
+    "year": 1999,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.812,
+      "hr": 207,
+      "battingWar": 25.28,
+      "wrcPlus": 103
+    },
+    "pitching": {
+      "era": 5.17,
+      "fip": 4.75,
+      "whip": 1.508,
+      "pitchingWar": 20.6,
+      "ip": 1191.7
+    },
+    "totalWar": 45.88,
+    "powerScore": 23.17,
+    "powerRank": 3
+  },
+  {
+    "year": 1999,
+    "team": "두산",
+    "batting": {
+      "ops": 0.793,
+      "hr": 141,
+      "battingWar": 21.89,
+      "wrcPlus": 104.4
+    },
+    "pitching": {
+      "era": 4.6,
+      "fip": 4.81,
+      "whip": 1.447,
+      "pitchingWar": 22.56,
+      "ip": 1183.8
+    },
+    "totalWar": 44.45,
+    "powerScore": 22.19,
+    "powerRank": 4
+  },
+  {
+    "year": 1999,
+    "team": "해태",
+    "batting": {
+      "ops": 0.829,
+      "hr": 210,
+      "battingWar": 25.82,
+      "wrcPlus": 111.7
+    },
+    "pitching": {
+      "era": 5.23,
+      "fip": 5.35,
+      "whip": 1.486,
+      "pitchingWar": 17.4,
+      "ip": 1163.9
+    },
+    "totalWar": 43.22,
+    "powerScore": 22.03,
+    "powerRank": 5
+  },
+  {
+    "year": 1999,
+    "team": "한화",
+    "batting": {
+      "ops": 0.838,
+      "hr": 197,
+      "battingWar": 22.38,
+      "wrcPlus": 110.4
+    },
+    "pitching": {
+      "era": 4.91,
+      "fip": 4.82,
+      "whip": 1.39,
+      "pitchingWar": 20.05,
+      "ip": 1165.1
+    },
+    "totalWar": 42.43,
+    "powerScore": 21.33,
+    "powerRank": 6
+  },
+  {
+    "year": 1999,
+    "team": "LG",
+    "batting": {
+      "ops": 0.792,
+      "hr": 145,
+      "battingWar": 22.04,
+      "wrcPlus": 100.7
+    },
+    "pitching": {
+      "era": 5.48,
+      "fip": 5.09,
+      "whip": 1.563,
+      "pitchingWar": 12.36,
+      "ip": 1106.7
+    },
+    "totalWar": 34.4,
+    "powerScore": 17.68,
+    "powerRank": 7
+  },
+  {
+    "year": 1999,
+    "team": "쌍방울",
+    "batting": {
+      "ops": 0.678,
+      "hr": 86,
+      "battingWar": 9.9,
+      "wrcPlus": 72.5
+    },
+    "pitching": {
+      "era": 5.89,
+      "fip": 5.71,
+      "whip": 1.577,
+      "pitchingWar": 7.77,
+      "ip": 1171.2
+    },
+    "totalWar": 17.67,
+    "powerScore": 8.94,
+    "powerRank": 8
+  },
+  {
+    "year": 2000,
+    "team": "현대",
+    "batting": {
+      "ops": 0.848,
+      "hr": 208,
+      "battingWar": 36.68,
+      "wrcPlus": 118.7
+    },
+    "pitching": {
+      "era": 3.62,
+      "fip": 3.7,
+      "whip": 1.314,
+      "pitchingWar": 29.58,
+      "ip": 1180.6
+    },
+    "totalWar": 66.26,
+    "powerScore": 33.48,
+    "powerRank": 1
+  },
+  {
+    "year": 2000,
+    "team": "LG",
+    "batting": {
+      "ops": 0.77,
+      "hr": 122,
+      "battingWar": 26.35,
+      "wrcPlus": 103.6
+    },
+    "pitching": {
+      "era": 4.47,
+      "fip": 4.17,
+      "whip": 1.394,
+      "pitchingWar": 20.86,
+      "ip": 1181
+    },
+    "totalWar": 47.21,
+    "powerScore": 23.88,
+    "powerRank": 2
+  },
+  {
+    "year": 2000,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.795,
+      "hr": 177,
+      "battingWar": 26.09,
+      "wrcPlus": 104.1
+    },
+    "pitching": {
+      "era": 4.65,
+      "fip": 4.63,
+      "whip": 1.488,
+      "pitchingWar": 20.99,
+      "ip": 1180.6
+    },
+    "totalWar": 47.08,
+    "powerScore": 23.8,
+    "powerRank": 3
+  },
+  {
+    "year": 2000,
+    "team": "두산",
+    "batting": {
+      "ops": 0.8,
+      "hr": 150,
+      "battingWar": 25.85,
+      "wrcPlus": 110.4
+    },
+    "pitching": {
+      "era": 4.24,
+      "fip": 4.37,
+      "whip": 1.461,
+      "pitchingWar": 21.06,
+      "ip": 1168
+    },
+    "totalWar": 46.91,
+    "powerScore": 23.69,
+    "powerRank": 4
+  },
+  {
+    "year": 2000,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.719,
+      "hr": 104,
+      "battingWar": 18.31,
+      "wrcPlus": 86.8
+    },
+    "pitching": {
+      "era": 4.03,
+      "fip": 4.24,
+      "whip": 1.323,
+      "pitchingWar": 27.01,
+      "ip": 1192.7
+    },
+    "totalWar": 45.32,
+    "powerScore": 22.23,
+    "powerRank": 5
+  },
+  {
+    "year": 2000,
+    "team": "해태",
+    "batting": {
+      "ops": 0.697,
+      "hr": 86,
+      "battingWar": 15.17,
+      "wrcPlus": 85.1
+    },
+    "pitching": {
+      "era": 4.97,
+      "fip": 5.03,
+      "whip": 1.487,
+      "pitchingWar": 16.07,
+      "ip": 1193.7
+    },
+    "totalWar": 31.24,
+    "powerScore": 15.58,
+    "powerRank": 6
+  },
+  {
+    "year": 2000,
+    "team": "한화",
+    "batting": {
+      "ops": 0.803,
+      "hr": 180,
+      "battingWar": 16.19,
+      "wrcPlus": 106.6
+    },
+    "pitching": {
+      "era": 5.27,
+      "fip": 5.38,
+      "whip": 1.508,
+      "pitchingWar": 11.94,
+      "ip": 1177.3
+    },
+    "totalWar": 28.13,
+    "powerScore": 14.28,
+    "powerRank": 7
+  },
+  {
+    "year": 2000,
+    "team": "SK",
+    "batting": {
+      "ops": 0.716,
+      "hr": 105,
+      "battingWar": 15.49,
+      "wrcPlus": 85.6
+    },
+    "pitching": {
+      "era": 6.02,
+      "fip": 5.57,
+      "whip": 1.652,
+      "pitchingWar": 3.65,
+      "ip": 1160.3
+    },
+    "totalWar": 19.14,
+    "powerScore": 10.16,
+    "powerRank": 8
+  },
+  {
+    "year": 2001,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.807,
+      "hr": 162,
+      "battingWar": 23.07,
+      "wrcPlus": 106.7
+    },
+    "pitching": {
+      "era": 4.44,
+      "fip": 4.65,
+      "whip": 1.488,
+      "pitchingWar": 25.28,
+      "ip": 1180.1
+    },
+    "totalWar": 48.35,
+    "powerScore": 24.06,
+    "powerRank": 1
+  },
+  {
+    "year": 2001,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.791,
+      "hr": 121,
+      "battingWar": 22.15,
+      "wrcPlus": 107.1
+    },
+    "pitching": {
+      "era": 4.69,
+      "fip": 4.63,
+      "whip": 1.508,
+      "pitchingWar": 19.72,
+      "ip": 1167.7
+    },
+    "totalWar": 41.87,
+    "powerScore": 21.06,
+    "powerRank": 2
+  },
+  {
+    "year": 2001,
+    "team": "현대",
+    "batting": {
+      "ops": 0.791,
+      "hr": 169,
+      "battingWar": 19.85,
+      "wrcPlus": 105
+    },
+    "pitching": {
+      "era": 4.39,
+      "fip": 4.46,
+      "whip": 1.523,
+      "pitchingWar": 21.55,
+      "ip": 1133.4
+    },
+    "totalWar": 41.4,
+    "powerScore": 20.62,
+    "powerRank": 3
+  },
+  {
+    "year": 2001,
+    "team": "두산",
+    "batting": {
+      "ops": 0.78,
+      "hr": 130,
+      "battingWar": 23.42,
+      "wrcPlus": 103.3
+    },
+    "pitching": {
+      "era": 4.99,
+      "fip": 4.68,
+      "whip": 1.562,
+      "pitchingWar": 12.46,
+      "ip": 1175.2
+    },
+    "totalWar": 35.88,
+    "powerScore": 18.49,
+    "powerRank": 4
+  },
+  {
+    "year": 2001,
+    "team": "SK",
+    "batting": {
+      "ops": 0.728,
+      "hr": 113,
+      "battingWar": 14.7,
+      "wrcPlus": 86.8
+    },
+    "pitching": {
+      "era": 4.43,
+      "fip": 4.6,
+      "whip": 1.421,
+      "pitchingWar": 20.67,
+      "ip": 1165.5
+    },
+    "totalWar": 35.37,
+    "powerScore": 17.39,
+    "powerRank": 5
+  },
+  {
+    "year": 2001,
+    "team": "한화",
+    "batting": {
+      "ops": 0.782,
+      "hr": 148,
+      "battingWar": 16.57,
+      "wrcPlus": 103.7
+    },
+    "pitching": {
+      "era": 4.87,
+      "fip": 4.72,
+      "whip": 1.551,
+      "pitchingWar": 17.69,
+      "ip": 1179.4
+    },
+    "totalWar": 34.26,
+    "powerScore": 17.07,
+    "powerRank": 6
+  },
+  {
+    "year": 2001,
+    "team": "LG",
+    "batting": {
+      "ops": 0.754,
+      "hr": 85,
+      "battingWar": 18.31,
+      "wrcPlus": 101.1
+    },
+    "pitching": {
+      "era": 5.15,
+      "fip": 4.94,
+      "whip": 1.612,
+      "pitchingWar": 13.85,
+      "ip": 1178.6
+    },
+    "totalWar": 32.16,
+    "powerScore": 16.3,
+    "powerRank": 7
+  },
+  {
+    "year": 2001,
+    "team": "해태",
+    "batting": {
+      "ops": 0.768,
+      "hr": 93,
+      "battingWar": 9.05,
+      "wrcPlus": 98.2
+    },
+    "pitching": {
+      "era": 4.81,
+      "fip": 4.88,
+      "whip": 1.441,
+      "pitchingWar": 12.48,
+      "ip": 774.6
+    },
+    "totalWar": 21.53,
+    "powerScore": 10.59,
+    "powerRank": 8
+  },
+  {
+    "year": 2001,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.814,
+      "hr": 53,
+      "battingWar": 8.29,
+      "wrcPlus": 111.7
+    },
+    "pitching": {
+      "era": 5.51,
+      "fip": 5.4,
+      "whip": 1.548,
+      "pitchingWar": 4.61,
+      "ip": 396.6
+    },
+    "totalWar": 12.9,
+    "powerScore": 6.63,
+    "powerRank": 9
+  },
+  {
+    "year": 2002,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.831,
+      "hr": 191,
+      "battingWar": 36.53,
+      "wrcPlus": 124.4
+    },
+    "pitching": {
+      "era": 3.93,
+      "fip": 4.04,
+      "whip": 1.312,
+      "pitchingWar": 25.1,
+      "ip": 1194.4
+    },
+    "totalWar": 61.63,
+    "powerScore": 31.39,
+    "powerRank": 1
+  },
+  {
+    "year": 2002,
+    "team": "현대",
+    "batting": {
+      "ops": 0.774,
+      "hr": 173,
+      "battingWar": 30.38,
+      "wrcPlus": 106.3
+    },
+    "pitching": {
+      "era": 4.32,
+      "fip": 4.3,
+      "whip": 1.381,
+      "pitchingWar": 16.37,
+      "ip": 1119.8
+    },
+    "totalWar": 46.75,
+    "powerScore": 24.08,
+    "powerRank": 2
+  },
+  {
+    "year": 2002,
+    "team": "SK",
+    "batting": {
+      "ops": 0.772,
+      "hr": 158,
+      "battingWar": 28.06,
+      "wrcPlus": 106.1
+    },
+    "pitching": {
+      "era": 4.49,
+      "fip": 4.42,
+      "whip": 1.322,
+      "pitchingWar": 16.32,
+      "ip": 1174.1
+    },
+    "totalWar": 44.38,
+    "powerScore": 22.78,
+    "powerRank": 3
+  },
+  {
+    "year": 2002,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.75,
+      "hr": 120,
+      "battingWar": 21,
+      "wrcPlus": 104
+    },
+    "pitching": {
+      "era": 3.94,
+      "fip": 4.35,
+      "whip": 1.306,
+      "pitchingWar": 24.22,
+      "ip": 1190.8
+    },
+    "totalWar": 45.22,
+    "powerScore": 22.45,
+    "powerRank": 4
+  },
+  {
+    "year": 2002,
+    "team": "두산",
+    "batting": {
+      "ops": 0.726,
+      "hr": 130,
+      "battingWar": 23.5,
+      "wrcPlus": 95.8
+    },
+    "pitching": {
+      "era": 3.94,
+      "fip": 3.79,
+      "whip": 1.372,
+      "pitchingWar": 19.66,
+      "ip": 1179.5
+    },
+    "totalWar": 43.16,
+    "powerScore": 21.77,
+    "powerRank": 5
+  },
+  {
+    "year": 2002,
+    "team": "LG",
+    "batting": {
+      "ops": 0.718,
+      "hr": 100,
+      "battingWar": 17.99,
+      "wrcPlus": 93.3
+    },
+    "pitching": {
+      "era": 3.95,
+      "fip": 4.43,
+      "whip": 1.366,
+      "pitchingWar": 21.6,
+      "ip": 1186
+    },
+    "totalWar": 39.59,
+    "powerScore": 19.61,
+    "powerRank": 6
+  },
+  {
+    "year": 2002,
+    "team": "한화",
+    "batting": {
+      "ops": 0.748,
+      "hr": 170,
+      "battingWar": 21.42,
+      "wrcPlus": 100.8
+    },
+    "pitching": {
+      "era": 4.81,
+      "fip": 4.15,
+      "whip": 1.394,
+      "pitchingWar": 12.97,
+      "ip": 1180.7
+    },
+    "totalWar": 34.39,
+    "powerScore": 17.62,
+    "powerRank": 7
+  },
+  {
+    "year": 2002,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.661,
+      "hr": 85,
+      "battingWar": 6.91,
+      "wrcPlus": 74.4
+    },
+    "pitching": {
+      "era": 4.77,
+      "fip": 4.49,
+      "whip": 1.47,
+      "pitchingWar": 6.96,
+      "ip": 1148.2
+    },
+    "totalWar": 13.87,
+    "powerScore": 6.93,
+    "powerRank": 8
+  },
+  {
+    "year": 2003,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.766,
+      "hr": 129,
+      "battingWar": 29.36,
+      "wrcPlus": 106.1
+    },
+    "pitching": {
+      "era": 3.67,
+      "fip": 4.14,
+      "whip": 1.283,
+      "pitchingWar": 26.23,
+      "ip": 1173.8
+    },
+    "totalWar": 55.59,
+    "powerScore": 27.95,
+    "powerRank": 1
+  },
+  {
+    "year": 2003,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.842,
+      "hr": 213,
+      "battingWar": 33.94,
+      "wrcPlus": 120.9
+    },
+    "pitching": {
+      "era": 4.39,
+      "fip": 4.21,
+      "whip": 1.438,
+      "pitchingWar": 20.03,
+      "ip": 1177.4
+    },
+    "totalWar": 53.97,
+    "powerScore": 27.68,
+    "powerRank": 2
+  },
+  {
+    "year": 2003,
+    "team": "현대",
+    "batting": {
+      "ops": 0.829,
+      "hr": 175,
+      "battingWar": 31.51,
+      "wrcPlus": 120.2
+    },
+    "pitching": {
+      "era": 4.26,
+      "fip": 4,
+      "whip": 1.459,
+      "pitchingWar": 18.88,
+      "ip": 1092.6
+    },
+    "totalWar": 50.39,
+    "powerScore": 25.83,
+    "powerRank": 3
+  },
+  {
+    "year": 2003,
+    "team": "한화",
+    "batting": {
+      "ops": 0.736,
+      "hr": 121,
+      "battingWar": 21.96,
+      "wrcPlus": 96.3
+    },
+    "pitching": {
+      "era": 4.4,
+      "fip": 4.25,
+      "whip": 1.366,
+      "pitchingWar": 20.83,
+      "ip": 1186.4
+    },
+    "totalWar": 42.79,
+    "powerScore": 21.45,
+    "powerRank": 4
+  },
+  {
+    "year": 2003,
+    "team": "SK",
+    "batting": {
+      "ops": 0.782,
+      "hr": 156,
+      "battingWar": 25.99,
+      "wrcPlus": 106.6
+    },
+    "pitching": {
+      "era": 4.45,
+      "fip": 4.4,
+      "whip": 1.431,
+      "pitchingWar": 15.06,
+      "ip": 1179
+    },
+    "totalWar": 41.05,
+    "powerScore": 21.07,
+    "powerRank": 5
+  },
+  {
+    "year": 2003,
+    "team": "두산",
+    "batting": {
+      "ops": 0.736,
+      "hr": 90,
+      "battingWar": 15.2,
+      "wrcPlus": 97.3
+    },
+    "pitching": {
+      "era": 4.27,
+      "fip": 4.21,
+      "whip": 1.417,
+      "pitchingWar": 17.1,
+      "ip": 1170.3
+    },
+    "totalWar": 32.3,
+    "powerScore": 16.05,
+    "powerRank": 6
+  },
+  {
+    "year": 2003,
+    "team": "LG",
+    "batting": {
+      "ops": 0.697,
+      "hr": 106,
+      "battingWar": 12.87,
+      "wrcPlus": 79.8
+    },
+    "pitching": {
+      "era": 4.03,
+      "fip": 4.19,
+      "whip": 1.488,
+      "pitchingWar": 17.88,
+      "ip": 1163.6
+    },
+    "totalWar": 30.75,
+    "powerScore": 15.12,
+    "powerRank": 7
+  },
+  {
+    "year": 2003,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.682,
+      "hr": 73,
+      "battingWar": 6.69,
+      "wrcPlus": 77
+    },
+    "pitching": {
+      "era": 5.04,
+      "fip": 4.9,
+      "whip": 1.496,
+      "pitchingWar": 6.66,
+      "ip": 1154.2
+    },
+    "totalWar": 13.35,
+    "powerScore": 6.68,
+    "powerRank": 8
+  },
+  {
+    "year": 2004,
+    "team": "현대",
+    "batting": {
+      "ops": 0.783,
+      "hr": 134,
+      "battingWar": 29.49,
+      "wrcPlus": 113.7
+    },
+    "pitching": {
+      "era": 4.09,
+      "fip": 4.13,
+      "whip": 1.382,
+      "pitchingWar": 23.96,
+      "ip": 1181.4
+    },
+    "totalWar": 53.45,
+    "powerScore": 27,
+    "powerRank": 1
+  },
+  {
+    "year": 2004,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.773,
+      "hr": 143,
+      "battingWar": 32.84,
+      "wrcPlus": 108
+    },
+    "pitching": {
+      "era": 4.54,
+      "fip": 4.51,
+      "whip": 1.439,
+      "pitchingWar": 19.51,
+      "ip": 1177.4
+    },
+    "totalWar": 52.35,
+    "powerScore": 26.84,
+    "powerRank": 2
+  },
+  {
+    "year": 2004,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.758,
+      "hr": 132,
+      "battingWar": 27.39,
+      "wrcPlus": 102.7
+    },
+    "pitching": {
+      "era": 3.77,
+      "fip": 3.95,
+      "whip": 1.338,
+      "pitchingWar": 24.06,
+      "ip": 1193.3
+    },
+    "totalWar": 51.45,
+    "powerScore": 25.89,
+    "powerRank": 3
+  },
+  {
+    "year": 2004,
+    "team": "SK",
+    "batting": {
+      "ops": 0.768,
+      "hr": 138,
+      "battingWar": 27,
+      "wrcPlus": 107
+    },
+    "pitching": {
+      "era": 4.41,
+      "fip": 4.31,
+      "whip": 1.447,
+      "pitchingWar": 15.55,
+      "ip": 1182.6
+    },
+    "totalWar": 42.55,
+    "powerScore": 21.85,
+    "powerRank": 4
+  },
+  {
+    "year": 2004,
+    "team": "두산",
+    "batting": {
+      "ops": 0.723,
+      "hr": 89,
+      "battingWar": 19.22,
+      "wrcPlus": 94
+    },
+    "pitching": {
+      "era": 3.9,
+      "fip": 3.99,
+      "whip": 1.367,
+      "pitchingWar": 24.27,
+      "ip": 1171.6
+    },
+    "totalWar": 43.49,
+    "powerScore": 21.49,
+    "powerRank": 5
+  },
+  {
+    "year": 2004,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.691,
+      "hr": 88,
+      "battingWar": 15.09,
+      "wrcPlus": 82.3
+    },
+    "pitching": {
+      "era": 4.24,
+      "fip": 4.15,
+      "whip": 1.406,
+      "pitchingWar": 17.93,
+      "ip": 1184.5
+    },
+    "totalWar": 33.02,
+    "powerScore": 16.37,
+    "powerRank": 6
+  },
+  {
+    "year": 2004,
+    "team": "한화",
+    "batting": {
+      "ops": 0.763,
+      "hr": 140,
+      "battingWar": 19.44,
+      "wrcPlus": 105
+    },
+    "pitching": {
+      "era": 5.39,
+      "fip": 5.06,
+      "whip": 1.499,
+      "pitchingWar": 9.8,
+      "ip": 1132.4
+    },
+    "totalWar": 29.24,
+    "powerScore": 15.1,
+    "powerRank": 7
+  },
+  {
+    "year": 2004,
+    "team": "LG",
+    "batting": {
+      "ops": 0.716,
+      "hr": 102,
+      "battingWar": 14.83,
+      "wrcPlus": 89.8
+    },
+    "pitching": {
+      "era": 4.4,
+      "fip": 4.41,
+      "whip": 1.536,
+      "pitchingWar": 14.61,
+      "ip": 1157.8
+    },
+    "totalWar": 29.44,
+    "powerScore": 14.73,
+    "powerRank": 8
+  },
+  {
+    "year": 2005,
+    "team": "SK",
+    "batting": {
+      "ops": 0.757,
+      "hr": 122,
+      "battingWar": 28.27,
+      "wrcPlus": 107.8
+    },
+    "pitching": {
+      "era": 3.44,
+      "fip": 4.03,
+      "whip": 1.262,
+      "pitchingWar": 27.14,
+      "ip": 1130.7
+    },
+    "totalWar": 55.41,
+    "powerScore": 27.76,
+    "powerRank": 1
+  },
+  {
+    "year": 2005,
+    "team": "두산",
+    "batting": {
+      "ops": 0.715,
+      "hr": 63,
+      "battingWar": 20.52,
+      "wrcPlus": 99.6
+    },
+    "pitching": {
+      "era": 3.43,
+      "fip": 3.96,
+      "whip": 1.318,
+      "pitchingWar": 28.94,
+      "ip": 1121.5
+    },
+    "totalWar": 49.46,
+    "powerScore": 24.31,
+    "powerRank": 2
+  },
+  {
+    "year": 2005,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.749,
+      "hr": 111,
+      "battingWar": 24.19,
+      "wrcPlus": 106.1
+    },
+    "pitching": {
+      "era": 3.84,
+      "fip": 3.9,
+      "whip": 1.256,
+      "pitchingWar": 23.14,
+      "ip": 1124.9
+    },
+    "totalWar": 47.33,
+    "powerScore": 23.72,
+    "powerRank": 3
+  },
+  {
+    "year": 2005,
+    "team": "한화",
+    "batting": {
+      "ops": 0.775,
+      "hr": 159,
+      "battingWar": 22.7,
+      "wrcPlus": 109.4
+    },
+    "pitching": {
+      "era": 4.43,
+      "fip": 4.45,
+      "whip": 1.43,
+      "pitchingWar": 18.13,
+      "ip": 1106.1
+    },
+    "totalWar": 40.83,
+    "powerScore": 20.64,
+    "powerRank": 4
+  },
+  {
+    "year": 2005,
+    "team": "현대",
+    "batting": {
+      "ops": 0.743,
+      "hr": 134,
+      "battingWar": 25.29,
+      "wrcPlus": 100.2
+    },
+    "pitching": {
+      "era": 4.73,
+      "fip": 4.35,
+      "whip": 1.439,
+      "pitchingWar": 11.63,
+      "ip": 1109.6
+    },
+    "totalWar": 36.92,
+    "powerScore": 19.14,
+    "powerRank": 5
+  },
+  {
+    "year": 2005,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.717,
+      "hr": 99,
+      "battingWar": 19.55,
+      "wrcPlus": 95.7
+    },
+    "pitching": {
+      "era": 4.87,
+      "fip": 4.87,
+      "whip": 1.525,
+      "pitchingWar": 10.8,
+      "ip": 1098.7
+    },
+    "totalWar": 30.35,
+    "powerScore": 15.61,
+    "powerRank": 6
+  },
+  {
+    "year": 2005,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.694,
+      "hr": 83,
+      "battingWar": 14.21,
+      "wrcPlus": 87.5
+    },
+    "pitching": {
+      "era": 4.32,
+      "fip": 3.85,
+      "whip": 1.348,
+      "pitchingWar": 17.18,
+      "ip": 1116.6
+    },
+    "totalWar": 31.39,
+    "powerScore": 15.55,
+    "powerRank": 7
+  },
+  {
+    "year": 2005,
+    "team": "LG",
+    "batting": {
+      "ops": 0.717,
+      "hr": 105,
+      "battingWar": 18.68,
+      "wrcPlus": 91.7
+    },
+    "pitching": {
+      "era": 4.92,
+      "fip": 4.35,
+      "whip": 1.541,
+      "pitchingWar": 8.66,
+      "ip": 1097.9
+    },
+    "totalWar": 27.34,
+    "powerScore": 14.17,
+    "powerRank": 8
+  },
+  {
+    "year": 2006,
+    "team": "현대",
+    "batting": {
+      "ops": 0.734,
+      "hr": 92,
+      "battingWar": 26.68,
+      "wrcPlus": 114.5
+    },
+    "pitching": {
+      "era": 3.45,
+      "fip": 3.28,
+      "whip": 1.303,
+      "pitchingWar": 19.54,
+      "ip": 1110.7
+    },
+    "totalWar": 46.22,
+    "powerScore": 23.47,
+    "powerRank": 1
+  },
+  {
+    "year": 2006,
+    "team": "한화",
+    "batting": {
+      "ops": 0.711,
+      "hr": 110,
+      "battingWar": 23.94,
+      "wrcPlus": 105.9
+    },
+    "pitching": {
+      "era": 3.32,
+      "fip": 3.5,
+      "whip": 1.3,
+      "pitchingWar": 21.28,
+      "ip": 1074.8
+    },
+    "totalWar": 45.22,
+    "powerScore": 22.74,
+    "powerRank": 2
+  },
+  {
+    "year": 2006,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.681,
+      "hr": 62,
+      "battingWar": 22.85,
+      "wrcPlus": 97
+    },
+    "pitching": {
+      "era": 3.37,
+      "fip": 3.61,
+      "whip": 1.293,
+      "pitchingWar": 21.95,
+      "ip": 1113.9
+    },
+    "totalWar": 44.8,
+    "powerScore": 22.45,
+    "powerRank": 3
+  },
+  {
+    "year": 2006,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.701,
+      "hr": 73,
+      "battingWar": 24.72,
+      "wrcPlus": 104.8
+    },
+    "pitching": {
+      "era": 3.34,
+      "fip": 3.56,
+      "whip": 1.252,
+      "pitchingWar": 19.02,
+      "ip": 1114.5
+    },
+    "totalWar": 43.74,
+    "powerScore": 22.16,
+    "powerRank": 4
+  },
+  {
+    "year": 2006,
+    "team": "SK",
+    "batting": {
+      "ops": 0.704,
+      "hr": 99,
+      "battingWar": 22.94,
+      "wrcPlus": 102.4
+    },
+    "pitching": {
+      "era": 3.83,
+      "fip": 3.82,
+      "whip": 1.358,
+      "pitchingWar": 12.37,
+      "ip": 1117
+    },
+    "totalWar": 35.31,
+    "powerScore": 18.18,
+    "powerRank": 5
+  },
+  {
+    "year": 2006,
+    "team": "두산",
+    "batting": {
+      "ops": 0.676,
+      "hr": 55,
+      "battingWar": 15.93,
+      "wrcPlus": 94.4
+    },
+    "pitching": {
+      "era": 3.35,
+      "fip": 3.26,
+      "whip": 1.252,
+      "pitchingWar": 20.37,
+      "ip": 1106.6
+    },
+    "totalWar": 36.3,
+    "powerScore": 17.93,
+    "powerRank": 6
+  },
+  {
+    "year": 2006,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.684,
+      "hr": 88,
+      "battingWar": 21.2,
+      "wrcPlus": 97.1
+    },
+    "pitching": {
+      "era": 3.89,
+      "fip": 3.76,
+      "whip": 1.381,
+      "pitchingWar": 10.88,
+      "ip": 1114
+    },
+    "totalWar": 32.08,
+    "powerScore": 16.56,
+    "powerRank": 7
+  },
+  {
+    "year": 2006,
+    "team": "LG",
+    "batting": {
+      "ops": 0.66,
+      "hr": 81,
+      "battingWar": 17.24,
+      "wrcPlus": 86.4
+    },
+    "pitching": {
+      "era": 4.25,
+      "fip": 3.93,
+      "whip": 1.435,
+      "pitchingWar": 9.33,
+      "ip": 1103
+    },
+    "totalWar": 26.57,
+    "powerScore": 13.68,
+    "powerRank": 8
+  },
+  {
+    "year": 2007,
+    "team": "SK",
+    "batting": {
+      "ops": 0.744,
+      "hr": 112,
+      "battingWar": 25.83,
+      "wrcPlus": 106.6
+    },
+    "pitching": {
+      "era": 3.27,
+      "fip": 3.89,
+      "whip": 1.344,
+      "pitchingWar": 24.18,
+      "ip": 1134.2
+    },
+    "totalWar": 50.01,
+    "powerScore": 25.09,
+    "powerRank": 1
+  },
+  {
+    "year": 2007,
+    "team": "두산",
+    "batting": {
+      "ops": 0.726,
+      "hr": 78,
+      "battingWar": 21.35,
+      "wrcPlus": 102.2
+    },
+    "pitching": {
+      "era": 3.46,
+      "fip": 3.6,
+      "whip": 1.3,
+      "pitchingWar": 25.27,
+      "ip": 1127.6
+    },
+    "totalWar": 46.62,
+    "powerScore": 23.11,
+    "powerRank": 2
+  },
+  {
+    "year": 2007,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.706,
+      "hr": 86,
+      "battingWar": 24.4,
+      "wrcPlus": 98.5
+    },
+    "pitching": {
+      "era": 3.72,
+      "fip": 3.79,
+      "whip": 1.321,
+      "pitchingWar": 19.66,
+      "ip": 1128.4
+    },
+    "totalWar": 44.06,
+    "powerScore": 22.27,
+    "powerRank": 3
+  },
+  {
+    "year": 2007,
+    "team": "한화",
+    "batting": {
+      "ops": 0.718,
+      "hr": 104,
+      "battingWar": 22.86,
+      "wrcPlus": 102
+    },
+    "pitching": {
+      "era": 3.59,
+      "fip": 3.76,
+      "whip": 1.381,
+      "pitchingWar": 19.42,
+      "ip": 1088.4
+    },
+    "totalWar": 42.28,
+    "powerScore": 21.31,
+    "powerRank": 4
+  },
+  {
+    "year": 2007,
+    "team": "현대",
+    "batting": {
+      "ops": 0.729,
+      "hr": 96,
+      "battingWar": 21.72,
+      "wrcPlus": 104.1
+    },
+    "pitching": {
+      "era": 4.45,
+      "fip": 4.04,
+      "whip": 1.401,
+      "pitchingWar": 11.39,
+      "ip": 1120.7
+    },
+    "totalWar": 33.11,
+    "powerScore": 17.07,
+    "powerRank": 5
+  },
+  {
+    "year": 2007,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.717,
+      "hr": 76,
+      "battingWar": 17.93,
+      "wrcPlus": 99.4
+    },
+    "pitching": {
+      "era": 4.15,
+      "fip": 3.84,
+      "whip": 1.414,
+      "pitchingWar": 15.02,
+      "ip": 1116
+    },
+    "totalWar": 32.95,
+    "powerScore": 16.62,
+    "powerRank": 6
+  },
+  {
+    "year": 2007,
+    "team": "LG",
+    "batting": {
+      "ops": 0.713,
+      "hr": 78,
+      "battingWar": 17.59,
+      "wrcPlus": 100.4
+    },
+    "pitching": {
+      "era": 4.36,
+      "fip": 3.96,
+      "whip": 1.498,
+      "pitchingWar": 13.88,
+      "ip": 1131.7
+    },
+    "totalWar": 31.47,
+    "powerScore": 15.92,
+    "powerRank": 7
+  },
+  {
+    "year": 2007,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.694,
+      "hr": 73,
+      "battingWar": 18.31,
+      "wrcPlus": 94.7
+    },
+    "pitching": {
+      "era": 4.54,
+      "fip": 4.45,
+      "whip": 1.481,
+      "pitchingWar": 10.46,
+      "ip": 1104.3
+    },
+    "totalWar": 28.77,
+    "powerScore": 14.78,
+    "powerRank": 8
+  },
+  {
+    "year": 2008,
+    "team": "SK",
+    "batting": {
+      "ops": 0.765,
+      "hr": 89,
+      "battingWar": 25.05,
+      "wrcPlus": 116.4
+    },
+    "pitching": {
+      "era": 3.24,
+      "fip": 3.9,
+      "whip": 1.31,
+      "pitchingWar": 29.42,
+      "ip": 1146.1
+    },
+    "totalWar": 54.47,
+    "powerScore": 27.02,
+    "powerRank": 1
+  },
+  {
+    "year": 2008,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.761,
+      "hr": 93,
+      "battingWar": 23.33,
+      "wrcPlus": 112.6
+    },
+    "pitching": {
+      "era": 3.69,
+      "fip": 3.93,
+      "whip": 1.385,
+      "pitchingWar": 21.67,
+      "ip": 1114.1
+    },
+    "totalWar": 45,
+    "powerScore": 22.58,
+    "powerRank": 2
+  },
+  {
+    "year": 2008,
+    "team": "한화",
+    "batting": {
+      "ops": 0.728,
+      "hr": 120,
+      "battingWar": 28.81,
+      "wrcPlus": 99.4
+    },
+    "pitching": {
+      "era": 4.45,
+      "fip": 4.4,
+      "whip": 1.473,
+      "pitchingWar": 13.75,
+      "ip": 1121.5
+    },
+    "totalWar": 42.56,
+    "powerScore": 22.03,
+    "powerRank": 3
+  },
+  {
+    "year": 2008,
+    "team": "두산",
+    "batting": {
+      "ops": 0.732,
+      "hr": 68,
+      "battingWar": 20.33,
+      "wrcPlus": 104.7
+    },
+    "pitching": {
+      "era": 3.91,
+      "fip": 3.81,
+      "whip": 1.323,
+      "pitchingWar": 21.53,
+      "ip": 1129.3
+    },
+    "totalWar": 41.86,
+    "powerScore": 20.87,
+    "powerRank": 4
+  },
+  {
+    "year": 2008,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.72,
+      "hr": 92,
+      "battingWar": 24.61,
+      "wrcPlus": 100.7
+    },
+    "pitching": {
+      "era": 4.45,
+      "fip": 4.12,
+      "whip": 1.433,
+      "pitchingWar": 15.56,
+      "ip": 1116.8
+    },
+    "totalWar": 40.17,
+    "powerScore": 20.54,
+    "powerRank": 5
+  },
+  {
+    "year": 2008,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.689,
+      "hr": 48,
+      "battingWar": 19.94,
+      "wrcPlus": 92.8
+    },
+    "pitching": {
+      "era": 4.11,
+      "fip": 4.06,
+      "whip": 1.388,
+      "pitchingWar": 16.34,
+      "ip": 1117.7
+    },
+    "totalWar": 36.28,
+    "powerScore": 18.32,
+    "powerRank": 6
+  },
+  {
+    "year": 2008,
+    "team": "우리",
+    "batting": {
+      "ops": 0.699,
+      "hr": 70,
+      "battingWar": 14.23,
+      "wrcPlus": 94
+    },
+    "pitching": {
+      "era": 4.46,
+      "fip": 4.28,
+      "whip": 1.449,
+      "pitchingWar": 15.95,
+      "ip": 1120.9
+    },
+    "totalWar": 30.18,
+    "powerScore": 15,
+    "powerRank": 7
+  },
+  {
+    "year": 2008,
+    "team": "LG",
+    "batting": {
+      "ops": 0.673,
+      "hr": 66,
+      "battingWar": 15.84,
+      "wrcPlus": 83.7
+    },
+    "pitching": {
+      "era": 4.91,
+      "fip": 4.5,
+      "whip": 1.559,
+      "pitchingWar": 9.3,
+      "ip": 1102.5
+    },
+    "totalWar": 25.14,
+    "powerScore": 12.9,
+    "powerRank": 8
+  },
+  {
+    "year": 2009,
+    "team": "SK",
+    "batting": {
+      "ops": 0.822,
+      "hr": 166,
+      "battingWar": 28.54,
+      "wrcPlus": 109.6
+    },
+    "pitching": {
+      "era": 3.7,
+      "fip": 4.16,
+      "whip": 1.373,
+      "pitchingWar": 32.14,
+      "ip": 1207.4
+    },
+    "totalWar": 60.68,
+    "powerScore": 30.16,
+    "powerRank": 1
+  },
+  {
+    "year": 2009,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.785,
+      "hr": 156,
+      "battingWar": 26.03,
+      "wrcPlus": 97.9
+    },
+    "pitching": {
+      "era": 3.94,
+      "fip": 4.15,
+      "whip": 1.357,
+      "pitchingWar": 27.77,
+      "ip": 1193.4
+    },
+    "totalWar": 53.8,
+    "powerScore": 26.81,
+    "powerRank": 2
+  },
+  {
+    "year": 2009,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.796,
+      "hr": 146,
+      "battingWar": 28.58,
+      "wrcPlus": 103.1
+    },
+    "pitching": {
+      "era": 5,
+      "fip": 4.89,
+      "whip": 1.584,
+      "pitchingWar": 18.67,
+      "ip": 1158.3
+    },
+    "totalWar": 47.25,
+    "powerScore": 24.12,
+    "powerRank": 3
+  },
+  {
+    "year": 2009,
+    "team": "두산",
+    "batting": {
+      "ops": 0.781,
+      "hr": 120,
+      "battingWar": 18.98,
+      "wrcPlus": 99.1
+    },
+    "pitching": {
+      "era": 4.64,
+      "fip": 4.56,
+      "whip": 1.47,
+      "pitchingWar": 21.68,
+      "ip": 1181.2
+    },
+    "totalWar": 40.66,
+    "powerScore": 20.2,
+    "powerRank": 4
+  },
+  {
+    "year": 2009,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.773,
+      "hr": 121,
+      "battingWar": 19.02,
+      "wrcPlus": 96
+    },
+    "pitching": {
+      "era": 4.78,
+      "fip": 4.9,
+      "whip": 1.537,
+      "pitchingWar": 21.05,
+      "ip": 1156.5
+    },
+    "totalWar": 40.07,
+    "powerScore": 19.93,
+    "powerRank": 5
+  },
+  {
+    "year": 2009,
+    "team": "우리",
+    "batting": {
+      "ops": 0.789,
+      "hr": 153,
+      "battingWar": 23.31,
+      "wrcPlus": 99.4
+    },
+    "pitching": {
+      "era": 5.47,
+      "fip": 5.25,
+      "whip": 1.536,
+      "pitchingWar": 13.24,
+      "ip": 1169.2
+    },
+    "totalWar": 36.55,
+    "powerScore": 18.78,
+    "powerRank": 6
+  },
+  {
+    "year": 2009,
+    "team": "LG",
+    "batting": {
+      "ops": 0.774,
+      "hr": 129,
+      "battingWar": 22.54,
+      "wrcPlus": 97.9
+    },
+    "pitching": {
+      "era": 5.44,
+      "fip": 5.42,
+      "whip": 1.626,
+      "pitchingWar": 11.74,
+      "ip": 1169.3
+    },
+    "totalWar": 34.28,
+    "powerScore": 17.68,
+    "powerRank": 7
+  },
+  {
+    "year": 2009,
+    "team": "한화",
+    "batting": {
+      "ops": 0.774,
+      "hr": 164,
+      "battingWar": 18.3,
+      "wrcPlus": 93.8
+    },
+    "pitching": {
+      "era": 5.74,
+      "fip": 5.13,
+      "whip": 1.629,
+      "pitchingWar": 12.05,
+      "ip": 1169.1
+    },
+    "totalWar": 30.35,
+    "powerScore": 15.49,
+    "powerRank": 8
+  },
+  {
+    "year": 2010,
+    "team": "SK",
+    "batting": {
+      "ops": 0.768,
+      "hr": 120,
+      "battingWar": 26.9,
+      "wrcPlus": 103
+    },
+    "pitching": {
+      "era": 3.75,
+      "fip": 4.07,
+      "whip": 1.357,
+      "pitchingWar": 28.75,
+      "ip": 1191.8
+    },
+    "totalWar": 55.65,
+    "powerScore": 27.73,
+    "powerRank": 1
+  },
+  {
+    "year": 2010,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.774,
+      "hr": 118,
+      "battingWar": 24.84,
+      "wrcPlus": 109.2
+    },
+    "pitching": {
+      "era": 3.96,
+      "fip": 4.06,
+      "whip": 1.363,
+      "pitchingWar": 29.36,
+      "ip": 1189.7
+    },
+    "totalWar": 54.2,
+    "powerScore": 26.87,
+    "powerRank": 2
+  },
+  {
+    "year": 2010,
+    "team": "두산",
+    "batting": {
+      "ops": 0.806,
+      "hr": 149,
+      "battingWar": 29.98,
+      "wrcPlus": 113.9
+    },
+    "pitching": {
+      "era": 4.66,
+      "fip": 4.56,
+      "whip": 1.388,
+      "pitchingWar": 18.93,
+      "ip": 1172.2
+    },
+    "totalWar": 48.91,
+    "powerScore": 25.01,
+    "powerRank": 3
+  },
+  {
+    "year": 2010,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.813,
+      "hr": 185,
+      "battingWar": 27.47,
+      "wrcPlus": 112.9
+    },
+    "pitching": {
+      "era": 4.88,
+      "fip": 4.77,
+      "whip": 1.438,
+      "pitchingWar": 19.44,
+      "ip": 1189.1
+    },
+    "totalWar": 46.91,
+    "powerScore": 23.86,
+    "powerRank": 4
+  },
+  {
+    "year": 2010,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.73,
+      "hr": 106,
+      "battingWar": 20.51,
+      "wrcPlus": 94.3
+    },
+    "pitching": {
+      "era": 4.41,
+      "fip": 4.19,
+      "whip": 1.437,
+      "pitchingWar": 17.4,
+      "ip": 1179.7
+    },
+    "totalWar": 37.91,
+    "powerScore": 19.11,
+    "powerRank": 5
+  },
+  {
+    "year": 2010,
+    "team": "LG",
+    "batting": {
+      "ops": 0.759,
+      "hr": 121,
+      "battingWar": 20.93,
+      "wrcPlus": 102.4
+    },
+    "pitching": {
+      "era": 5.26,
+      "fip": 4.98,
+      "whip": 1.553,
+      "pitchingWar": 14.19,
+      "ip": 1173.9
+    },
+    "totalWar": 35.12,
+    "powerScore": 17.9,
+    "powerRank": 6
+  },
+  {
+    "year": 2010,
+    "team": "넥센",
+    "batting": {
+      "ops": 0.714,
+      "hr": 87,
+      "battingWar": 14.59,
+      "wrcPlus": 90.4
+    },
+    "pitching": {
+      "era": 4.57,
+      "fip": 5.01,
+      "whip": 1.502,
+      "pitchingWar": 19.4,
+      "ip": 1182.4
+    },
+    "totalWar": 33.99,
+    "powerScore": 16.75,
+    "powerRank": 7
+  },
+  {
+    "year": 2010,
+    "team": "한화",
+    "batting": {
+      "ops": 0.69,
+      "hr": 104,
+      "battingWar": 13.12,
+      "wrcPlus": 81.9
+    },
+    "pitching": {
+      "era": 5.46,
+      "fip": 5.1,
+      "whip": 1.583,
+      "pitchingWar": 11.73,
+      "ip": 1162.8
+    },
+    "totalWar": 24.85,
+    "powerScore": 12.49,
+    "powerRank": 8
+  },
+  {
+    "year": 2011,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.719,
+      "hr": 95,
+      "battingWar": 23.92,
+      "wrcPlus": 97.4
+    },
+    "pitching": {
+      "era": 3.36,
+      "fip": 3.88,
+      "whip": 1.331,
+      "pitchingWar": 28.47,
+      "ip": 1191.9
+    },
+    "totalWar": 52.39,
+    "powerScore": 25.97,
+    "powerRank": 1
+  },
+  {
+    "year": 2011,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.752,
+      "hr": 106,
+      "battingWar": 32.51,
+      "wrcPlus": 109.8
+    },
+    "pitching": {
+      "era": 4.17,
+      "fip": 3.92,
+      "whip": 1.36,
+      "pitchingWar": 17.9,
+      "ip": 1157.6
+    },
+    "totalWar": 50.41,
+    "powerScore": 25.94,
+    "powerRank": 2
+  },
+  {
+    "year": 2011,
+    "team": "SK",
+    "batting": {
+      "ops": 0.726,
+      "hr": 100,
+      "battingWar": 26.07,
+      "wrcPlus": 98.5
+    },
+    "pitching": {
+      "era": 3.61,
+      "fip": 3.96,
+      "whip": 1.3,
+      "pitchingWar": 24.53,
+      "ip": 1185.8
+    },
+    "totalWar": 50.6,
+    "powerScore": 25.38,
+    "powerRank": 3
+  },
+  {
+    "year": 2011,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.781,
+      "hr": 111,
+      "battingWar": 23.63,
+      "wrcPlus": 115.6
+    },
+    "pitching": {
+      "era": 4.24,
+      "fip": 4.32,
+      "whip": 1.427,
+      "pitchingWar": 22.34,
+      "ip": 1181.4
+    },
+    "totalWar": 45.97,
+    "powerScore": 23.05,
+    "powerRank": 4
+  },
+  {
+    "year": 2011,
+    "team": "두산",
+    "batting": {
+      "ops": 0.742,
+      "hr": 92,
+      "battingWar": 25.49,
+      "wrcPlus": 105.2
+    },
+    "pitching": {
+      "era": 4.34,
+      "fip": 4.17,
+      "whip": 1.443,
+      "pitchingWar": 16.06,
+      "ip": 1182.6
+    },
+    "totalWar": 41.55,
+    "powerScore": 21.25,
+    "powerRank": 5
+  },
+  {
+    "year": 2011,
+    "team": "LG",
+    "batting": {
+      "ops": 0.716,
+      "hr": 94,
+      "battingWar": 21.05,
+      "wrcPlus": 96.6
+    },
+    "pitching": {
+      "era": 4.19,
+      "fip": 4.15,
+      "whip": 1.42,
+      "pitchingWar": 15.75,
+      "ip": 1186.9
+    },
+    "totalWar": 36.8,
+    "powerScore": 18.66,
+    "powerRank": 6
+  },
+  {
+    "year": 2011,
+    "team": "넥센",
+    "batting": {
+      "ops": 0.676,
+      "hr": 79,
+      "battingWar": 15,
+      "wrcPlus": 84.1
+    },
+    "pitching": {
+      "era": 4.39,
+      "fip": 4.41,
+      "whip": 1.515,
+      "pitchingWar": 16.46,
+      "ip": 1162.8
+    },
+    "totalWar": 31.46,
+    "powerScore": 15.66,
+    "powerRank": 7
+  },
+  {
+    "year": 2011,
+    "team": "한화",
+    "batting": {
+      "ops": 0.7,
+      "hr": 93,
+      "battingWar": 19.67,
+      "wrcPlus": 91.8
+    },
+    "pitching": {
+      "era": 5.14,
+      "fip": 4.43,
+      "whip": 1.536,
+      "pitchingWar": 7.91,
+      "ip": 1170.1
+    },
+    "totalWar": 27.58,
+    "powerScore": 14.38,
+    "powerRank": 8
+  },
+  {
+    "year": 2012,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.742,
+      "hr": 89,
+      "battingWar": 28.44,
+      "wrcPlus": 114.8
+    },
+    "pitching": {
+      "era": 3.41,
+      "fip": 3.34,
+      "whip": 1.242,
+      "pitchingWar": 26.87,
+      "ip": 1183
+    },
+    "totalWar": 55.31,
+    "powerScore": 27.73,
+    "powerRank": 1
+  },
+  {
+    "year": 2012,
+    "team": "SK",
+    "batting": {
+      "ops": 0.717,
+      "hr": 108,
+      "battingWar": 26.13,
+      "wrcPlus": 105
+    },
+    "pitching": {
+      "era": 3.84,
+      "fip": 3.98,
+      "whip": 1.336,
+      "pitchingWar": 18.64,
+      "ip": 1176.2
+    },
+    "totalWar": 44.77,
+    "powerScore": 22.76,
+    "powerRank": 2
+  },
+  {
+    "year": 2012,
+    "team": "넥센",
+    "batting": {
+      "ops": 0.696,
+      "hr": 102,
+      "battingWar": 25.84,
+      "wrcPlus": 97.1
+    },
+    "pitching": {
+      "era": 3.84,
+      "fip": 4.06,
+      "whip": 1.408,
+      "pitchingWar": 17.78,
+      "ip": 1183.6
+    },
+    "totalWar": 43.62,
+    "powerScore": 22.21,
+    "powerRank": 3
+  },
+  {
+    "year": 2012,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.69,
+      "hr": 54,
+      "battingWar": 24.85,
+      "wrcPlus": 102.3
+    },
+    "pitching": {
+      "era": 3.92,
+      "fip": 3.77,
+      "whip": 1.371,
+      "pitchingWar": 16.66,
+      "ip": 1176.9
+    },
+    "totalWar": 41.51,
+    "powerScore": 21.16,
+    "powerRank": 4
+  },
+  {
+    "year": 2012,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.691,
+      "hr": 73,
+      "battingWar": 18.2,
+      "wrcPlus": 97.9
+    },
+    "pitching": {
+      "era": 3.51,
+      "fip": 3.79,
+      "whip": 1.364,
+      "pitchingWar": 24.06,
+      "ip": 1183.1
+    },
+    "totalWar": 42.26,
+    "powerScore": 20.84,
+    "powerRank": 5
+  },
+  {
+    "year": 2012,
+    "team": "두산",
+    "batting": {
+      "ops": 0.673,
+      "hr": 59,
+      "battingWar": 17.45,
+      "wrcPlus": 91.6
+    },
+    "pitching": {
+      "era": 3.61,
+      "fip": 3.84,
+      "whip": 1.299,
+      "pitchingWar": 19.73,
+      "ip": 1188.2
+    },
+    "totalWar": 37.18,
+    "powerScore": 18.48,
+    "powerRank": 6
+  },
+  {
+    "year": 2012,
+    "team": "LG",
+    "batting": {
+      "ops": 0.687,
+      "hr": 59,
+      "battingWar": 16.78,
+      "wrcPlus": 98.5
+    },
+    "pitching": {
+      "era": 4.05,
+      "fip": 3.8,
+      "whip": 1.387,
+      "pitchingWar": 15.5,
+      "ip": 1194.3
+    },
+    "totalWar": 32.28,
+    "powerScore": 16.2,
+    "powerRank": 7
+  },
+  {
+    "year": 2012,
+    "team": "한화",
+    "batting": {
+      "ops": 0.69,
+      "hr": 71,
+      "battingWar": 20.36,
+      "wrcPlus": 101.2
+    },
+    "pitching": {
+      "era": 4.59,
+      "fip": 3.98,
+      "whip": 1.403,
+      "pitchingWar": 10.08,
+      "ip": 1165.8
+    },
+    "totalWar": 30.44,
+    "powerScore": 15.73,
+    "powerRank": 8
+  },
+  {
+    "year": 2013,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.776,
+      "hr": 113,
+      "battingWar": 30.49,
+      "wrcPlus": 109.7
+    },
+    "pitching": {
+      "era": 4,
+      "fip": 3.99,
+      "whip": 1.34,
+      "pitchingWar": 21.18,
+      "ip": 1142
+    },
+    "totalWar": 51.67,
+    "powerScore": 26.3,
+    "powerRank": 1
+  },
+  {
+    "year": 2013,
+    "team": "두산",
+    "batting": {
+      "ops": 0.79,
+      "hr": 95,
+      "battingWar": 37.36,
+      "wrcPlus": 121.3
+    },
+    "pitching": {
+      "era": 4.6,
+      "fip": 4.38,
+      "whip": 1.483,
+      "pitchingWar": 11.39,
+      "ip": 1144.5
+    },
+    "totalWar": 48.75,
+    "powerScore": 25.67,
+    "powerRank": 2
+  },
+  {
+    "year": 2013,
+    "team": "LG",
+    "batting": {
+      "ops": 0.741,
+      "hr": 59,
+      "battingWar": 23.68,
+      "wrcPlus": 103.6
+    },
+    "pitching": {
+      "era": 3.73,
+      "fip": 4.06,
+      "whip": 1.359,
+      "pitchingWar": 23.63,
+      "ip": 1130.7
+    },
+    "totalWar": 47.31,
+    "powerScore": 23.66,
+    "powerRank": 3
+  },
+  {
+    "year": 2013,
+    "team": "넥센",
+    "batting": {
+      "ops": 0.771,
+      "hr": 125,
+      "battingWar": 24.24,
+      "wrcPlus": 104.2
+    },
+    "pitching": {
+      "era": 4.14,
+      "fip": 4.27,
+      "whip": 1.456,
+      "pitchingWar": 22.53,
+      "ip": 1141.9
+    },
+    "totalWar": 46.77,
+    "powerScore": 23.47,
+    "powerRank": 4
+  },
+  {
+    "year": 2013,
+    "team": "SK",
+    "batting": {
+      "ops": 0.753,
+      "hr": 124,
+      "battingWar": 24.03,
+      "wrcPlus": 99.8
+    },
+    "pitching": {
+      "era": 4.2,
+      "fip": 4.48,
+      "whip": 1.407,
+      "pitchingWar": 19.01,
+      "ip": 1134.1
+    },
+    "totalWar": 43.04,
+    "powerScore": 21.77,
+    "powerRank": 5
+  },
+  {
+    "year": 2013,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.703,
+      "hr": 57,
+      "battingWar": 17,
+      "wrcPlus": 88.6
+    },
+    "pitching": {
+      "era": 3.96,
+      "fip": 4.34,
+      "whip": 1.431,
+      "pitchingWar": 23.47,
+      "ip": 1144.2
+    },
+    "totalWar": 40.47,
+    "powerScore": 19.91,
+    "powerRank": 6
+  },
+  {
+    "year": 2013,
+    "team": "NC",
+    "batting": {
+      "ops": 0.685,
+      "hr": 86,
+      "battingWar": 14.07,
+      "wrcPlus": 82.7
+    },
+    "pitching": {
+      "era": 3.97,
+      "fip": 4.38,
+      "whip": 1.347,
+      "pitchingWar": 19.44,
+      "ip": 1139.9
+    },
+    "totalWar": 33.51,
+    "powerScore": 16.49,
+    "powerRank": 7
+  },
+  {
+    "year": 2013,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.722,
+      "hr": 88,
+      "battingWar": 12.82,
+      "wrcPlus": 98
+    },
+    "pitching": {
+      "era": 5.15,
+      "fip": 4.31,
+      "whip": 1.618,
+      "pitchingWar": 15.54,
+      "ip": 1137.2
+    },
+    "totalWar": 28.36,
+    "powerScore": 14.04,
+    "powerRank": 8
+  },
+  {
+    "year": 2013,
+    "team": "한화",
+    "batting": {
+      "ops": 0.69,
+      "hr": 47,
+      "battingWar": 12.34,
+      "wrcPlus": 90.4
+    },
+    "pitching": {
+      "era": 5.36,
+      "fip": 4.7,
+      "whip": 1.537,
+      "pitchingWar": 5.98,
+      "ip": 1123.4
+    },
+    "totalWar": 18.32,
+    "powerScore": 9.48,
+    "powerRank": 9
+  },
+  {
+    "year": 2014,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.85,
+      "hr": 161,
+      "battingWar": 27.8,
+      "wrcPlus": 111.7
+    },
+    "pitching": {
+      "era": 4.54,
+      "fip": 4.51,
+      "whip": 1.415,
+      "pitchingWar": 23.04,
+      "ip": 1139.1
+    },
+    "totalWar": 50.84,
+    "powerScore": 25.66,
+    "powerRank": 1
+  },
+  {
+    "year": 2014,
+    "team": "넥센",
+    "batting": {
+      "ops": 0.891,
+      "hr": 199,
+      "battingWar": 30.23,
+      "wrcPlus": 115.3
+    },
+    "pitching": {
+      "era": 5.28,
+      "fip": 5.33,
+      "whip": 1.61,
+      "pitchingWar": 19.96,
+      "ip": 1127
+    },
+    "totalWar": 50.19,
+    "powerScore": 25.61,
+    "powerRank": 2
+  },
+  {
+    "year": 2014,
+    "team": "NC",
+    "batting": {
+      "ops": 0.8,
+      "hr": 143,
+      "battingWar": 17.37,
+      "wrcPlus": 97.4
+    },
+    "pitching": {
+      "era": 4.31,
+      "fip": 5.11,
+      "whip": 1.461,
+      "pitchingWar": 23.45,
+      "ip": 1133.1
+    },
+    "totalWar": 40.82,
+    "powerScore": 20.11,
+    "powerRank": 3
+  },
+  {
+    "year": 2014,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.808,
+      "hr": 120,
+      "battingWar": 17.86,
+      "wrcPlus": 97.7
+    },
+    "pitching": {
+      "era": 5.25,
+      "fip": 5.27,
+      "whip": 1.577,
+      "pitchingWar": 19.54,
+      "ip": 1128.9
+    },
+    "totalWar": 37.4,
+    "powerScore": 18.62,
+    "powerRank": 4
+  },
+  {
+    "year": 2014,
+    "team": "LG",
+    "batting": {
+      "ops": 0.761,
+      "hr": 90,
+      "battingWar": 15.47,
+      "wrcPlus": 95.6
+    },
+    "pitching": {
+      "era": 4.61,
+      "fip": 4.92,
+      "whip": 1.433,
+      "pitchingWar": 19.42,
+      "ip": 1137.3
+    },
+    "totalWar": 34.89,
+    "powerScore": 17.25,
+    "powerRank": 5
+  },
+  {
+    "year": 2014,
+    "team": "두산",
+    "batting": {
+      "ops": 0.797,
+      "hr": 108,
+      "battingWar": 19.75,
+      "wrcPlus": 105.1
+    },
+    "pitching": {
+      "era": 5.44,
+      "fip": 5.03,
+      "whip": 1.571,
+      "pitchingWar": 11.02,
+      "ip": 1101.5
+    },
+    "totalWar": 30.77,
+    "powerScore": 15.82,
+    "powerRank": 6
+  },
+  {
+    "year": 2014,
+    "team": "SK",
+    "batting": {
+      "ops": 0.795,
+      "hr": 115,
+      "battingWar": 16.71,
+      "wrcPlus": 97.1
+    },
+    "pitching": {
+      "era": 5.55,
+      "fip": 5.6,
+      "whip": 1.597,
+      "pitchingWar": 14.12,
+      "ip": 1122.8
+    },
+    "totalWar": 30.83,
+    "powerScore": 15.54,
+    "powerRank": 7
+  },
+  {
+    "year": 2014,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.792,
+      "hr": 121,
+      "battingWar": 12.23,
+      "wrcPlus": 92.9
+    },
+    "pitching": {
+      "era": 5.86,
+      "fip": 5.2,
+      "whip": 1.659,
+      "pitchingWar": 11.9,
+      "ip": 1114.9
+    },
+    "totalWar": 24.13,
+    "powerScore": 12.08,
+    "powerRank": 8
+  },
+  {
+    "year": 2014,
+    "team": "한화",
+    "batting": {
+      "ops": 0.774,
+      "hr": 104,
+      "battingWar": 9.58,
+      "wrcPlus": 90.9
+    },
+    "pitching": {
+      "era": 6.39,
+      "fip": 5.94,
+      "whip": 1.77,
+      "pitchingWar": 5.25,
+      "ip": 1123.4
+    },
+    "totalWar": 14.83,
+    "powerScore": 7.63,
+    "powerRank": 9
+  },
+  {
+    "year": 2015,
+    "team": "NC",
+    "batting": {
+      "ops": 0.822,
+      "hr": 161,
+      "battingWar": 31.58,
+      "wrcPlus": 113.1
+    },
+    "pitching": {
+      "era": 4.28,
+      "fip": 4.71,
+      "whip": 1.348,
+      "pitchingWar": 26.12,
+      "ip": 1274.9
+    },
+    "totalWar": 57.7,
+    "powerScore": 29.12,
+    "powerRank": 1
+  },
+  {
+    "year": 2015,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.847,
+      "hr": 176,
+      "battingWar": 34.15,
+      "wrcPlus": 116.9
+    },
+    "pitching": {
+      "era": 4.71,
+      "fip": 4.61,
+      "whip": 1.373,
+      "pitchingWar": 22.92,
+      "ip": 1271.6
+    },
+    "totalWar": 57.07,
+    "powerScore": 29.1,
+    "powerRank": 2
+  },
+  {
+    "year": 2015,
+    "team": "넥센",
+    "batting": {
+      "ops": 0.859,
+      "hr": 203,
+      "battingWar": 33.21,
+      "wrcPlus": 114.4
+    },
+    "pitching": {
+      "era": 4.97,
+      "fip": 4.79,
+      "whip": 1.5,
+      "pitchingWar": 20.11,
+      "ip": 1281.1
+    },
+    "totalWar": 53.32,
+    "powerScore": 27.32,
+    "powerRank": 3
+  },
+  {
+    "year": 2015,
+    "team": "두산",
+    "batting": {
+      "ops": 0.804,
+      "hr": 140,
+      "battingWar": 30.88,
+      "wrcPlus": 113.4
+    },
+    "pitching": {
+      "era": 5.06,
+      "fip": 4.86,
+      "whip": 1.537,
+      "pitchingWar": 13.28,
+      "ip": 1279.4
+    },
+    "totalWar": 44.16,
+    "powerScore": 22.96,
+    "powerRank": 4
+  },
+  {
+    "year": 2015,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.809,
+      "hr": 173,
+      "battingWar": 23.11,
+      "wrcPlus": 100.8
+    },
+    "pitching": {
+      "era": 5.12,
+      "fip": 4.99,
+      "whip": 1.528,
+      "pitchingWar": 18.62,
+      "ip": 1276.2
+    },
+    "totalWar": 41.73,
+    "powerScore": 21.09,
+    "powerRank": 5
+  },
+  {
+    "year": 2015,
+    "team": "한화",
+    "batting": {
+      "ops": 0.775,
+      "hr": 130,
+      "battingWar": 19.13,
+      "wrcPlus": 97.9
+    },
+    "pitching": {
+      "era": 5.14,
+      "fip": 5.5,
+      "whip": 1.569,
+      "pitchingWar": 15.39,
+      "ip": 1272.9
+    },
+    "totalWar": 34.52,
+    "powerScore": 17.45,
+    "powerRank": 6
+  },
+  {
+    "year": 2015,
+    "team": "SK",
+    "batting": {
+      "ops": 0.759,
+      "hr": 145,
+      "battingWar": 14.39,
+      "wrcPlus": 93.8
+    },
+    "pitching": {
+      "era": 4.75,
+      "fip": 4.65,
+      "whip": 1.469,
+      "pitchingWar": 19.72,
+      "ip": 1276
+    },
+    "totalWar": 34.11,
+    "powerScore": 16.79,
+    "powerRank": 7
+  },
+  {
+    "year": 2015,
+    "team": "LG",
+    "batting": {
+      "ops": 0.738,
+      "hr": 114,
+      "battingWar": 8.78,
+      "wrcPlus": 90
+    },
+    "pitching": {
+      "era": 4.66,
+      "fip": 4.56,
+      "whip": 1.445,
+      "pitchingWar": 17.21,
+      "ip": 1274.3
+    },
+    "totalWar": 25.99,
+    "powerScore": 12.57,
+    "powerRank": 8
+  },
+  {
+    "year": 2015,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.718,
+      "hr": 136,
+      "battingWar": 5.76,
+      "wrcPlus": 79.7
+    },
+    "pitching": {
+      "era": 4.82,
+      "fip": 5.09,
+      "whip": 1.531,
+      "pitchingWar": 18.87,
+      "ip": 1268.8
+    },
+    "totalWar": 24.63,
+    "powerScore": 11.66,
+    "powerRank": 9
+  },
+  {
+    "year": 2015,
+    "team": "KT",
+    "batting": {
+      "ops": 0.748,
+      "hr": 124,
+      "battingWar": 8.98,
+      "wrcPlus": 85.8
+    },
+    "pitching": {
+      "era": 5.58,
+      "fip": 5.07,
+      "whip": 1.66,
+      "pitchingWar": 11.82,
+      "ip": 1262
+    },
+    "totalWar": 20.8,
+    "powerScore": 10.26,
+    "powerRank": 10
+  },
+  {
+    "year": 2016,
+    "team": "두산",
+    "batting": {
+      "ops": 0.851,
+      "hr": 183,
+      "battingWar": 35.14,
+      "wrcPlus": 118.5
+    },
+    "pitching": {
+      "era": 4.48,
+      "fip": 4.97,
+      "whip": 1.469,
+      "pitchingWar": 25.74,
+      "ip": 1281.6
+    },
+    "totalWar": 60.88,
+    "powerScore": 30.91,
+    "powerRank": 1
+  },
+  {
+    "year": 2016,
+    "team": "NC",
+    "batting": {
+      "ops": 0.824,
+      "hr": 169,
+      "battingWar": 26.18,
+      "wrcPlus": 109.1
+    },
+    "pitching": {
+      "era": 4.44,
+      "fip": 4.71,
+      "whip": 1.421,
+      "pitchingWar": 26.26,
+      "ip": 1245.2
+    },
+    "totalWar": 52.44,
+    "powerScore": 26.22,
+    "powerRank": 2
+  },
+  {
+    "year": 2016,
+    "team": "넥센",
+    "batting": {
+      "ops": 0.811,
+      "hr": 133,
+      "battingWar": 23.21,
+      "wrcPlus": 101.5
+    },
+    "pitching": {
+      "era": 4.98,
+      "fip": 5.1,
+      "whip": 1.507,
+      "pitchingWar": 23.33,
+      "ip": 1275.2
+    },
+    "totalWar": 46.54,
+    "powerScore": 23.26,
+    "powerRank": 3
+  },
+  {
+    "year": 2016,
+    "team": "SK",
+    "batting": {
+      "ops": 0.811,
+      "hr": 182,
+      "battingWar": 20.59,
+      "wrcPlus": 99.4
+    },
+    "pitching": {
+      "era": 4.97,
+      "fip": 5.24,
+      "whip": 1.51,
+      "pitchingWar": 20.3,
+      "ip": 1267
+    },
+    "totalWar": 40.89,
+    "powerScore": 20.46,
+    "powerRank": 4
+  },
+  {
+    "year": 2016,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.81,
+      "hr": 170,
+      "battingWar": 21.73,
+      "wrcPlus": 101
+    },
+    "pitching": {
+      "era": 5.02,
+      "fip": 5.04,
+      "whip": 1.588,
+      "pitchingWar": 18.61,
+      "ip": 1270.4
+    },
+    "totalWar": 40.34,
+    "powerScore": 20.33,
+    "powerRank": 5
+  },
+  {
+    "year": 2016,
+    "team": "LG",
+    "batting": {
+      "ops": 0.779,
+      "hr": 118,
+      "battingWar": 24.21,
+      "wrcPlus": 101.2
+    },
+    "pitching": {
+      "era": 5.12,
+      "fip": 5.1,
+      "whip": 1.532,
+      "pitchingWar": 14.73,
+      "ip": 1282.3
+    },
+    "totalWar": 38.94,
+    "powerScore": 19.94,
+    "powerRank": 6
+  },
+  {
+    "year": 2016,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.806,
+      "hr": 142,
+      "battingWar": 21.65,
+      "wrcPlus": 97.9
+    },
+    "pitching": {
+      "era": 5.66,
+      "fip": 5.66,
+      "whip": 1.585,
+      "pitchingWar": 15.97,
+      "ip": 1277.9
+    },
+    "totalWar": 37.62,
+    "powerScore": 19.09,
+    "powerRank": 7
+  },
+  {
+    "year": 2016,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.793,
+      "hr": 127,
+      "battingWar": 18.29,
+      "wrcPlus": 94.8
+    },
+    "pitching": {
+      "era": 5.66,
+      "fip": 5.33,
+      "whip": 1.644,
+      "pitchingWar": 15.8,
+      "ip": 1259.8
+    },
+    "totalWar": 34.09,
+    "powerScore": 17.17,
+    "powerRank": 8
+  },
+  {
+    "year": 2016,
+    "team": "한화",
+    "batting": {
+      "ops": 0.793,
+      "hr": 142,
+      "battingWar": 17.02,
+      "wrcPlus": 96.7
+    },
+    "pitching": {
+      "era": 5.8,
+      "fip": 5.44,
+      "whip": 1.676,
+      "pitchingWar": 11.93,
+      "ip": 1285.2
+    },
+    "totalWar": 28.95,
+    "powerScore": 14.73,
+    "powerRank": 9
+  },
+  {
+    "year": 2016,
+    "team": "KT",
+    "batting": {
+      "ops": 0.744,
+      "hr": 113,
+      "battingWar": 3.15,
+      "wrcPlus": 82
+    },
+    "pitching": {
+      "era": 5.95,
+      "fip": 5.22,
+      "whip": 1.698,
+      "pitchingWar": 8.18,
+      "ip": 1268.1
+    },
+    "totalWar": 11.33,
+    "powerScore": 5.41,
+    "powerRank": 10
+  },
+  {
+    "year": 2017,
+    "team": "두산",
+    "batting": {
+      "ops": 0.828,
+      "hr": 178,
+      "battingWar": 33.17,
+      "wrcPlus": 118.4
+    },
+    "pitching": {
+      "era": 4.39,
+      "fip": 4.81,
+      "whip": 1.455,
+      "pitchingWar": 22.61,
+      "ip": 1284.5
+    },
+    "totalWar": 55.78,
+    "powerScore": 28.42,
+    "powerRank": 1
+  },
+  {
+    "year": 2017,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.84,
+      "hr": 170,
+      "battingWar": 31.25,
+      "wrcPlus": 114
+    },
+    "pitching": {
+      "era": 4.84,
+      "fip": 4.73,
+      "whip": 1.519,
+      "pitchingWar": 21.46,
+      "ip": 1285.1
+    },
+    "totalWar": 52.71,
+    "powerScore": 26.84,
+    "powerRank": 2
+  },
+  {
+    "year": 2017,
+    "team": "NC",
+    "batting": {
+      "ops": 0.809,
+      "hr": 149,
+      "battingWar": 27.59,
+      "wrcPlus": 107.9
+    },
+    "pitching": {
+      "era": 4.73,
+      "fip": 4.98,
+      "whip": 1.416,
+      "pitchingWar": 20.16,
+      "ip": 1280
+    },
+    "totalWar": 47.75,
+    "powerScore": 24.25,
+    "powerRank": 3
+  },
+  {
+    "year": 2017,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.791,
+      "hr": 151,
+      "battingWar": 20.92,
+      "wrcPlus": 96.6
+    },
+    "pitching": {
+      "era": 4.58,
+      "fip": 4.87,
+      "whip": 1.43,
+      "pitchingWar": 27,
+      "ip": 1282.9
+    },
+    "totalWar": 47.92,
+    "powerScore": 23.66,
+    "powerRank": 4
+  },
+  {
+    "year": 2017,
+    "team": "넥센",
+    "batting": {
+      "ops": 0.794,
+      "hr": 141,
+      "battingWar": 18.68,
+      "wrcPlus": 102.1
+    },
+    "pitching": {
+      "era": 5.08,
+      "fip": 4.79,
+      "whip": 1.483,
+      "pitchingWar": 18.64,
+      "ip": 1265.4
+    },
+    "totalWar": 37.32,
+    "powerScore": 18.66,
+    "powerRank": 5
+  },
+  {
+    "year": 2017,
+    "team": "SK",
+    "batting": {
+      "ops": 0.806,
+      "hr": 234,
+      "battingWar": 19.41,
+      "wrcPlus": 98.9
+    },
+    "pitching": {
+      "era": 5.05,
+      "fip": 5.17,
+      "whip": 1.52,
+      "pitchingWar": 16.72,
+      "ip": 1266
+    },
+    "totalWar": 36.13,
+    "powerScore": 18.2,
+    "powerRank": 6
+  },
+  {
+    "year": 2017,
+    "team": "LG",
+    "batting": {
+      "ops": 0.748,
+      "hr": 110,
+      "battingWar": 15.1,
+      "wrcPlus": 95.8
+    },
+    "pitching": {
+      "era": 4.34,
+      "fip": 4.44,
+      "whip": 1.322,
+      "pitchingWar": 21.85,
+      "ip": 1274.1
+    },
+    "totalWar": 36.95,
+    "powerScore": 18.14,
+    "powerRank": 7
+  },
+  {
+    "year": 2017,
+    "team": "한화",
+    "batting": {
+      "ops": 0.785,
+      "hr": 150,
+      "battingWar": 21.25,
+      "wrcPlus": 99.1
+    },
+    "pitching": {
+      "era": 5.32,
+      "fip": 5.26,
+      "whip": 1.514,
+      "pitchingWar": 12.43,
+      "ip": 1268.1
+    },
+    "totalWar": 33.68,
+    "powerScore": 17.28,
+    "powerRank": 8
+  },
+  {
+    "year": 2017,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.769,
+      "hr": 145,
+      "battingWar": 14.73,
+      "wrcPlus": 87.8
+    },
+    "pitching": {
+      "era": 5.92,
+      "fip": 5.45,
+      "whip": 1.637,
+      "pitchingWar": 10.56,
+      "ip": 1276.2
+    },
+    "totalWar": 25.29,
+    "powerScore": 12.85,
+    "powerRank": 9
+  },
+  {
+    "year": 2017,
+    "team": "KT",
+    "batting": {
+      "ops": 0.746,
+      "hr": 116,
+      "battingWar": 6.76,
+      "wrcPlus": 85.8
+    },
+    "pitching": {
+      "era": 5.79,
+      "fip": 5.32,
+      "whip": 1.563,
+      "pitchingWar": 10.27,
+      "ip": 1251.8
+    },
+    "totalWar": 17.03,
+    "powerScore": 8.34,
+    "powerRank": 10
+  },
+  {
+    "year": 2018,
+    "team": "두산",
+    "batting": {
+      "ops": 0.862,
+      "hr": 191,
+      "battingWar": 41.59,
+      "wrcPlus": 122.4
+    },
+    "pitching": {
+      "era": 5.02,
+      "fip": 5.15,
+      "whip": 1.463,
+      "pitchingWar": 22.46,
+      "ip": 1282.6
+    },
+    "totalWar": 64.05,
+    "powerScore": 32.98,
+    "powerRank": 1
+  },
+  {
+    "year": 2018,
+    "team": "SK",
+    "batting": {
+      "ops": 0.83,
+      "hr": 233,
+      "battingWar": 23.7,
+      "wrcPlus": 103.7
+    },
+    "pitching": {
+      "era": 4.71,
+      "fip": 5.08,
+      "whip": 1.401,
+      "pitchingWar": 24.31,
+      "ip": 1269.3
+    },
+    "totalWar": 48.01,
+    "powerScore": 23.97,
+    "powerRank": 2
+  },
+  {
+    "year": 2018,
+    "team": "넥센",
+    "batting": {
+      "ops": 0.802,
+      "hr": 165,
+      "battingWar": 23.02,
+      "wrcPlus": 101.8
+    },
+    "pitching": {
+      "era": 5.1,
+      "fip": 5.23,
+      "whip": 1.456,
+      "pitchingWar": 20.08,
+      "ip": 1276.4
+    },
+    "totalWar": 43.1,
+    "powerScore": 21.7,
+    "powerRank": 3
+  },
+  {
+    "year": 2018,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.843,
+      "hr": 201,
+      "battingWar": 24.14,
+      "wrcPlus": 105.8
+    },
+    "pitching": {
+      "era": 5.43,
+      "fip": 5.07,
+      "whip": 1.533,
+      "pitchingWar": 18.39,
+      "ip": 1276.9
+    },
+    "totalWar": 42.53,
+    "powerScore": 21.55,
+    "powerRank": 4
+  },
+  {
+    "year": 2018,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.825,
+      "hr": 170,
+      "battingWar": 24.12,
+      "wrcPlus": 107.3
+    },
+    "pitching": {
+      "era": 5.45,
+      "fip": 5.25,
+      "whip": 1.545,
+      "pitchingWar": 15.67,
+      "ip": 1266
+    },
+    "totalWar": 39.79,
+    "powerScore": 20.32,
+    "powerRank": 5
+  },
+  {
+    "year": 2018,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.787,
+      "hr": 146,
+      "battingWar": 14.11,
+      "wrcPlus": 91
+    },
+    "pitching": {
+      "era": 5.23,
+      "fip": 5.19,
+      "whip": 1.497,
+      "pitchingWar": 22.7,
+      "ip": 1280.9
+    },
+    "totalWar": 36.81,
+    "powerScore": 17.98,
+    "powerRank": 6
+  },
+  {
+    "year": 2018,
+    "team": "한화",
+    "batting": {
+      "ops": 0.763,
+      "hr": 151,
+      "battingWar": 15.58,
+      "wrcPlus": 90.1
+    },
+    "pitching": {
+      "era": 4.98,
+      "fip": 5.02,
+      "whip": 1.473,
+      "pitchingWar": 19.81,
+      "ip": 1267
+    },
+    "totalWar": 35.39,
+    "powerScore": 17.48,
+    "powerRank": 7
+  },
+  {
+    "year": 2018,
+    "team": "LG",
+    "batting": {
+      "ops": 0.798,
+      "hr": 148,
+      "battingWar": 20.43,
+      "wrcPlus": 104.5
+    },
+    "pitching": {
+      "era": 5.35,
+      "fip": 5.04,
+      "whip": 1.496,
+      "pitchingWar": 12.44,
+      "ip": 1261.2
+    },
+    "totalWar": 32.87,
+    "powerScore": 16.83,
+    "powerRank": 8
+  },
+  {
+    "year": 2018,
+    "team": "KT",
+    "batting": {
+      "ops": 0.797,
+      "hr": 205,
+      "battingWar": 16.69,
+      "wrcPlus": 96.1
+    },
+    "pitching": {
+      "era": 5.39,
+      "fip": 5.3,
+      "whip": 1.566,
+      "pitchingWar": 14.53,
+      "ip": 1269.9
+    },
+    "totalWar": 31.22,
+    "powerScore": 15.72,
+    "powerRank": 9
+  },
+  {
+    "year": 2018,
+    "team": "NC",
+    "batting": {
+      "ops": 0.735,
+      "hr": 143,
+      "battingWar": 7,
+      "wrcPlus": 81.7
+    },
+    "pitching": {
+      "era": 5.53,
+      "fip": 5.55,
+      "whip": 1.574,
+      "pitchingWar": 10.57,
+      "ip": 1257.7
+    },
+    "totalWar": 17.57,
+    "powerScore": 8.61,
+    "powerRank": 10
+  },
+  {
+    "year": 2019,
+    "team": "두산",
+    "batting": {
+      "ops": 0.744,
+      "hr": 84,
+      "battingWar": 32.45,
+      "wrcPlus": 115.7
+    },
+    "pitching": {
+      "era": 3.53,
+      "fip": 3.9,
+      "whip": 1.281,
+      "pitchingWar": 24.85,
+      "ip": 1279
+    },
+    "totalWar": 57.3,
+    "powerScore": 29.03,
+    "powerRank": 1
+  },
+  {
+    "year": 2019,
+    "team": "키움",
+    "batting": {
+      "ops": 0.768,
+      "hr": 112,
+      "battingWar": 31.47,
+      "wrcPlus": 117.8
+    },
+    "pitching": {
+      "era": 3.62,
+      "fip": 3.48,
+      "whip": 1.306,
+      "pitchingWar": 25.5,
+      "ip": 1274.1
+    },
+    "totalWar": 56.97,
+    "powerScore": 28.78,
+    "powerRank": 2
+  },
+  {
+    "year": 2019,
+    "team": "NC",
+    "batting": {
+      "ops": 0.762,
+      "hr": 128,
+      "battingWar": 27.24,
+      "wrcPlus": 106.6
+    },
+    "pitching": {
+      "era": 4.03,
+      "fip": 4.2,
+      "whip": 1.384,
+      "pitchingWar": 23.65,
+      "ip": 1277.1
+    },
+    "totalWar": 50.89,
+    "powerScore": 25.62,
+    "powerRank": 3
+  },
+  {
+    "year": 2019,
+    "team": "SK",
+    "batting": {
+      "ops": 0.718,
+      "hr": 117,
+      "battingWar": 18.6,
+      "wrcPlus": 96.4
+    },
+    "pitching": {
+      "era": 3.59,
+      "fip": 3.8,
+      "whip": 1.305,
+      "pitchingWar": 27.97,
+      "ip": 1228.2
+    },
+    "totalWar": 46.57,
+    "powerScore": 22.82,
+    "powerRank": 4
+  },
+  {
+    "year": 2019,
+    "team": "KT",
+    "batting": {
+      "ops": 0.729,
+      "hr": 103,
+      "battingWar": 26.37,
+      "wrcPlus": 102
+    },
+    "pitching": {
+      "era": 4.32,
+      "fip": 4.53,
+      "whip": 1.404,
+      "pitchingWar": 18.46,
+      "ip": 1269.7
+    },
+    "totalWar": 44.83,
+    "powerScore": 22.81,
+    "powerRank": 5
+  },
+  {
+    "year": 2019,
+    "team": "LG",
+    "batting": {
+      "ops": 0.713,
+      "hr": 94,
+      "battingWar": 22.9,
+      "wrcPlus": 103.2
+    },
+    "pitching": {
+      "era": 3.9,
+      "fip": 4.16,
+      "whip": 1.375,
+      "pitchingWar": 16.82,
+      "ip": 1277.5
+    },
+    "totalWar": 39.72,
+    "powerScore": 20.16,
+    "powerRank": 6
+  },
+  {
+    "year": 2019,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.718,
+      "hr": 122,
+      "battingWar": 16.9,
+      "wrcPlus": 92.9
+    },
+    "pitching": {
+      "era": 4.66,
+      "fip": 4.57,
+      "whip": 1.46,
+      "pitchingWar": 13.89,
+      "ip": 1270.2
+    },
+    "totalWar": 30.79,
+    "powerScore": 15.55,
+    "powerRank": 7
+  },
+  {
+    "year": 2019,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.706,
+      "hr": 76,
+      "battingWar": 14.68,
+      "wrcPlus": 95.6
+    },
+    "pitching": {
+      "era": 4.67,
+      "fip": 4.22,
+      "whip": 1.482,
+      "pitchingWar": 12.79,
+      "ip": 1259.1
+    },
+    "totalWar": 27.47,
+    "powerScore": 13.83,
+    "powerRank": 8
+  },
+  {
+    "year": 2019,
+    "team": "한화",
+    "batting": {
+      "ops": 0.686,
+      "hr": 88,
+      "battingWar": 11.15,
+      "wrcPlus": 89.7
+    },
+    "pitching": {
+      "era": 4.84,
+      "fip": 4.54,
+      "whip": 1.53,
+      "pitchingWar": 10.3,
+      "ip": 1263.3
+    },
+    "totalWar": 21.45,
+    "powerScore": 10.77,
+    "powerRank": 9
+  },
+  {
+    "year": 2019,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.685,
+      "hr": 87,
+      "battingWar": 6.44,
+      "wrcPlus": 85.8
+    },
+    "pitching": {
+      "era": 4.89,
+      "fip": 4.35,
+      "whip": 1.546,
+      "pitchingWar": 9.05,
+      "ip": 1263.3
+    },
+    "totalWar": 15.49,
+    "powerScore": 7.61,
+    "powerRank": 10
+  },
+  {
+    "year": 2020,
+    "team": "NC",
+    "batting": {
+      "ops": 0.828,
+      "hr": 187,
+      "battingWar": 34.65,
+      "wrcPlus": 114.3
+    },
+    "pitching": {
+      "era": 4.61,
+      "fip": 4.85,
+      "whip": 1.424,
+      "pitchingWar": 24.94,
+      "ip": 1291.3
+    },
+    "totalWar": 59.59,
+    "powerScore": 30.28,
+    "powerRank": 1
+  },
+  {
+    "year": 2020,
+    "team": "KT",
+    "batting": {
+      "ops": 0.794,
+      "hr": 163,
+      "battingWar": 31.24,
+      "wrcPlus": 108
+    },
+    "pitching": {
+      "era": 4.58,
+      "fip": 4.8,
+      "whip": 1.464,
+      "pitchingWar": 24.62,
+      "ip": 1284.5
+    },
+    "totalWar": 55.86,
+    "powerScore": 28.26,
+    "powerRank": 2
+  },
+  {
+    "year": 2020,
+    "team": "두산",
+    "batting": {
+      "ops": 0.792,
+      "hr": 125,
+      "battingWar": 30.38,
+      "wrcPlus": 118.4
+    },
+    "pitching": {
+      "era": 4.42,
+      "fip": 4.23,
+      "whip": 1.465,
+      "pitchingWar": 20.47,
+      "ip": 1278.9
+    },
+    "totalWar": 50.85,
+    "powerScore": 25.92,
+    "powerRank": 3
+  },
+  {
+    "year": 2020,
+    "team": "LG",
+    "batting": {
+      "ops": 0.779,
+      "hr": 149,
+      "battingWar": 27.56,
+      "wrcPlus": 111.7
+    },
+    "pitching": {
+      "era": 4.42,
+      "fip": 4.52,
+      "whip": 1.429,
+      "pitchingWar": 19.97,
+      "ip": 1285.9
+    },
+    "totalWar": 47.53,
+    "powerScore": 24.14,
+    "powerRank": 4
+  },
+  {
+    "year": 2020,
+    "team": "키움",
+    "batting": {
+      "ops": 0.762,
+      "hr": 127,
+      "battingWar": 25.89,
+      "wrcPlus": 106.4
+    },
+    "pitching": {
+      "era": 4.41,
+      "fip": 4.54,
+      "whip": 1.398,
+      "pitchingWar": 21.2,
+      "ip": 1274.5
+    },
+    "totalWar": 47.09,
+    "powerScore": 23.78,
+    "powerRank": 5
+  },
+  {
+    "year": 2020,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.761,
+      "hr": 131,
+      "battingWar": 19.5,
+      "wrcPlus": 98.3
+    },
+    "pitching": {
+      "era": 4.67,
+      "fip": 4.54,
+      "whip": 1.415,
+      "pitchingWar": 22.2,
+      "ip": 1270.8
+    },
+    "totalWar": 41.7,
+    "powerScore": 20.72,
+    "powerRank": 6
+  },
+  {
+    "year": 2020,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.732,
+      "hr": 129,
+      "battingWar": 13.92,
+      "wrcPlus": 86.7
+    },
+    "pitching": {
+      "era": 4.8,
+      "fip": 5.02,
+      "whip": 1.477,
+      "pitchingWar": 22.07,
+      "ip": 1267.2
+    },
+    "totalWar": 35.99,
+    "powerScore": 17.59,
+    "powerRank": 7
+  },
+  {
+    "year": 2020,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.755,
+      "hr": 130,
+      "battingWar": 16.3,
+      "wrcPlus": 99.1
+    },
+    "pitching": {
+      "era": 5.17,
+      "fip": 4.59,
+      "whip": 1.55,
+      "pitchingWar": 15.45,
+      "ip": 1262.9
+    },
+    "totalWar": 31.75,
+    "powerScore": 15.92,
+    "powerRank": 8
+  },
+  {
+    "year": 2020,
+    "team": "SK",
+    "batting": {
+      "ops": 0.711,
+      "hr": 143,
+      "battingWar": 8.85,
+      "wrcPlus": 84.3
+    },
+    "pitching": {
+      "era": 5.6,
+      "fip": 5.47,
+      "whip": 1.6,
+      "pitchingWar": 8.86,
+      "ip": 1241.2
+    },
+    "totalWar": 17.71,
+    "powerScore": 8.85,
+    "powerRank": 9
+  },
+  {
+    "year": 2020,
+    "team": "한화",
+    "batting": {
+      "ops": 0.658,
+      "hr": 79,
+      "battingWar": 2.02,
+      "wrcPlus": 75.9
+    },
+    "pitching": {
+      "era": 5.31,
+      "fip": 5.12,
+      "whip": 1.597,
+      "pitchingWar": 9.14,
+      "ip": 1257.7
+    },
+    "totalWar": 11.16,
+    "powerScore": 5.22,
+    "powerRank": 10
+  },
+  {
+    "year": 2021,
+    "team": "KT",
+    "batting": {
+      "ops": 0.738,
+      "hr": 106,
+      "battingWar": 24.11,
+      "wrcPlus": 101.8
+    },
+    "pitching": {
+      "era": 3.7,
+      "fip": 3.75,
+      "whip": 1.323,
+      "pitchingWar": 29.17,
+      "ip": 1258.4
+    },
+    "totalWar": 53.28,
+    "powerScore": 26.39,
+    "powerRank": 1
+  },
+  {
+    "year": 2021,
+    "team": "LG",
+    "batting": {
+      "ops": 0.71,
+      "hr": 110,
+      "battingWar": 22.81,
+      "wrcPlus": 101.3
+    },
+    "pitching": {
+      "era": 3.61,
+      "fip": 3.95,
+      "whip": 1.32,
+      "pitchingWar": 26.17,
+      "ip": 1265.8
+    },
+    "totalWar": 48.98,
+    "powerScore": 24.32,
+    "powerRank": 2
+  },
+  {
+    "year": 2021,
+    "team": "두산",
+    "batting": {
+      "ops": 0.74,
+      "hr": 110,
+      "battingWar": 25.54,
+      "wrcPlus": 109.5
+    },
+    "pitching": {
+      "era": 4.29,
+      "fip": 4.26,
+      "whip": 1.493,
+      "pitchingWar": 21.2,
+      "ip": 1260.7
+    },
+    "totalWar": 46.74,
+    "powerScore": 23.59,
+    "powerRank": 3
+  },
+  {
+    "year": 2021,
+    "team": "SSG",
+    "batting": {
+      "ops": 0.775,
+      "hr": 185,
+      "battingWar": 28,
+      "wrcPlus": 109.4
+    },
+    "pitching": {
+      "era": 4.87,
+      "fip": 4.82,
+      "whip": 1.51,
+      "pitchingWar": 15.27,
+      "ip": 1252.4
+    },
+    "totalWar": 43.27,
+    "powerScore": 22.27,
+    "powerRank": 4
+  },
+  {
+    "year": 2021,
+    "team": "키움",
+    "batting": {
+      "ops": 0.724,
+      "hr": 91,
+      "battingWar": 23.6,
+      "wrcPlus": 101.5
+    },
+    "pitching": {
+      "era": 4.34,
+      "fip": 4.46,
+      "whip": 1.47,
+      "pitchingWar": 16.49,
+      "ip": 1256.1
+    },
+    "totalWar": 40.09,
+    "powerScore": 20.4,
+    "powerRank": 5
+  },
+  {
+    "year": 2021,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.743,
+      "hr": 133,
+      "battingWar": 18.14,
+      "wrcPlus": 98
+    },
+    "pitching": {
+      "era": 4.31,
+      "fip": 4.34,
+      "whip": 1.457,
+      "pitchingWar": 22.98,
+      "ip": 1254.1
+    },
+    "totalWar": 41.12,
+    "powerScore": 20.32,
+    "powerRank": 6
+  },
+  {
+    "year": 2021,
+    "team": "NC",
+    "batting": {
+      "ops": 0.759,
+      "hr": 170,
+      "battingWar": 22.23,
+      "wrcPlus": 103.8
+    },
+    "pitching": {
+      "era": 4.57,
+      "fip": 4.47,
+      "whip": 1.488,
+      "pitchingWar": 17.88,
+      "ip": 1249.9
+    },
+    "totalWar": 40.11,
+    "powerScore": 20.27,
+    "powerRank": 7
+  },
+  {
+    "year": 2021,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.755,
+      "hr": 107,
+      "battingWar": 20.63,
+      "wrcPlus": 102.3
+    },
+    "pitching": {
+      "era": 5.42,
+      "fip": 4.72,
+      "whip": 1.574,
+      "pitchingWar": 14.03,
+      "ip": 1257
+    },
+    "totalWar": 34.66,
+    "powerScore": 17.66,
+    "powerRank": 8
+  },
+  {
+    "year": 2021,
+    "team": "한화",
+    "batting": {
+      "ops": 0.675,
+      "hr": 80,
+      "battingWar": 13.49,
+      "wrcPlus": 88.3
+    },
+    "pitching": {
+      "era": 4.69,
+      "fip": 4.71,
+      "whip": 1.501,
+      "pitchingWar": 12.33,
+      "ip": 1248.4
+    },
+    "totalWar": 25.82,
+    "powerScore": 12.97,
+    "powerRank": 9
+  },
+  {
+    "year": 2021,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.673,
+      "hr": 66,
+      "battingWar": 10.99,
+      "wrcPlus": 85.9
+    },
+    "pitching": {
+      "era": 4.95,
+      "fip": 4.9,
+      "whip": 1.511,
+      "pitchingWar": 12.93,
+      "ip": 1261
+    },
+    "totalWar": 23.92,
+    "powerScore": 11.86,
+    "powerRank": 10
+  },
+  {
+    "year": 2022,
+    "team": "LG",
+    "batting": {
+      "ops": 0.742,
+      "hr": 118,
+      "battingWar": 32.05,
+      "wrcPlus": 115.7
+    },
+    "pitching": {
+      "era": 3.34,
+      "fip": 3.84,
+      "whip": 1.272,
+      "pitchingWar": 28,
+      "ip": 1281.7
+    },
+    "totalWar": 60.05,
+    "powerScore": 30.23,
+    "powerRank": 1
+  },
+  {
+    "year": 2022,
+    "team": "SSG",
+    "batting": {
+      "ops": 0.732,
+      "hr": 138,
+      "battingWar": 28.27,
+      "wrcPlus": 103.1
+    },
+    "pitching": {
+      "era": 3.91,
+      "fip": 4.23,
+      "whip": 1.295,
+      "pitchingWar": 23.98,
+      "ip": 1296.9
+    },
+    "totalWar": 52.25,
+    "powerScore": 26.34,
+    "powerRank": 2
+  },
+  {
+    "year": 2022,
+    "team": "KT",
+    "batting": {
+      "ops": 0.705,
+      "hr": 119,
+      "battingWar": 20.15,
+      "wrcPlus": 93.8
+    },
+    "pitching": {
+      "era": 3.58,
+      "fip": 3.54,
+      "whip": 1.255,
+      "pitchingWar": 29.83,
+      "ip": 1280.8
+    },
+    "totalWar": 49.98,
+    "powerScore": 24.51,
+    "powerRank": 3
+  },
+  {
+    "year": 2022,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.746,
+      "hr": 113,
+      "battingWar": 29.97,
+      "wrcPlus": 112
+    },
+    "pitching": {
+      "era": 4.23,
+      "fip": 4.25,
+      "whip": 1.422,
+      "pitchingWar": 16.41,
+      "ip": 1274.3
+    },
+    "totalWar": 46.38,
+    "powerScore": 23.87,
+    "powerRank": 4
+  },
+  {
+    "year": 2022,
+    "team": "NC",
+    "batting": {
+      "ops": 0.709,
+      "hr": 105,
+      "battingWar": 20.31,
+      "wrcPlus": 98.3
+    },
+    "pitching": {
+      "era": 3.93,
+      "fip": 3.99,
+      "whip": 1.363,
+      "pitchingWar": 19.52,
+      "ip": 1279.9
+    },
+    "totalWar": 39.83,
+    "powerScore": 19.95,
+    "powerRank": 5
+  },
+  {
+    "year": 2022,
+    "team": "키움",
+    "batting": {
+      "ops": 0.697,
+      "hr": 94,
+      "battingWar": 18.53,
+      "wrcPlus": 99.7
+    },
+    "pitching": {
+      "era": 3.82,
+      "fip": 4.03,
+      "whip": 1.346,
+      "pitchingWar": 21.35,
+      "ip": 1290.5
+    },
+    "totalWar": 39.88,
+    "powerScore": 19.8,
+    "powerRank": 6
+  },
+  {
+    "year": 2022,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.721,
+      "hr": 103,
+      "battingWar": 17.06,
+      "wrcPlus": 98
+    },
+    "pitching": {
+      "era": 4.36,
+      "fip": 4.35,
+      "whip": 1.444,
+      "pitchingWar": 17.59,
+      "ip": 1280
+    },
+    "totalWar": 34.65,
+    "powerScore": 17.3,
+    "powerRank": 7
+  },
+  {
+    "year": 2022,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.711,
+      "hr": 106,
+      "battingWar": 13.22,
+      "wrcPlus": 94.5
+    },
+    "pitching": {
+      "era": 4.48,
+      "fip": 3.53,
+      "whip": 1.46,
+      "pitchingWar": 16.03,
+      "ip": 1267.8
+    },
+    "totalWar": 29.25,
+    "powerScore": 14.48,
+    "powerRank": 8
+  },
+  {
+    "year": 2022,
+    "team": "두산",
+    "batting": {
+      "ops": 0.69,
+      "hr": 101,
+      "battingWar": 15.29,
+      "wrcPlus": 97.1
+    },
+    "pitching": {
+      "era": 4.49,
+      "fip": 4.46,
+      "whip": 1.487,
+      "pitchingWar": 7.55,
+      "ip": 1272.1
+    },
+    "totalWar": 22.84,
+    "powerScore": 11.81,
+    "powerRank": 9
+  },
+  {
+    "year": 2022,
+    "team": "한화",
+    "batting": {
+      "ops": 0.671,
+      "hr": 88,
+      "battingWar": 12.6,
+      "wrcPlus": 88.1
+    },
+    "pitching": {
+      "era": 4.84,
+      "fip": 4.51,
+      "whip": 1.517,
+      "pitchingWar": 7.83,
+      "ip": 1260
+    },
+    "totalWar": 20.43,
+    "powerScore": 10.45,
+    "powerRank": 10
+  },
+  {
+    "year": 2023,
+    "team": "LG",
+    "batting": {
+      "ops": 0.755,
+      "hr": 93,
+      "battingWar": 33.67,
+      "wrcPlus": 118.6
+    },
+    "pitching": {
+      "era": 3.73,
+      "fip": 3.97,
+      "whip": 1.368,
+      "pitchingWar": 22.15,
+      "ip": 1284.7
+    },
+    "totalWar": 55.82,
+    "powerScore": 28.49,
+    "powerRank": 1
+  },
+  {
+    "year": 2023,
+    "team": "NC",
+    "batting": {
+      "ops": 0.732,
+      "hr": 98,
+      "battingWar": 25.86,
+      "wrcPlus": 105.9
+    },
+    "pitching": {
+      "era": 3.85,
+      "fip": 4.03,
+      "whip": 1.313,
+      "pitchingWar": 22.95,
+      "ip": 1274.1
+    },
+    "totalWar": 48.81,
+    "powerScore": 24.55,
+    "powerRank": 2
+  },
+  {
+    "year": 2023,
+    "team": "KT",
+    "batting": {
+      "ops": 0.709,
+      "hr": 89,
+      "battingWar": 21.85,
+      "wrcPlus": 95.1
+    },
+    "pitching": {
+      "era": 3.96,
+      "fip": 3.82,
+      "whip": 1.357,
+      "pitchingWar": 26.8,
+      "ip": 1281.4
+    },
+    "totalWar": 48.65,
+    "powerScore": 24.08,
+    "powerRank": 3
+  },
+  {
+    "year": 2023,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.735,
+      "hr": 101,
+      "battingWar": 26.02,
+      "wrcPlus": 108.5
+    },
+    "pitching": {
+      "era": 4.16,
+      "fip": 4.25,
+      "whip": 1.431,
+      "pitchingWar": 18.4,
+      "ip": 1263.4
+    },
+    "totalWar": 44.42,
+    "powerScore": 22.59,
+    "powerRank": 4
+  },
+  {
+    "year": 2023,
+    "team": "두산",
+    "batting": {
+      "ops": 0.705,
+      "hr": 100,
+      "battingWar": 21.99,
+      "wrcPlus": 101.5
+    },
+    "pitching": {
+      "era": 3.95,
+      "fip": 4.07,
+      "whip": 1.366,
+      "pitchingWar": 17.89,
+      "ip": 1278.6
+    },
+    "totalWar": 39.88,
+    "powerScore": 20.15,
+    "powerRank": 5
+  },
+  {
+    "year": 2023,
+    "team": "SSG",
+    "batting": {
+      "ops": 0.725,
+      "hr": 125,
+      "battingWar": 21.13,
+      "wrcPlus": 100.1
+    },
+    "pitching": {
+      "era": 4.38,
+      "fip": 4.52,
+      "whip": 1.53,
+      "pitchingWar": 16.25,
+      "ip": 1285.3
+    },
+    "totalWar": 37.38,
+    "powerScore": 18.93,
+    "powerRank": 6
+  },
+  {
+    "year": 2023,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.701,
+      "hr": 69,
+      "battingWar": 14.49,
+      "wrcPlus": 94.1
+    },
+    "pitching": {
+      "era": 4.15,
+      "fip": 3.95,
+      "whip": 1.468,
+      "pitchingWar": 19.3,
+      "ip": 1262.6
+    },
+    "totalWar": 33.79,
+    "powerScore": 16.65,
+    "powerRank": 7
+  },
+  {
+    "year": 2023,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.702,
+      "hr": 88,
+      "battingWar": 16.37,
+      "wrcPlus": 94.3
+    },
+    "pitching": {
+      "era": 4.64,
+      "fip": 4.41,
+      "whip": 1.477,
+      "pitchingWar": 13.37,
+      "ip": 1271.8
+    },
+    "totalWar": 29.74,
+    "powerScore": 15.02,
+    "powerRank": 8
+  },
+  {
+    "year": 2023,
+    "team": "한화",
+    "batting": {
+      "ops": 0.675,
+      "hr": 100,
+      "battingWar": 14.01,
+      "wrcPlus": 89.4
+    },
+    "pitching": {
+      "era": 4.4,
+      "fip": 4.22,
+      "whip": 1.41,
+      "pitchingWar": 13.06,
+      "ip": 1283.5
+    },
+    "totalWar": 27.07,
+    "powerScore": 13.58,
+    "powerRank": 9
+  },
+  {
+    "year": 2023,
+    "team": "키움",
+    "batting": {
+      "ops": 0.685,
+      "hr": 61,
+      "battingWar": 11.73,
+      "wrcPlus": 92.5
+    },
+    "pitching": {
+      "era": 4.42,
+      "fip": 4.14,
+      "whip": 1.458,
+      "pitchingWar": 14.27,
+      "ip": 1278.4
+    },
+    "totalWar": 26,
+    "powerScore": 12.87,
+    "powerRank": 10
+  },
+  {
+    "year": 2024,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.829,
+      "hr": 163,
+      "battingWar": 29.05,
+      "wrcPlus": 114.9
+    },
+    "pitching": {
+      "era": 4.52,
+      "fip": 4.88,
+      "whip": 1.486,
+      "pitchingWar": 21.04,
+      "ip": 1281.4
+    },
+    "totalWar": 50.09,
+    "powerScore": 25.45,
+    "powerRank": 1
+  },
+  {
+    "year": 2024,
+    "team": "LG",
+    "batting": {
+      "ops": 0.78,
+      "hr": 115,
+      "battingWar": 30.35,
+      "wrcPlus": 109.1
+    },
+    "pitching": {
+      "era": 4.68,
+      "fip": 4.79,
+      "whip": 1.501,
+      "pitchingWar": 19.09,
+      "ip": 1268.6
+    },
+    "totalWar": 49.44,
+    "powerScore": 25.28,
+    "powerRank": 2
+  },
+  {
+    "year": 2024,
+    "team": "두산",
+    "batting": {
+      "ops": 0.774,
+      "hr": 150,
+      "battingWar": 25.91,
+      "wrcPlus": 103.2
+    },
+    "pitching": {
+      "era": 4.84,
+      "fip": 5.03,
+      "whip": 1.5,
+      "pitchingWar": 18.97,
+      "ip": 1278.3
+    },
+    "totalWar": 44.88,
+    "powerScore": 22.79,
+    "powerRank": 3
+  },
+  {
+    "year": 2024,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.774,
+      "hr": 185,
+      "battingWar": 20.08,
+      "wrcPlus": 95.9
+    },
+    "pitching": {
+      "era": 4.71,
+      "fip": 5.2,
+      "whip": 1.455,
+      "pitchingWar": 25.56,
+      "ip": 1278.7
+    },
+    "totalWar": 45.64,
+    "powerScore": 22.55,
+    "powerRank": 4
+  },
+  {
+    "year": 2024,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.782,
+      "hr": 125,
+      "battingWar": 18.41,
+      "wrcPlus": 98.1
+    },
+    "pitching": {
+      "era": 5.16,
+      "fip": 4.77,
+      "whip": 1.538,
+      "pitchingWar": 21.3,
+      "ip": 1248.1
+    },
+    "totalWar": 39.71,
+    "powerScore": 19.71,
+    "powerRank": 5
+  },
+  {
+    "year": 2024,
+    "team": "NC",
+    "batting": {
+      "ops": 0.78,
+      "hr": 172,
+      "battingWar": 23.11,
+      "wrcPlus": 104.9
+    },
+    "pitching": {
+      "era": 5.08,
+      "fip": 4.91,
+      "whip": 1.515,
+      "pitchingWar": 14.84,
+      "ip": 1267.5
+    },
+    "totalWar": 37.95,
+    "powerScore": 19.39,
+    "powerRank": 6
+  },
+  {
+    "year": 2024,
+    "team": "KT",
+    "batting": {
+      "ops": 0.772,
+      "hr": 145,
+      "battingWar": 20.34,
+      "wrcPlus": 98.5
+    },
+    "pitching": {
+      "era": 5.15,
+      "fip": 4.72,
+      "whip": 1.478,
+      "pitchingWar": 17.69,
+      "ip": 1279.2
+    },
+    "totalWar": 38.03,
+    "powerScore": 19.15,
+    "powerRank": 7
+  },
+  {
+    "year": 2024,
+    "team": "SSG",
+    "batting": {
+      "ops": 0.762,
+      "hr": 152,
+      "battingWar": 15.15,
+      "wrcPlus": 92.9
+    },
+    "pitching": {
+      "era": 5.29,
+      "fip": 5.13,
+      "whip": 1.561,
+      "pitchingWar": 17.41,
+      "ip": 1262.9
+    },
+    "totalWar": 32.56,
+    "powerScore": 16.17,
+    "powerRank": 8
+  },
+  {
+    "year": 2024,
+    "team": "한화",
+    "batting": {
+      "ops": 0.745,
+      "hr": 127,
+      "battingWar": 13.05,
+      "wrcPlus": 93.6
+    },
+    "pitching": {
+      "era": 5.03,
+      "fip": 4.67,
+      "whip": 1.535,
+      "pitchingWar": 17.57,
+      "ip": 1269.3
+    },
+    "totalWar": 30.62,
+    "powerScore": 15.08,
+    "powerRank": 9
+  },
+  {
+    "year": 2024,
+    "team": "키움",
+    "batting": {
+      "ops": 0.72,
+      "hr": 100,
+      "battingWar": 13.17,
+      "wrcPlus": 91
+    },
+    "pitching": {
+      "era": 5.23,
+      "fip": 5.25,
+      "whip": 1.512,
+      "pitchingWar": 12.85,
+      "ip": 1265.2
+    },
+    "totalWar": 26.02,
+    "powerScore": 13.03,
+    "powerRank": 10
+  },
+  {
+    "year": 2025,
+    "team": "LG",
+    "batting": {
+      "ops": 0.77,
+      "hr": 130,
+      "battingWar": 36.33,
+      "wrcPlus": 118.7
+    },
+    "pitching": {
+      "era": 3.82,
+      "fip": 4,
+      "whip": 1.355,
+      "pitchingWar": 25.53,
+      "ip": 1274.2
+    },
+    "totalWar": 61.86,
+    "powerScore": 31.47,
+    "powerRank": 1
+  },
+  {
+    "year": 2025,
+    "team": "삼성",
+    "batting": {
+      "ops": 0.78,
+      "hr": 161,
+      "battingWar": 29.63,
+      "wrcPlus": 108.3
+    },
+    "pitching": {
+      "era": 4.14,
+      "fip": 4.39,
+      "whip": 1.356,
+      "pitchingWar": 24.23,
+      "ip": 1262.6
+    },
+    "totalWar": 53.86,
+    "powerScore": 27.2,
+    "powerRank": 2
+  },
+  {
+    "year": 2025,
+    "team": "한화",
+    "batting": {
+      "ops": 0.73,
+      "hr": 116,
+      "battingWar": 20,
+      "wrcPlus": 99.4
+    },
+    "pitching": {
+      "era": 3.57,
+      "fip": 3.58,
+      "whip": 1.273,
+      "pitchingWar": 31.3,
+      "ip": 1284.5
+    },
+    "totalWar": 51.3,
+    "powerScore": 25.09,
+    "powerRank": 3
+  },
+  {
+    "year": 2025,
+    "team": "SSG",
+    "batting": {
+      "ops": 0.706,
+      "hr": 127,
+      "battingWar": 15.09,
+      "wrcPlus": 91.7
+    },
+    "pitching": {
+      "era": 3.65,
+      "fip": 4.07,
+      "whip": 1.308,
+      "pitchingWar": 29.85,
+      "ip": 1278
+    },
+    "totalWar": 44.94,
+    "powerScore": 21.73,
+    "powerRank": 4
+  },
+  {
+    "year": 2025,
+    "team": "두산",
+    "batting": {
+      "ops": 0.715,
+      "hr": 102,
+      "battingWar": 21.63,
+      "wrcPlus": 99
+    },
+    "pitching": {
+      "era": 4.32,
+      "fip": 4.44,
+      "whip": 1.389,
+      "pitchingWar": 15.3,
+      "ip": 1273.7
+    },
+    "totalWar": 36.93,
+    "powerScore": 18.78,
+    "powerRank": 5
+  },
+  {
+    "year": 2025,
+    "team": "KT",
+    "batting": {
+      "ops": 0.706,
+      "hr": 104,
+      "battingWar": 16.72,
+      "wrcPlus": 94.7
+    },
+    "pitching": {
+      "era": 4.12,
+      "fip": 4.03,
+      "whip": 1.411,
+      "pitchingWar": 20.42,
+      "ip": 1269.4
+    },
+    "totalWar": 37.14,
+    "powerScore": 18.39,
+    "powerRank": 6
+  },
+  {
+    "year": 2025,
+    "team": "NC",
+    "batting": {
+      "ops": 0.744,
+      "hr": 128,
+      "battingWar": 23.51,
+      "wrcPlus": 104.1
+    },
+    "pitching": {
+      "era": 4.86,
+      "fip": 4.92,
+      "whip": 1.501,
+      "pitchingWar": 11.73,
+      "ip": 1264
+    },
+    "totalWar": 35.24,
+    "powerScore": 18.21,
+    "powerRank": 7
+  },
+  {
+    "year": 2025,
+    "team": "KIA",
+    "batting": {
+      "ops": 0.734,
+      "hr": 144,
+      "battingWar": 21.22,
+      "wrcPlus": 104.1
+    },
+    "pitching": {
+      "era": 4.7,
+      "fip": 4.32,
+      "whip": 1.44,
+      "pitchingWar": 13.15,
+      "ip": 1268.6
+    },
+    "totalWar": 34.37,
+    "powerScore": 17.59,
+    "powerRank": 8
+  },
+  {
+    "year": 2025,
+    "team": "롯데",
+    "batting": {
+      "ops": 0.717,
+      "hr": 75,
+      "battingWar": 16.94,
+      "wrcPlus": 96
+    },
+    "pitching": {
+      "era": 4.85,
+      "fip": 4.32,
+      "whip": 1.514,
+      "pitchingWar": 14.16,
+      "ip": 1202.4
+    },
+    "totalWar": 31.1,
+    "powerScore": 15.69,
+    "powerRank": 9
+  },
+  {
+    "year": 2025,
+    "team": "키움",
+    "batting": {
+      "ops": 0.671,
+      "hr": 104,
+      "battingWar": 7.16,
+      "wrcPlus": 89.1
+    },
+    "pitching": {
+      "era": 5.44,
+      "fip": 5.03,
+      "whip": 1.58,
+      "pitchingWar": -3.52,
+      "ip": 1264.1
+    },
+    "totalWar": 3.64,
+    "powerScore": 2.35,
+    "powerRank": 10
+  }
+]
