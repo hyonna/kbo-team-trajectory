@@ -8,6 +8,16 @@ KBO 팀들의 시즌별 성적 흐름을 연도·월·지표 기준으로 시각
 
 실제 경기 결과와는 다를 수 있으며, 선수 개인의 성과 지표(WAR, OPS, ERA 등)를 기반으로 팀의 전반적인 전력을 평가하는 지표입니다.
 
+## ✨ 주요 특징
+
+- 🎨 **모던한 UI/UX**: 스포티하고 트렌디한 디자인
+- 🌙 **다크 모드 지원**: 시스템 설정 자동 감지 및 수동 전환 가능
+- 🎯 **공식 팀 컬러**: 각 팀의 공식 Primary/Secondary 색상 적용
+- 📊 **고해상도 차트**: Recharts 기반의 인터랙티브 차트
+- 🔍 **상세한 툴팁**: 호버 시 상세 정보 표시
+- 📱 **반응형 디자인**: 모바일, 태블릿, 데스크톱 지원
+- 🔤 **Pretendard 폰트**: 한국어에 최적화된 폰트 적용
+
 ## 📈 집계 공식
 
 ### 타자 지표
@@ -75,15 +85,30 @@ kbo-team-trajectory/
 │   │   └── trajectory/         # 팀 추이 분석 페이지
 │   ├── components/
 │   │   ├── charts/              # 차트 컴포넌트
+│   │   │   ├── RankTrajectoryChart.tsx    # 순위 추이 차트
+│   │   │   ├── TrajectoryLineChart.tsx    # 라인 차트
+│   │   │   ├── SnapshotBarChart.tsx       # 바 차트
+│   │   │   └── ChartContainer.tsx         # 차트 래퍼
+│   │   ├── layout/             # 레이아웃 컴포넌트
+│   │   │   ├── Header.tsx      # 네비게이션 헤더
+│   │   │   └── ThemeToggle.tsx # 다크 모드 토글
 │   │   ├── snapshot/           # 스냅샷 관련 컴포넌트
 │   │   ├── team/               # 팀 페이지 컴포넌트
 │   │   ├── trajectory/         # 추이 분석 컴포넌트
+│   │   ├── theme/              # 테마 관리
+│   │   │   └── ThemeProvider.tsx
 │   │   └── ui/                 # 공통 UI 컴포넌트
 │   ├── data/
 │   │   ├── derived/            # 집계된 팀 시즌 데이터
 │   │   └── raw/                # 원본 선수 시즌별 데이터
 │   ├── lib/
 │   │   ├── chart/              # 차트 관련 유틸리티
+│   │   │   ├── colors.ts       # 팀 컬러 매핑
+│   │   │   ├── domain.ts       # Y축 도메인 계산
+│   │   │   ├── format.ts       # 숫자 포맷팅
+│   │   │   ├── selectors.ts    # 지표 선택 함수
+│   │   │   ├── transform.ts    # 차트용 데이터 변환
+│   │   │   └── types.ts        # 타입 정의
 │   │   └── dataset/            # 데이터 로더
 │   └── scripts/                # 데이터 처리 스크립트
 └── package.json
@@ -98,39 +123,86 @@ kbo-team-trajectory/
 - 다양한 지표 선택 (Power Rank, Power Score, Total WAR, OPS, ERA 등)
 - 연도별 추이 라인 차트 또는 랭킹 차트 표시
 - 선택 팀의 최신 시즌 요약 카드
+- **개선된 순위 차트**: 가독성 향상, 순위 구간 표시, 상세 툴팁
 
 ### 2. 연도별 스냅샷 (`/snapshot`)
 
 - 특정 연도의 팀별 성적 비교
 - 전년 대비 변화량 표시
 - 다양한 지표로 바 차트 비교
+- Delta 배지로 증감 표시
 
 ### 3. 팀 상세 페이지 (`/team/[team]`)
 
 - 팀의 연도별 Power Score 및 Total WAR 추이
 - 특정 연도 선택 시 TOP 10 타자/투수 리스트
 - 선수별 WAR 및 주요 지표 표시
+- 연도별 선수 기여도 분석
+
+### 4. 홈 페이지 (`/`)
+
+- 전체 팀 순위 추이 (1982-2025)
+- 최근 팀 순위 추이 (2010-2025)
+- Total WAR 추이
+- 최신 시즌 스냅샷
+
+## 🎨 디자인 시스템
+
+### 팀 컬러
+
+각 팀의 공식 Primary/Secondary 색상이 적용되어 있습니다:
+
+- **LG 트윈스**: `#c30452` / `#a5aca8`
+- **두산 베어스**: `#132650` / `#b3bfc8`
+- **삼성 라이온즈**: `#1251d6` / `#a9bedc`
+- **KIA 타이거즈**: `#c8102e` / `#f6bf00`
+- **NC 다이노스**: `#003263` / `#b0926a`
+- **롯데 자이언츠**: `#d7333b` / `#005bbf`
+- **SSG 랜더스**: `#c5102d` / `#ffd700`
+- **키움 히어로즈**: `#810034` / `#d7a94b`
+- **KT 위즈**: `#212121` / `#e60012`
+- **한화 이글스**: `#fb4f14` / `#000000`
+
+### 폰트
+
+- **Pretendard**: 한국어에 최적화된 폰트 사용
+- 다양한 굵기 지원 (Regular, Medium, SemiBold, Bold, ExtraBold)
+
+### 다크 모드
+
+- 시스템 설정 자동 감지
+- Header의 토글 버튼으로 수동 전환
+- 로컬 스토리지에 설정 저장
 
 ## 📊 데이터 출처
 
 본 프로젝트는 1982년부터 2025년까지의 KBO 선수 시즌별 기록을 기반으로 팀 단위 통계를 집계합니다.
+
+원본 데이터는 [Kaggle의 KBO Player Dataset by Regular Season (1982-2025)](https://www.kaggle.com/datasets/netsong/kbo-player-dataset-by-regular-season-1982-2025)에서 제공됩니다.
 
 - **타자 스탯**: PA, AB, H, BB, HP, SF, TB, HR, OPS, wRC+, WAR
 - **투수 스탯**: IP, ER, H, BB, ERA, FIP, WHIP, WAR
 
 ## 🛠 기술 스택
 
-- **Frontend**
-  - Next.js 15 (App Router)
-  - React 19
-  - TypeScript
-  - Tailwind CSS
-  - Recharts
+### Frontend
 
-- **Data Processing**
-  - Node.js
-  - TypeScript
-  - JSON 데이터 집계
+- **Next.js 15** (App Router) - React 프레임워크
+- **React 19** - UI 라이브러리
+- **TypeScript** - 타입 안정성
+- **Tailwind CSS 4** - 유틸리티 CSS
+- **Recharts** - 차트 라이브러리
+
+### Data Processing
+
+- **Node.js** - 런타임
+- **TypeScript** - 스크립트 작성
+- **JSON 데이터 집계** - 선수 데이터를 팀 단위로 집계
+
+### 개발 도구
+
+- **Cursor** - AI 기반 코드 에디터로 개발
+- **pnpm** - 패키지 관리자
 
 ## 🗺 향후 로드맵
 
@@ -146,6 +218,7 @@ kbo-team-trajectory/
 - 팀 간 상대 전적 분석
 - 시즌별 주요 이벤트(트레이드, 부상 등) 반영
 - 데이터 내보내기 기능 (CSV, JSON)
+- 차트 이미지 다운로드 기능
 
 ## 📝 라이선스
 
@@ -154,3 +227,9 @@ kbo-team-trajectory/
 ## 🤝 기여
 
 이슈 및 제안사항은 GitHub Issues를 통해 제출해주세요.
+
+## 🙏 감사의 말
+
+- 데이터 제공: [Kaggle - KBO Player Dataset](https://www.kaggle.com/datasets/netsong/kbo-player-dataset-by-regular-season-1982-2025)
+- 폰트: [Pretendard](https://github.com/orioncactus/pretendard)
+- 개발 도구: [Cursor](https://cursor.sh)
