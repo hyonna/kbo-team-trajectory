@@ -1,8 +1,9 @@
-import type { Metadata } from 'next'
-import './globals.css'
 import Header from '@/components/layout/Header'
 import { ThemeProvider } from '@/components/theme/ThemeProvider'
+import { Analytics } from '@vercel/analytics/next'
+import type { Metadata } from 'next'
 import Script from 'next/script'
+import './globals.css'
 
 export const metadata: Metadata = {
   title: 'KBO Team Trajectory',
@@ -36,6 +37,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Header />
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
