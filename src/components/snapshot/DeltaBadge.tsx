@@ -37,7 +37,8 @@ export default function DeltaBadge({
                 : 'text-red-600 dark:text-red-400'
           }`}
         >
-          {delta === 0 ? '±0' : isPositive ? '▲' : '▼'} {formatValue(Math.abs(delta))}
+          {delta === 0 ? '±0' : isPositive ? '▲' : '▼'}{' '}
+          {formatValue(Math.abs(delta))}
         </span>
       </div>
     </div>

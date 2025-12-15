@@ -125,14 +125,22 @@ function PlayerLineChart({
 
   // 메트릭에 따른 포맷터
   const formatter = (value: number) => {
-    if (metric === 'WAR' || metric === 'ERA' || metric === 'FIP') {
+    if (
+      metric === 'WAR' ||
+      metric === 'ERA' ||
+      metric === 'FIP' ||
+      metric === 'WHIP' ||
+      metric === 'K9' ||
+      metric === 'BB9' ||
+      metric === 'KBB'
+    ) {
       return formatNumber(value, { decimals: 2 })
     }
     if (metric === 'OPS') {
       return formatNumber(value, { decimals: 3 })
     }
     if (metric === 'IP') {
-      return formatNumber(value, { decimals: 1 })
+      return formatNumber(value, { decimals: 2 })
     }
     return formatNumber(value, { decimals: 0 })
   }

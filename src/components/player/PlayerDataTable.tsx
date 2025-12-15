@@ -98,7 +98,27 @@ function PlayerDataTable({
     {
       key: 'IP',
       label: '이닝',
-      format: (v: number) => formatNumber(v, { decimals: 1 }),
+      format: (v: number) => formatNumber(v, { decimals: 2 }),
+    },
+    {
+      key: 'WHIP',
+      label: 'WHIP',
+      format: (v: number) => formatNumber(v, { decimals: 2 }),
+    },
+    {
+      key: 'K9',
+      label: 'K9',
+      format: (v: number) => formatNumber(v, { decimals: 2 }),
+    },
+    {
+      key: 'BB9',
+      label: 'BB9',
+      format: (v: number) => formatNumber(v, { decimals: 2 }),
+    },
+    {
+      key: 'KBB',
+      label: 'K/BB',
+      format: (v: number) => formatNumber(v, { decimals: 2 }),
     },
   ]
 
@@ -137,7 +157,42 @@ function PlayerDataTable({
                 className="border-b border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"
               >
                 {columns.map(col => {
-                  const value = record[col.key as keyof typeof record]
+                  let rawValue = record[col.key as keyof typeof record]
+
+                  // 파생 지표(K9, BB9, K/BB)는 실시간 계산
+                  if (playerType === 'pitcher') {
+                    const pitchingRecord = record as PitchingRecord
+                    const ip =
+                      typeof pitchingRecord.IP === 'number' &&
+                      pitchingRecord.IP > 0
+                        ? pitchingRecord.IP
+                        : 0
+                    if (col.key === 'K9') {
+                      const so =
+                        typeof pitchingRecord.SO === 'number'
+                          ? pitchingRecord.SO
+                          : 0
+                      rawValue = ip > 0 ? (so * 9) / ip : 0
+                    } else if (col.key === 'BB9') {
+                      const bb =
+                        typeof pitchingRecord.BB === 'number'
+                          ? pitchingRecord.BB
+                          : 0
+                      rawValue = ip > 0 ? (bb * 9) / ip : 0
+                    } else if (col.key === 'KBB') {
+                      const so =
+                        typeof pitchingRecord.SO === 'number'
+                          ? pitchingRecord.SO
+                          : 0
+                      const bb =
+                        typeof pitchingRecord.BB === 'number'
+                          ? pitchingRecord.BB
+                          : 0
+                      rawValue = bb > 0 ? so / bb : 0
+                    }
+                  }
+
+                  const value = rawValue
                   const isSelectedMetric = col.key === selectedMetric
                   let displayValue: string | number
 

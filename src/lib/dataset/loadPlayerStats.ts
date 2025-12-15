@@ -21,6 +21,9 @@ export interface PitchingRecord {
   ERA: number
   FIP: number
   IP: number
+  SO?: number
+  BB?: number
+  WHIP?: number
   [key: string]: unknown
 }
 

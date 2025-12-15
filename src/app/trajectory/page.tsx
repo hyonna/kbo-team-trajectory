@@ -91,51 +91,64 @@ async function TrajectoryContent({ searchParams }: TrajectoryContentProps) {
   )
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-gray-50 via-blue-50/30 to-purple-50/30 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 p-8">
-      <div className="max-w-7xl mx-auto space-y-8">
-        <div className="text-center mb-12 animate-fade-in">
-          <h1 className="text-5xl font-extrabold gradient-text mb-4">
+    <main className="min-h-screen bg-linear-to-br from-gray-50 via-blue-50/30 to-purple-50/30 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 p-4 md:p-8">
+      <div className="mx-auto space-y-6">
+        {/* 헤더 */}
+        <div className="animate-fade-in">
+          <h1 className="text-2xl md:text-3xl font-extrabold gradient-text mb-1">
             팀 추이 분석
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-400">
-            팀별 성적 추이를 시각화하고 비교합니다
+          <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400">
+            팀을 선택하고 연도 범위·지표를 지정해, 시즌별 성적 흐름을
+            비교합니다.
           </p>
         </div>
 
-        <FilterBar
-          availableTeams={availableTeams}
-          availableYears={availableYears}
-          initialTeams={selectedTeams}
-          initialYearRange={{ from: yearFrom, to: yearTo }}
-          initialMetric={metric}
-        />
-
-        <Suspense
-          fallback={
-            <div className="card-sporty h-[500px] flex items-center justify-center">
-              <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
-            </div>
-          }
-        >
-          {metric === 'powerRank' ? (
-            <RankTrajectoryChart data={trajectoryData} maxRank={10} />
-          ) : (
-            <TrajectoryLineChart
-              data={trajectoryData}
-              metric={metric}
-              yDomain="auto"
+        {/* 대시보드 레이아웃: 좌측 사이드바 + 우측 차트/요약 */}
+        <div className="flex flex-col md:flex-row gap-6 lg:gap-8 items-start">
+          {/* 사이드바: 필터 */}
+          <aside className="w-full md:w-72 lg:w-80 shrink-0 md:sticky md:top-24 self-start">
+            <FilterBar
+              availableTeams={availableTeams}
+              availableYears={availableYears}
+              initialTeams={selectedTeams}
+              initialYearRange={{ from: yearFrom, to: yearTo }}
+              initialMetric={metric}
             />
-          )}
-        </Suspense>
+          </aside>
 
-        {selectedTeams.length > 0 && (
-          <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">팀 요약</h2>
-            <TeamSummaryCards data={allData} teams={selectedTeams} />
-          </div>
-        )}
+          {/* 메인 영역: 차트 + 팀 요약 */}
+          <section className="flex-1 space-y-6">
+            <Suspense
+              fallback={
+                <div className="card-sporty h-[500px] flex items-center justify-center">
+                  <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+                </div>
+              }
+            >
+              {metric === 'powerRank' ? (
+                <RankTrajectoryChart data={trajectoryData} maxRank={10} />
+              ) : (
+                <TrajectoryLineChart
+                  data={trajectoryData}
+                  metric={metric}
+                  yDomain="auto"
+                />
+              )}
+            </Suspense>
+
+            {selectedTeams.length > 0 && (
+              <div>
+                <h2 className="text-lg md:text-xl font-bold text-gray-900 dark:text-gray-100 mb-3">
+                  팀 요약
+                </h2>
+                <TeamSummaryCards data={allData} teams={selectedTeams} />
+              </div>
+            )}
+          </section>
+        </div>
       </div>
-    </div>
+    </main>
   )
 }
 

@@ -13,6 +13,10 @@ export type PlayerMetricKey =
   | 'ERA'
   | 'FIP'
   | 'IP'
+  | 'WHIP'
+  | 'K9'
+  | 'BB9'
+  | 'KBB'
 
 export interface PlayerSeriesPoint {
   x: number // year
@@ -138,6 +142,29 @@ export function buildPitcherTrajectoryData(
       case 'IP':
         value = record.IP || 0
         break
+      case 'WHIP': {
+        const rawWhip = record.WHIP
+        value = typeof rawWhip === 'number' ? rawWhip : 0
+        break
+      }
+      case 'K9': {
+        const so = typeof record.SO === 'number' ? record.SO : 0
+        const ip = typeof record.IP === 'number' ? record.IP : 0
+        value = ip > 0 ? (so * 9) / ip : 0
+        break
+      }
+      case 'BB9': {
+        const bb = typeof record.BB === 'number' ? record.BB : 0
+        const ip = typeof record.IP === 'number' ? record.IP : 0
+        value = ip > 0 ? (bb * 9) / ip : 0
+        break
+      }
+      case 'KBB': {
+        const so = typeof record.SO === 'number' ? record.SO : 0
+        const bb = typeof record.BB === 'number' ? record.BB : 0
+        value = bb > 0 ? so / bb : 0
+        break
+      }
       default:
         value = 0
     }

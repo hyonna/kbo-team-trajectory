@@ -1,5 +1,3 @@
-import { InfoIcon } from '@/components/ui/InfoIcon'
-
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-linear-to-br from-gray-50 via-blue-50/30 to-purple-50/30 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 p-8">
@@ -16,10 +14,6 @@ export default function AboutPage() {
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-400">
             시즌별 성과 지표로 팀 전력을 재해석하는 데이터 리포트
-          </p>
-          <p className="text-sm text-gray-500 dark:text-gray-500 mt-1">
-            본 프로젝트는 Cursor로 개발되었으며, Kaggle KBO 데이터(1982-2025)를
-            사용합니다.
           </p>
         </div>
 
@@ -49,212 +43,7 @@ export default function AboutPage() {
                 Kaggle KBO 시즌별 선수 기록(1982-2025)을 가공해 팀 단위 통계로
                 집계했습니다.
               </p>
-              <p>
-                데이터:{' '}
-                <a
-                  className="text-blue-600 dark:text-blue-400 underline"
-                  href="https://www.kaggle.com/datasets/netsong/kbo-player-dataset-by-regular-season-1982-2025"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Kaggle KBO Player Dataset
-                </a>
-              </p>
-            </div>
-          </section>
-        </div>
 
-        <div className="card-sporty space-y-6">
-          <section className="space-y-4">
-            <div className="flex items-center gap-2">
-              <h2 className="text-2xl font-bold gradient-text">집계 공식</h2>
-              <span className="text-xs px-2 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-200">
-                핵심 지표
-              </span>
-            </div>
-            <div className="grid gap-6 md:grid-cols-2">
-              <div className="h-full">
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-3 flex items-center gap-2">
-                  타자 지표
-                  <span className="text-[11px] px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-200">
-                    공격
-                  </span>
-                </h3>
-                <div className="bg-white dark:bg-gray-900/60 p-4 rounded-xl space-y-3 text-sm font-mono border border-gray-100 dark:border-gray-800 shadow-sm">
-                  <div className="flex items-start gap-2">
-                    <span className="text-gray-600">
-                      OBP (출루율){' '}
-                      <InfoIcon
-                        label="OBP"
-                        description="출루율: 안타, 볼넷, 사구를 더해 타석 대비 출루 비율"
-                      />
-                    </span>{' '}
-                    ={' '}
-                    <span className="text-gray-900">
-                      (H + BB + HP) / (AB + BB + HP + SF)
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-gray-600">
-                      SLG (장타율){' '}
-                      <InfoIcon
-                        label="SLG"
-                        description="장타율: 총루타 / 타수, 장타 생산력을 나타냄"
-                      />
-                    </span>{' '}
-                    = <span className="text-gray-900">TB / AB</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-gray-600">
-                      OPS{' '}
-                      <InfoIcon
-                        label="OPS"
-                        description="출루율 + 장타율, 공격력을 종합적으로 보는 지표"
-                      />
-                    </span>{' '}
-                    = <span className="text-gray-900">OBP + SLG</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-gray-600">
-                      wRC+{' '}
-                      <InfoIcon
-                        label="wRC+"
-                        description="가중 득점 생산력: 리그 평균 대비 100을 기준으로 상대적 생산성"
-                      />
-                    </span>{' '}
-                    = <span className="text-gray-900">PA 가중 평균</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-gray-600">
-                      Batting WAR{' '}
-                      <InfoIcon
-                        label="Batting WAR"
-                        description="타자의 대체 수준 대비 승리 기여도 합계"
-                      />
-                    </span>{' '}
-                    ={' '}
-                    <span className="text-gray-900">
-                      팀 내 모든 타자의 WAR 합계
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="h-full">
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-3 flex items-center gap-2">
-                  투수 지표
-                  <span className="text-[11px] px-2 py-1 rounded-full bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-200">
-                    투수
-                  </span>
-                </h3>
-                <div className="bg-white dark:bg-gray-900/60 p-4 rounded-xl space-y-3 text-sm font-mono border border-gray-100 dark:border-gray-800 shadow-sm">
-                  <div className="flex items-start gap-2">
-                    <span className="text-gray-600">
-                      ERA{' '}
-                      <InfoIcon
-                        label="ERA"
-                        description="평균자책점: 9이닝당 실점(자책점) 평균, 낮을수록 좋음"
-                      />
-                    </span>{' '}
-                    = <span className="text-gray-900">(ER × 9) / IP</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-gray-600">
-                      FIP{' '}
-                      <InfoIcon
-                        label="FIP"
-                        description="수비 무관 평균자책: 탈삼진/볼넷/피홈런만으로 투수 기여 측정"
-                      />
-                    </span>{' '}
-                    = <span className="text-gray-900">IP 가중 평균</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-gray-600">
-                      WHIP{' '}
-                      <InfoIcon
-                        label="WHIP"
-                        description="이닝당 출루 허용: (피안타+볼넷)/이닝, 낮을수록 좋음"
-                      />
-                    </span>{' '}
-                    = <span className="text-gray-900">(H + BB) / IP</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-gray-600">
-                      Pitching WAR{' '}
-                      <InfoIcon
-                        label="Pitching WAR"
-                        description="투수의 대체 수준 대비 승리 기여도 합계"
-                      />
-                    </span>{' '}
-                    ={' '}
-                    <span className="text-gray-900">
-                      팀 내 모든 투수의 WAR 합계
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="md:col-span-2">
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-3 flex items-center gap-2">
-                  파생 지표
-                  <span className="text-[11px] px-2 py-1 rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-200">
-                    팀 전력
-                  </span>
-                </h3>
-                <div className="bg-white dark:bg-gray-900/60 p-4 rounded-xl space-y-3 text-sm font-mono border border-gray-100 dark:border-gray-800 shadow-sm">
-                  <div className="flex items-start gap-2">
-                    <span className="text-gray-600">
-                      Total WAR{' '}
-                      <InfoIcon
-                        label="Total WAR"
-                        description="타자 WAR + 투수 WAR 합계로 본 팀 전체 기여도"
-                      />
-                    </span>{' '}
-                    ={' '}
-                    <span className="text-gray-900">
-                      Batting WAR + Pitching WAR
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-gray-600">
-                      Power Score{' '}
-                      <InfoIcon
-                        label="Power Score"
-                        description="팀 전력 점수: 타자 WAR 55% + 투수 WAR 45% 가중합"
-                      />
-                    </span>{' '}
-                    ={' '}
-                    <span className="text-gray-900">
-                      Batting WAR × 0.55 + Pitching WAR × 0.45
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-gray-600">
-                      Power Rank{' '}
-                      <InfoIcon
-                        label="Power Rank"
-                        description="Power Score를 연도별로 내림차순 정렬하여 부여한 순위"
-                      />
-                    </span>{' '}
-                    ={' '}
-                    <span className="text-gray-900">
-                      연도별 Power Score 기준 내림차순 정렬 후 순위 부여
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold gradient-text mb-4">
-              데이터 출처
-            </h2>
-            <div className="prose prose-gray dark:prose-invert max-w-none">
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                본 프로젝트는 1982년부터 2025년까지의 KBO 선수 시즌별 기록을
-                기반으로 팀 단위 통계를 집계합니다.
-              </p>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                 원본 데이터는{' '}
                 <a
@@ -275,7 +64,246 @@ export default function AboutPage() {
               </ul>
             </div>
           </section>
+        </div>
 
+        {/* 집계 공식 박스 */}
+        <div className="card-sporty space-y-6">
+          <section className="space-y-4">
+            <div className="flex items-center gap-2">
+              <h2 className="text-2xl font-bold gradient-text">집계 공식</h2>
+              <span className="text-xs px-2 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-200">
+                핵심 지표
+              </span>
+            </div>
+            <div className="grid gap-6 md:grid-cols-2">
+              <div className="h-full">
+                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-3 flex items-center gap-2">
+                  타자 지표
+                  <span className="text-[11px] px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-200">
+                    공격
+                  </span>
+                </h3>
+                <div className="bg-white dark:bg-gray-900/60 p-4 rounded-xl space-y-3 text-sm border border-gray-100 dark:border-gray-800 shadow-sm">
+                  {/* OBP */}
+                  <div className="rounded-lg bg-gray-50/80 dark:bg-gray-900/80 px-3 py-2.5">
+                    <div className="flex items-baseline justify-between gap-3">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">
+                        OBP (출루율)
+                      </span>
+                      <span className="text-[11px] text-gray-500 dark:text-gray-400">
+                        (H + BB + HP) / (AB + BB + HP + SF)
+                      </span>
+                    </div>
+                    <p className="mt-2 pt-2 text-xs text-gray-700 dark:text-gray-300 border-t border-dashed border-gray-200 dark:border-gray-700">
+                      타석 대비 얼마나 자주 나가는지 보는 지표입니다. 안타,
+                      볼넷, 사구를 모두 포함합니다.
+                    </p>
+                  </div>
+
+                  {/* SLG */}
+                  <div className="rounded-lg bg-gray-50/80 dark:bg-gray-900/80 px-3 py-2.5">
+                    <div className="flex items-baseline justify-between gap-3">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">
+                        SLG (장타율)
+                      </span>
+                      <span className="text-[11px] text-gray-500 dark:text-gray-400">
+                        TB / AB
+                      </span>
+                    </div>
+                    <p className="mt-2 pt-2 text-xs text-gray-700 dark:text-gray-300 border-t border-dashed border-gray-200 dark:border-gray-700">
+                      한 타석에서 평균 몇 루타를 쳐냈는지 나타내는 지표로, 장타
+                      생산력을 보여줍니다.
+                    </p>
+                  </div>
+
+                  {/* OPS */}
+                  <div className="rounded-lg bg-gray-50/80 dark:bg-gray-900/80 px-3 py-2.5">
+                    <div className="flex items-baseline justify-between gap-3">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">
+                        OPS
+                      </span>
+                      <span className="text-[11px] text-gray-500 dark:text-gray-400">
+                        OBP + SLG
+                      </span>
+                    </div>
+                    <p className="mt-2 pt-2 text-xs text-gray-700 dark:text-gray-300 border-t border-dashed border-gray-200 dark:border-gray-700">
+                      출루 능력(OBP)과 장타력(SLG)을 합쳐 타자의 공격력을 한
+                      번에 보는 종합 지표입니다.
+                    </p>
+                  </div>
+
+                  {/* wRC+ */}
+                  <div className="rounded-lg bg-gray-50/80 dark:bg-gray-900/80 px-3 py-2.5">
+                    <div className="flex items-baseline justify-between gap-3">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">
+                        wRC+ (가중 득점 생산력)
+                      </span>
+                      <span className="text-[11px] text-gray-500 dark:text-gray-400">
+                        리그 평균 = 100
+                      </span>
+                    </div>
+                    <p className="mt-2 pt-2 text-xs text-gray-700 dark:text-gray-300 border-t border-dashed border-gray-200 dark:border-gray-700">
+                      리그 평균을 100으로 두고, 타자가 평균 대비 어느 정도
+                      득점을 만들어냈는지 보는 지표입니다. 예를 들어 120이면
+                      리그 평균보다 20% 더 잘한 것입니다.
+                    </p>
+                  </div>
+
+                  {/* Batting WAR */}
+                  <div className="rounded-lg bg-gray-50/80 dark:bg-gray-900/80 px-3 py-2.5">
+                    <div className="flex items-baseline justify-between gap-3">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">
+                        Batting WAR (타자 WAR)
+                      </span>
+                      <span className="text-[11px] text-gray-500 dark:text-gray-400">
+                        팀 내 타자 WAR 합계
+                      </span>
+                    </div>
+                    <p className="mt-2 pt-2 text-xs text-gray-700 dark:text-gray-300 border-t border-dashed border-gray-200 dark:border-gray-700">
+                      대체 수준 타자와 비교했을 때, 팀 타자들이 승리에 얼마나
+                      기여했는지를 승수로 환산한 지표입니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="h-full">
+                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-3 flex items-center gap-2">
+                  투수 지표
+                  <span className="text-[11px] px-2 py-1 rounded-full bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-200">
+                    투수
+                  </span>
+                </h3>
+                <div className="bg-white dark:bg-gray-900/60 p-4 rounded-xl space-y-3 text-sm border border-gray-100 dark:border-gray-800 shadow-sm">
+                  {/* ERA */}
+                  <div className="rounded-lg bg-gray-50/80 dark:bg-gray-900/80 px-3 py-2.5">
+                    <div className="flex items-baseline justify-between gap-3">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">
+                        ERA (평균자책점)
+                      </span>
+                      <span className="text-[11px] text-gray-500 dark:text-gray-400">
+                        (ER × 9) / IP
+                      </span>
+                    </div>
+                    <p className="mt-2 pt-2 text-xs text-gray-700 dark:text-gray-300 border-t border-dashed border-gray-200 dark:border-gray-700">
+                      9이닝 기준으로 몇 점을 내줬는지 나타내는 지표입니다.
+                      낮을수록 좋은 성적입니다.
+                    </p>
+                  </div>
+
+                  {/* FIP */}
+                  <div className="rounded-lg bg-gray-50/80 dark:bg-gray-900/80 px-3 py-2.5">
+                    <div className="flex items-baseline justify-between gap-3">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">
+                        FIP (수비 무관 평균자책)
+                      </span>
+                      <span className="text-[11px] text-gray-500 dark:text-gray-400">
+                        탈삼진 / 볼넷 / 피홈런 기반
+                      </span>
+                    </div>
+                    <p className="mt-2 pt-2 text-xs text-gray-700 dark:text-gray-300 border-t border-dashed border-gray-200 dark:border-gray-700">
+                      수비의 영향을 배제하고, 탈삼진·볼넷·피홈런만으로 투수의
+                      기여를 평가하는 지표입니다.
+                    </p>
+                  </div>
+
+                  {/* WHIP */}
+                  <div className="rounded-lg bg-gray-50/80 dark:bg-gray-900/80 px-3 py-2.5">
+                    <div className="flex items-baseline justify-between gap-3">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">
+                        WHIP
+                      </span>
+                      <span className="text-[11px] text-gray-500 dark:text-gray-400">
+                        (H + BB) / IP
+                      </span>
+                    </div>
+                    <p className="mt-2 pt-2 text-xs text-gray-700 dark:text-gray-300 border-t border-dashed border-gray-200 dark:border-gray-700">
+                      이닝당 얼마나 많은 타자를 출루시켰는지 보는 지표입니다.
+                      낮을수록 좋습니다.
+                    </p>
+                  </div>
+
+                  {/* Pitching WAR */}
+                  <div className="rounded-lg bg-gray-50/80 dark:bg-gray-900/80 px-3 py-2.5">
+                    <div className="flex items-baseline justify-between gap-3">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">
+                        Pitching WAR (투수 WAR)
+                      </span>
+                      <span className="text-[11px] text-gray-500 dark:text-gray-400">
+                        팀 내 투수 WAR 합계
+                      </span>
+                    </div>
+                    <p className="mt-2 pt-2 text-xs text-gray-700 dark:text-gray-300 border-t border-dashed border-gray-200 dark:border-gray-700">
+                      대체 수준 투수와 비교했을 때, 투수가 팀 승리에 얼마나
+                      기여했는지 승수로 환산한 지표입니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="md:col-span-2">
+                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-3 flex items-center gap-2">
+                  파생 지표
+                  <span className="text-[11px] px-2 py-1 rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-200">
+                    팀 전력
+                  </span>
+                </h3>
+                <div className="bg-white dark:bg-gray-900/60 p-4 rounded-xl space-y-3 text-sm border border-gray-100 dark:border-gray-800 shadow-sm">
+                  {/* Total WAR */}
+                  <div className="rounded-lg bg-gray-50/80 dark:bg-gray-900/80 px-3 py-2.5">
+                    <div className="flex items-baseline justify-between gap-3">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">
+                        Total WAR
+                      </span>
+                      <span className="text-[11px] text-gray-500 dark:text-gray-400">
+                        Batting WAR + Pitching WAR
+                      </span>
+                    </div>
+                    <p className="mt-2 pt-2 text-xs text-gray-700 dark:text-gray-300 border-t border-dashed border-gray-200 dark:border-gray-700">
+                      팀 안의 타자 WAR와 투수 WAR를 모두 더해, 팀 전체가 대체
+                      수준 대비 얼마나 승리를 더 가져왔는지 보는 지표입니다.
+                    </p>
+                  </div>
+
+                  {/* Power Score */}
+                  <div className="rounded-lg bg-gray-50/80 dark:bg-gray-900/80 px-3 py-2.5">
+                    <div className="flex items-baseline justify-between gap-3">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">
+                        Power Score
+                      </span>
+                      <span className="text-[11px] text-gray-500 dark:text-gray-400">
+                        Batting WAR × 0.55 + Pitching WAR × 0.45
+                      </span>
+                    </div>
+                    <p className="mt-2 pt-2 text-xs text-gray-700 dark:text-gray-300 border-t border-dashed border-gray-200 dark:border-gray-700">
+                      타자 기여도 55%, 투수 기여도 45%로 가중치를 둔 팀 전력
+                      점수입니다. 값이 높을수록 전력이 강한 팀으로 해석합니다.
+                    </p>
+                  </div>
+
+                  {/* Power Rank */}
+                  <div className="rounded-lg bg-gray-50/80 dark:bg-gray-900/80 px-3 py-2.5">
+                    <div className="flex items-baseline justify-between gap-3">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">
+                        Power Rank
+                      </span>
+                      <span className="text-[11px] text-gray-500 dark:text-gray-400">
+                        연도별 Power Score 순위
+                      </span>
+                    </div>
+                    <p className="mt-2 pt-2 text-xs text-gray-700 dark:text-gray-300 border-t border-dashed border-gray-200 dark:border-gray-700">
+                      같은 연도 안에서 Power Score를 내림차순으로 정렬해 매긴
+                      순위입니다. 1위가 가장 높은 전력으로 평가된 팀입니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        {/* 데이터 출처 / 로드맵 / 기술 스택 박스 */}
+        <div className="card-sporty space-y-6">
           <section>
             <h2 className="text-2xl font-bold gradient-text mb-4">
               향후 로드맵
@@ -325,16 +353,8 @@ export default function AboutPage() {
             </div>
             <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                <strong>개발 도구:</strong> 본 프로젝트는{' '}
-                <a
-                  href="https://cursor.sh"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 underline font-semibold"
-                >
-                  Cursor
-                </a>
-                로 개발되었습니다.
+                본 프로젝트는 Cursor로 개발되었으며, Kaggle KBO
+                데이터(1982-2025)를 사용합니다.
               </p>
             </div>
           </section>

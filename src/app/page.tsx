@@ -142,29 +142,40 @@ async function HomeContent({ searchParams }: HomeContentProps) {
   )
 
   return (
-    <main className="min-h-screen bg-linear-to-br from-gray-50 via-blue-50/30 to-purple-50/30 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 p-8">
-      <div className="max-w-7xl mx-auto space-y-8">
-        <div className="text-center mb-12 animate-fade-in">
-          <h1 className="text-5xl font-extrabold gradient-text mb-4">
+    <main className="min-h-screen bg-linear-to-br from-gray-50 via-blue-50/30 to-purple-50/30 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 p-4 md:p-8">
+      <div className="mx-auto space-y-6">
+        {/* 헤더 */}
+        <div className="animate-fade-in">
+          <h1 className="text-2xl md:text-3xl font-extrabold gradient-text mb-1">
             KBO Team Trajectory
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-400">
-            KBO 팀들의 시즌별 성적 흐름을 시각화합니다
+          <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400">
+            기준 연도를 선택해, 해당 시즌 기준으로 팀 전력 흐름을 대시보드로
+            확인합니다.
           </p>
         </div>
 
-        <YearSelector
-          availableYears={availableYears}
-          initialYear={selectedYear}
-        />
+        {/* 대시보드 레이아웃: 좌측 고정 사이드바 + 우측 차트 영역 */}
+        <div className="flex flex-col md:flex-row gap-6 lg:gap-8 items-start">
+          {/* 사이드바: 기준 연도 선택 (스크롤 시 상단 고정) */}
+          <aside className="w-full md:w-72 lg:w-80 shrink-0 md:sticky md:top-24 self-start">
+            <YearSelector
+              availableYears={availableYears}
+              initialYear={selectedYear}
+            />
+          </aside>
 
-        <ChartSection
-          rankData={rankData}
-          totalWarData={totalWarData}
-          rows={rows}
-          selectedYear={selectedYear}
-          teamsForYear={teamsForYear}
-        />
+          {/* 메인 차트 영역 */}
+          <section className="flex-1 space-y-6">
+            <ChartSection
+              rankData={rankData}
+              totalWarData={totalWarData}
+              rows={rows}
+              selectedYear={selectedYear}
+              teamsForYear={teamsForYear}
+            />
+          </section>
+        </div>
       </div>
     </main>
   )

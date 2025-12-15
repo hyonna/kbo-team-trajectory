@@ -33,10 +33,10 @@ export function formatNumber(
   }
 
   // 불필요한 소수점 제거
+  // - 정수형(decimals === 0)만 .0 제거
+  // - 소수 자릿수가 있는 경우에는 0도 그대로 유지 (예: 1.20, 3.00)
   if (decimals === 0) {
     formatted = formatted.replace(/\.0+$/, '')
-  } else {
-    formatted = formatted.replace(/\.?0+$/, '')
   }
 
   return unit ? `${formatted}${unit}` : formatted

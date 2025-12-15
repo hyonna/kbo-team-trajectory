@@ -1,6 +1,5 @@
 'use client'
 
-import DeltaBadge from '@/components/snapshot/DeltaBadge'
 import LegendChips from '@/components/ui/LegendChips'
 import TooltipCard, { TooltipRow } from '@/components/ui/TooltipCard'
 import { getTeamColor } from '@/lib/chart/colors'
@@ -112,13 +111,19 @@ export default function SnapshotBarChartWithDelta({
   }))
 
   const formatOptions = getMetricFormat(metric)
-  const yLabel = metric
+  const metricLabel =
+    metric === 'powerScore'
+      ? 'Power Score'
+      : metric === 'totalWar'
+        ? 'Total WAR'
+        : metric
+  const yLabel = metricLabel
 
   return (
     <>
       <ChartContainer
-        title={`${year}년 ${metric} 비교`}
-        description={`${year}년도 팀별 ${metric} 비교입니다.`}
+        title={`${year}년 ${metricLabel} 비교`}
+        description={`${year}년도 팀별 ${metricLabel} 비교입니다.`}
       >
         <ResponsiveContainer width="100%" height={500}>
           <BarChart
@@ -168,18 +173,23 @@ export default function SnapshotBarChartWithDelta({
       </ChartContainer>
       <div className="mt-6 card-sporty">
         <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">
-          팀별 {metric} 목록
+          팀별 {metricLabel} 목록
         </h3>
         <div className="overflow-x-auto">
           <table className="w-full border-collapse">
             <thead>
               <tr className="bg-gray-100 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 text-sm text-gray-700 dark:text-gray-300">
-                <th className="px-4 py-3 text-left w-14">순위</th>
-                <th className="px-4 py-3 text-left">팀</th>
-                <th className="px-4 py-3 text-left">{metric}</th>
+                <th className="px-4 py-3 text-center w-18">순위</th>
+                <th className="px-4 py-3 text-center">팀</th>
+                <th className="px-4 py-3 text-center text-xs md:text-sm text-gray-600 dark:text-gray-300">
+                  전년 {metricLabel}
+                </th>
+                <th className="px-4 py-3 text-center text-xs md:text-sm text-gray-600 dark:text-gray-300">
+                  현재 {metricLabel}
+                </th>
                 {previousYear !== undefined && (
-                  <th className="px-4 py-3 text-left">
-                    Δ ({previousYear} 대비)
+                  <th className="px-4 py-3 text-center text-xs md:text-sm text-gray-600 dark:text-gray-300">
+                    전년 대비
                   </th>
                 )}
               </tr>
@@ -194,24 +204,50 @@ export default function SnapshotBarChartWithDelta({
                       : 'bg-gray-50 dark:bg-gray-900/70'
                   }`}
                 >
-                  <td className="px-4 py-3 text-sm font-semibold text-gray-900 dark:text-gray-100">
+                  <td className="px-4 py-3 text-sm font-semibold text-gray-900 dark:text-gray-100 text-center">
                     {index + 1}
                   </td>
-                  <td className="px-4 py-3 text-sm font-semibold text-gray-900 dark:text-gray-100">
+                  <td className="px-4 py-3 text-sm font-semibold text-gray-900 dark:text-gray-100 text-center">
                     {item.team}
                   </td>
-                  <td className="px-4 py-3 text-sm text-gray-800 dark:text-gray-200">
+                  <td className="px-4 py-3 text-sm text-gray-500 dark:text-gray-400 text-center">
+                    {item.previous !== null
+                      ? formatNumber(item.previous as number, formatOptions)
+                      : '-'}
+                  </td>
+                  <td className="px-4 py-3 text-sm text-gray-800 dark:text-gray-200 text-center">
                     {formatNumber(item.value, formatOptions)}
                   </td>
                   {previousYear !== undefined && (
-                    <td className="px-4 py-3">
-                      <DeltaBadge
-                        current={item.value}
-                        previous={item.previous}
-                        formatValue={value =>
-                          formatNumber(value, formatOptions)
-                        }
-                      />
+                    <td className="px-4 py-3 text-sm text-center">
+                      {item.previous !== null && item.previous !== 0 ? (
+                        (() => {
+                          const delta =
+                            ((item.value - (item.previous as number)) /
+                              Math.abs(item.previous as number)) *
+                            100
+                          const isPositive = delta > 0
+                          const isZero = Math.abs(delta) < 0.0001
+                          const colorClass = isZero
+                            ? 'text-gray-500 dark:text-gray-400'
+                            : isPositive
+                              ? 'text-red-600 dark:text-red-400'
+                              : 'text-blue-600 dark:text-blue-400'
+                          const sign = isZero ? '±' : isPositive ? '+' : '-'
+                          return (
+                            <span
+                              className={`inline-flex items-center gap-1 ${colorClass}`}
+                            >
+                              {sign}
+                              {Math.abs(delta).toFixed(1)}%
+                            </span>
+                          )
+                        })()
+                      ) : (
+                        <span className="text-xs text-gray-400 dark:text-gray-500">
+                          -
+                        </span>
+                      )}
                     </td>
                   )}
                 </tr>

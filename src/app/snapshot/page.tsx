@@ -1,10 +1,10 @@
-import { Suspense } from 'react'
-import YearSelector from '@/components/snapshot/YearSelector'
-import MetricSelector from '@/components/snapshot/MetricSelector'
 import SnapshotBarChartWithDelta from '@/components/charts/SnapshotBarChartWithDelta'
-import { loadTeamSeasons, getYears } from '@/lib/dataset/loadTeamSeason'
-import type { MetricKey } from '@/lib/chart/types'
+import MetricSelector from '@/components/snapshot/MetricSelector'
+import YearSelector from '@/components/snapshot/YearSelector'
 import { PageSkeleton } from '@/components/ui/Skeleton'
+import type { MetricKey } from '@/lib/chart/types'
+import { getYears, loadTeamSeasons } from '@/lib/dataset/loadTeamSeason'
+import { Suspense } from 'react'
 
 interface SnapshotPageProps {
   searchParams: Promise<{
@@ -41,33 +41,41 @@ async function SnapshotContent({ searchParams }: SnapshotContentProps) {
     currentYearIndex > 0 ? availableYears[currentYearIndex - 1] : undefined
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-gray-50 via-blue-50/30 to-purple-50/30 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 p-8">
-      <div className="max-w-7xl mx-auto space-y-8">
-        <div className="text-center mb-12 animate-fade-in">
-          <h1 className="text-5xl font-extrabold gradient-text mb-4">
-            연도별 스냅샷 비교
+    <main className="min-h-screen bg-linear-to-br from-gray-50 via-blue-50/30 to-purple-50/30 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 p-4 md:p-8">
+      <div className="mx-auto space-y-6">
+        {/* 헤더 */}
+        <div className="animate-fade-in">
+          <h1 className="text-2xl md:text-3xl font-extrabold gradient-text mb-1">
+            연도별 팀 성적 비교
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-400">
-            특정 연도의 팀별 성적을 비교하고 전년 대비 변화를 확인합니다
+          <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400">
+            기준 연도와 지표를 선택해 팀별 전력과 전년 대비 변화를 비교합니다.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <YearSelector
-            availableYears={availableYears}
-            initialYear={selectedYear}
-          />
-          <MetricSelector initialMetric={metric} />
-        </div>
+        {/* 대시보드 레이아웃: 좌측 사이드바 + 우측 차트 */}
+        <div className="flex flex-col md:flex-row gap-6 lg:gap-8 items-start">
+          {/* 사이드바: 연도 / 지표 선택 */}
+          <aside className="w-full md:w-72 lg:w-80 shrink-0 md:sticky md:top-24 self-start space-y-4">
+            <YearSelector
+              availableYears={availableYears}
+              initialYear={selectedYear}
+            />
+            <MetricSelector initialMetric={metric} />
+          </aside>
 
-        <SnapshotBarChartWithDelta
-          rows={allData}
-          year={selectedYear}
-          metric={metric as MetricKey}
-          previousYear={previousYear}
-        />
+          {/* 메인 차트 영역 */}
+          <section className="flex-1">
+            <SnapshotBarChartWithDelta
+              rows={allData}
+              year={selectedYear}
+              metric={metric as MetricKey}
+              previousYear={previousYear}
+            />
+          </section>
+        </div>
       </div>
-    </div>
+    </main>
   )
 }
 
