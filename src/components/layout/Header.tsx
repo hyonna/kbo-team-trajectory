@@ -55,6 +55,32 @@ export default function Header() {
             <ThemeToggle />
           </div>
         </div>
+
+        {/* 모바일 내비게이션 (작은 화면에서만 표시) */}
+        <nav className="mt-1 mb-2 md:hidden">
+          <div className="flex justify-center">
+            <div className="inline-flex flex-wrap justify-center items-center gap-1 rounded-2xl bg-gray-100/90 dark:bg-gray-800/90 px-3 py-1.5 shadow-sm border border-gray-200/70 dark:border-gray-700/70">
+              {navigation.map(item => {
+                const isActive =
+                  pathname === item.href ||
+                  (item.href !== '/' && pathname?.startsWith(item.href))
+                return (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className={`whitespace-nowrap px-3 py-1.5 rounded-full text-[11px] font-semibold transition-all ${
+                      isActive
+                        ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-sm shadow-blue-500/40'
+                        : 'text-gray-700 dark:text-gray-300 hover:bg-gray-200/80 dark:hover:bg-gray-700/80'
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                )
+              })}
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
   )

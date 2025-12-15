@@ -124,7 +124,7 @@ async function PlayerContent({ searchParams }: PlayerContentProps) {
     <main className="min-h-screen bg-linear-to-br from-gray-50 via-blue-50/30 to-purple-50/30 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 p-4 md:p-8">
       <div className="mx-auto space-y-6">
         {/* 헤더 */}
-        <div className="animate-fade-in">
+        <div className="animate-fade-in text-center md:text-left">
           <h1 className="text-2xl md:text-3xl font-extrabold gradient-text mb-1">
             선수별 추이 분석
           </h1>
