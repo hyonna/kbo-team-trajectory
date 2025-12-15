@@ -1,6 +1,7 @@
 # KBO Team Trajectory
 
-KBO 팀들의 시즌별 성적 흐름을 연도·월·지표 기준으로 시각화하는 인터랙티브 데이터 대시보드 프로젝트입니다.
+KBO 팀들의 시즌별 성적 흐름을 **연도·지표 기준으로 시각화**하는 인터랙티브 데이터 대시보드 프로젝트입니다.  
+홈 / 연도별 팀 성적 비교 / 팀 추이 / 선수 추이 페이지가 모두 **좌측 필터 사이드바 + 우측 차트/테이블** 레이아웃으로 통일된 대시보드 형태입니다.
 
 ## 📊 Power Ranking이란?
 
@@ -10,13 +11,24 @@ KBO 팀들의 시즌별 성적 흐름을 연도·월·지표 기준으로 시각
 
 ## ✨ 주요 특징
 
-- 🎨 **대시보드형 UI/UX**: 스포티하고 트렌디한 카드·그리드 레이아웃, 좌측 필터 사이드바 + 우측 차트/테이블 구조
-- 🌙 **다크 모드 & 무한 깜빡임 최소화**: 초기 스크립트로 다크모드 즉시 적용, 전역 스켈레톤(`app/loading.tsx`)으로 로딩 플래시 감소
-- 🎯 **공식 팀 컬러**: 각 팀의 공식 Primary/Secondary 색상 적용
-- 📊 **인터랙티브 차트**: Recharts 기반, 개선된 툴팁/가독성
-- 🔍 **지표 설명**: About 페이지에서 WAR·OPS·ERA 등 전문용어를 공식 + 한국어 설명으로 정리
-- 📱 **반응형 디자인**: 모바일/태블릿/데스크톱 대응
-- 🔤 **Pretendard 폰트**: 한국어에 최적화
+- 🎨 **대시보드형 UI/UX**
+  - 스포티하고 트렌디한 카드·그리드 레이아웃
+  - 홈 / 연도별 팀 성적 비교 / 팀 추이 / 선수 추이 페이지가 **좌측 필터 사이드바 + 우측 차트/테이블** 구조로 통일
+- 🌙 **다크 모드 & 깜빡임 최소화**
+  - 초기 스크립트로 다크 모드 즉시 적용
+  - 전역 스켈레톤(`app/loading.tsx`) + 페이지별 `PageSkeleton`으로 로딩 플래시 최소화
+- 🎯 **공식 팀 컬러**
+  - 각 팀의 공식 Primary/Secondary 색상 적용 (`src/lib/chart/colors.ts`)
+- 📊 **인터랙티브 차트**
+  - Recharts 기반 라인/바/랭크 차트
+  - 개선된 툴팁, 가독성 높은 Y축 도메인 처리, 상위/하위 구간 시각화
+- 🔍 **지표 설명**
+  - About 페이지에서 WAR·OPS·ERA·FIP·WHIP·wRC+ 등 전문 용어를 **공식 + 한국어 설명**으로 정리
+- 📱 **반응형 디자인**
+  - 모바일/태블릿/데스크톱 대응
+  - 헤더/필터/차트가 화면 폭에 따라 자연스럽게 재배치
+- 🔤 **Pretendard 폰트**
+  - 한국어에 최적화된 Pretendard 폰트를 전역 적용
 
 ## 📈 집계 공식
 
@@ -30,9 +42,13 @@ KBO 팀들의 시즌별 성적 흐름을 연도·월·지표 기준으로 시각
 
 ### 투수 지표
 
+- **IP (이닝)**: 투수가 던진 이닝 수
 - **ERA (평균자책점)** = `(ER × 9) / IP`
-- **FIP (수비 무관 자책점)** = `IP 가중 평균`
+- **FIP (수비 무관 자책점)**: 탈삼진/볼넷/피홈런 기반의 수비 무관 평균자책
 - **WHIP (이닝당 출루 허용)** = `(H + BB) / IP`
+- **K9 (9이닝당 탈삼진)** = `(SO × 9) / IP`
+- **BB9 (9이닝당 볼넷)** = `(BB × 9) / IP`
+- **K/BB (탈삼진/볼넷 비율)** = `SO / BB`
 - **Pitching WAR** = 팀 내 모든 투수의 WAR 합계
 
 ### 파생 지표
@@ -80,21 +96,26 @@ kbo-team-trajectory/
 ├── src/
 │   ├── app/                    # Next.js App Router 페이지
 │   │   ├── about/              # 프로젝트 소개 페이지
-│   │   ├── snapshot/           # 연도별 팀 성적 비교
+│   │   ├── snapshot/           # 연도별 팀 성적 비교 (연도/지표 선택 + 스냅샷 바 차트)
 │   │   ├── team/[team]/        # 팀별 상세 페이지
-│   │   └── trajectory/         # 팀 추이 분석 페이지
+│   │   ├── trajectory/         # 팀 추이 분석 페이지
+│   │   └── player/             # 선수별 추이 분석 페이지
 │   ├── components/
 │   │   ├── charts/              # 차트 컴포넌트
 │   │   │   ├── RankTrajectoryChart.tsx    # 순위 추이 차트
 │   │   │   ├── TrajectoryLineChart.tsx    # 라인 차트
-│   │   │   ├── SnapshotBarChart.tsx       # 바 차트
+│   │   │   ├── SnapshotBarChart.tsx       # 스냅샷 바 차트
+│   │   │   ├── SnapshotBarChartWithDelta.tsx # Δ(전년 대비) 포함 스냅샷 차트
+│   │   │   ├── PlayerLineChart.tsx        # 선수별 추이 라인 차트
 │   │   │   └── ChartContainer.tsx         # 차트 래퍼
 │   │   ├── layout/             # 레이아웃 컴포넌트
 │   │   │   ├── Header.tsx      # 네비게이션 헤더
 │   │   │   └── ThemeToggle.tsx # 다크 모드 토글
-│   │   ├── snapshot/           # 연도별 비교 관련 컴포넌트
+│   │   ├── snapshot/           # 연도별 비교 관련 컴포넌트 (연도/지표 선택 등)
+│   │   ├── home/               # 홈 페이지 전용 컴포넌트 (연도 선택 등)
 │   │   ├── team/               # 팀 페이지 컴포넌트
-│   │   ├── trajectory/         # 추이 분석 컴포넌트
+│   │   ├── trajectory/         # 추이 분석 컴포넌트 (FilterBar, TeamSummaryCards 등)
+│   │   ├── player/             # 선수 추이 페이지 컴포넌트
 │   │   ├── theme/              # 테마 관리
 │   │   │   └── ThemeProvider.tsx
 │   │   └── ui/                 # 공통 UI 컴포넌트
@@ -107,9 +128,10 @@ kbo-team-trajectory/
 │   │   │   ├── domain.ts       # Y축 도메인 계산
 │   │   │   ├── format.ts       # 숫자 포맷팅
 │   │   │   ├── selectors.ts    # 지표 선택 함수
-│   │   │   ├── transform.ts    # 차트용 데이터 변환
+│   │   │   ├── transform.ts    # 팀 차트용 데이터 변환
+│   │   │   ├── transformPlayer.ts # 선수 차트용 데이터 변환
 │   │   │   └── types.ts        # 타입 정의
-│   │   └── dataset/            # 데이터 로더
+│   │   └── dataset/            # 데이터 로더 (팀 시즌 / 선수 시즌 / 팀 리스트 등)
 │   └── scripts/                # 데이터 처리 스크립트
 └── package.json
 ```
@@ -118,8 +140,7 @@ kbo-team-trajectory/
 
 ### 1. 팀 추이 분석 (`/trajectory`)
 
-- 최대 4개 팀 선택하여 비교
-- 연도 범위 선택
+- 좌측 사이드바에서 **팀(최대 4개) · 연도 범위 · 지표**를 선택
 - 다양한 지표 선택 (Power Rank, Power Score, Total WAR, OPS, ERA 등)
 - 연도별 추이 라인 차트 또는 랭킹 차트 표시
 - 선택 팀의 최신 시즌 요약 카드
@@ -127,8 +148,9 @@ kbo-team-trajectory/
 
 ### 2. 연도별 팀 성적 비교 (`/snapshot`)
 
-- 특정 연도의 팀별 성적 비교 + 전년 대비 Δ 표시
-- 막대 차트 + 하단 리스트 테이블(순위/팀/지표/Δ)
+- 좌측 사이드바에서 **연도 · 지표(powerScore/totalWar)** 선택
+- 특정 연도의 팀별 성적 비교 + 전년 대비 Δ(증감률) 표시
+- 막대 차트 + 하단 리스트 테이블(순위/팀/전년값/현재값/전년 대비 %)
 - 지표 선택 박스 다크 모드 지원
 
 ### 3. 팀 상세 페이지 (`/team/[team]`)
@@ -139,14 +161,23 @@ kbo-team-trajectory/
 
 ### 4. 선수 추이 페이지 (`/player`)
 
-- 좌측 사이드바에서 **선수 유형(타자/투수) · 연도 · 팀 · 선수**를 순서대로 선택
-- 선택한 선수의 지표(WAR, OPS, ERA, FIP, WHIP, IP, K9, BB9, K/BB 등)를 시즌별 라인 차트로 시각화
-- 하단 시즌별 상세 테이블(최신 시즌부터 20개씩 “더보기” 로드)
+- 좌측 사이드바에서 **선수 유형(타자/투수) → 연도 → 팀 → 선수**를 순서대로 선택
+- 선택한 선수의 지표를 시즌별 라인 차트로 시각화
+  - 타자: WAR, OPS, PA, AB, H, HR
+  - 투수: WAR, ERA, FIP, WHIP, IP, K9, BB9, K/BB
+- 하단 시즌별 상세 테이블
+  - 최신 시즌부터 20개씩 “더보기” 로드
+  - 투수 테이블에는 WHIP, K9, BB9, K/BB 컬럼 포함
 
 ### 5. 홈 페이지 (`/`)
 
-- 좌측 사이드바에서 기준 연도 선택 (드롭다운 + 최근 10년 빠른 선택 버튼)
-- 기준 연도에 존재하는 팀만 대상으로 전체 팀 순위/전력 추이, Total WAR, 최신 시즌 팀 비교 차트를 표시
+- 좌측 사이드바에서 **기준 연도 선택**
+  - 모든 사용 가능한 연도 드롭다운
+  - 최근 10개 연도 빠른 선택 버튼
+- 기준 연도에 존재하는 팀만 대상으로:
+  - 전체 팀 순위(파워랭킹) 추이
+  - Total WAR 추이
+  - 최신 시즌 팀별 Power Score 스냅샷 차트를 표시
 
 ## 🎨 디자인 시스템
 
@@ -225,13 +256,3 @@ kbo-team-trajectory/
 ## 📝 라이선스
 
 이 프로젝트는 개인 프로젝트입니다.
-
-## 🤝 기여
-
-이슈 및 제안사항은 GitHub Issues를 통해 제출해주세요.
-
-## 🙏 감사의 말
-
-- 데이터 제공: [Kaggle - KBO Player Dataset](https://www.kaggle.com/datasets/netsong/kbo-player-dataset-by-regular-season-1982-2025)
-- 폰트: [Pretendard](https://github.com/orioncactus/pretendard)
-- 개발 도구: [Cursor](https://cursor.sh)
