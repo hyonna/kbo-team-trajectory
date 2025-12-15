@@ -4,6 +4,7 @@ import MetricSelector from '@/components/snapshot/MetricSelector'
 import SnapshotBarChartWithDelta from '@/components/charts/SnapshotBarChartWithDelta'
 import { loadTeamSeasons, getYears } from '@/lib/dataset/loadTeamSeason'
 import type { MetricKey } from '@/lib/chart/types'
+import { PageSkeleton } from '@/components/ui/Skeleton'
 
 interface SnapshotPageProps {
   searchParams: Promise<{
@@ -40,7 +41,7 @@ async function SnapshotContent({ searchParams }: SnapshotContentProps) {
     currentYearIndex > 0 ? availableYears[currentYearIndex - 1] : undefined
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50/30 to-purple-50/30 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 p-8">
+    <div className="min-h-screen bg-linear-to-br from-gray-50 via-blue-50/30 to-purple-50/30 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 p-8">
       <div className="max-w-7xl mx-auto space-y-8">
         <div className="text-center mb-12 animate-fade-in">
           <h1 className="text-5xl font-extrabold gradient-text mb-4">
@@ -76,7 +77,7 @@ export default async function SnapshotPage({
   const resolvedParams = await searchParams
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<PageSkeleton />}>
       <SnapshotContent searchParams={resolvedParams} />
     </Suspense>
   )

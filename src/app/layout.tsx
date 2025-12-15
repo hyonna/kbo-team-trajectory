@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import { ThemeProvider } from '@/components/theme/ThemeProvider'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'KBO Team Trajectory',
@@ -15,6 +16,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" suppressHydrationWarning>
+      <head>
+        <Script id="theme-init" strategy="beforeInteractive">
+          {`
+            try {
+              const saved = localStorage.getItem('theme');
+              const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+              const theme = saved ? saved : (prefersDark ? 'dark' : 'light');
+              if (theme === 'dark') {
+                document.documentElement.classList.add('dark');
+              } else {
+                document.documentElement.classList.remove('dark');
+              }
+            } catch (e) {}
+          `}
+        </Script>
+      </head>
       <body className="bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors">
         <ThemeProvider>
           <Header />

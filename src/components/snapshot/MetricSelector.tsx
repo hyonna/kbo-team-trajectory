@@ -50,14 +50,14 @@ export default function MetricSelector({
   }, [metric, router, searchParams])
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-      <label className="block text-sm font-medium text-gray-700 mb-2">
+    <div className="card-sporty">
+      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
         지표 선택
       </label>
       <select
         value={metric}
         onChange={e => setMetric(e.target.value as 'powerScore' | 'totalWar')}
-        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full px-3 py-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-md text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 transition"
       >
         <option value="powerScore">Power Score</option>
         <option value="totalWar">Total WAR</option>

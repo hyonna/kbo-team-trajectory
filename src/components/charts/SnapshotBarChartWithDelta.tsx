@@ -1,24 +1,24 @@
 'use client'
 
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-  Cell,
-} from 'recharts'
-import type { TeamSeason, MetricKey } from '@/lib/chart/types'
-import { getMetric } from '@/lib/chart/selectors'
-import { getTeamColor } from '@/lib/chart/colors'
-import { formatNumber, getMetricFormat } from '@/lib/chart/format'
-import ChartContainer from './ChartContainer'
+import DeltaBadge from '@/components/snapshot/DeltaBadge'
 import LegendChips from '@/components/ui/LegendChips'
 import TooltipCard, { TooltipRow } from '@/components/ui/TooltipCard'
-import DeltaBadge from '@/components/snapshot/DeltaBadge'
+import { getTeamColor } from '@/lib/chart/colors'
+import { formatNumber, getMetricFormat } from '@/lib/chart/format'
+import { getMetric } from '@/lib/chart/selectors'
+import type { MetricKey, TeamSeason } from '@/lib/chart/types'
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Cell,
+  Legend,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from 'recharts'
+import ChartContainer from './ChartContainer'
 
 interface SnapshotBarChartWithDeltaProps {
   rows: TeamSeason[]
@@ -115,78 +115,111 @@ export default function SnapshotBarChartWithDelta({
   const yLabel = metric
 
   return (
-    <ChartContainer
-      title={`${year}년 ${metric} 비교`}
-      description={`${year}년도 팀별 ${metric} 비교입니다.`}
-    >
-      <ResponsiveContainer width="100%" height={500}>
-        <BarChart
-          data={chartData}
-          margin={{ top: 20, right: 30, left: 20, bottom: 60 }}
-        >
-          <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-          <XAxis
-            dataKey="team"
-            stroke="#6b7280"
-            tick={{ fill: '#6b7280' }}
-            angle={-45}
-            textAnchor="end"
-            height={80}
-            label={{
-              value: '팀',
-              position: 'insideBottom',
-              offset: -10,
-              style: { fill: '#6b7280' },
-            }}
-          />
-          <YAxis
-            stroke="#6b7280"
-            tick={{ fill: '#6b7280' }}
-            label={{
-              value: yLabel,
-              angle: -90,
-              position: 'insideLeft',
-              style: { fill: '#6b7280' },
-            }}
-          />
-          <Tooltip content={<CustomTooltip metric={metric} />} />
-          <Legend
-            wrapperStyle={{ paddingTop: '20px' }}
-            iconType="square"
-            formatter={value => value}
-          />
-          <Bar dataKey="value" radius={[4, 4, 0, 0]}>
-            {chartData.map((item, index) => (
-              <Cell key={item.team} fill={getTeamColor(item.team, index)} />
-            ))}
-          </Bar>
-        </BarChart>
-      </ResponsiveContainer>
-      <div className="mt-4 space-y-2">
-        <div className="flex flex-wrap gap-2">
-          {chartData.map(item => (
-            <div
-              key={item.team}
-              className="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded-md"
-            >
-              <span className="text-sm font-medium text-gray-900">
-                {item.team}:
-              </span>
-              <span className="text-sm text-gray-700">
-                {formatNumber(item.value, formatOptions)}
-              </span>
-              {previousYear !== undefined && (
-                <DeltaBadge
-                  current={item.value}
-                  previous={item.previous}
-                  formatValue={value => formatNumber(value, formatOptions)}
-                />
-              )}
-            </div>
-          ))}
+    <>
+      <ChartContainer
+        title={`${year}년 ${metric} 비교`}
+        description={`${year}년도 팀별 ${metric} 비교입니다.`}
+      >
+        <ResponsiveContainer width="100%" height={500}>
+          <BarChart
+            data={chartData}
+            margin={{ top: 20, right: 30, left: 20, bottom: 60 }}
+          >
+            <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+            <XAxis
+              dataKey="team"
+              stroke="#6b7280"
+              tick={{ fill: '#6b7280' }}
+              angle={-45}
+              textAnchor="end"
+              height={80}
+              label={{
+                value: '팀',
+                position: 'insideBottom',
+                offset: -10,
+                style: { fill: '#6b7280' },
+              }}
+            />
+            <YAxis
+              stroke="#6b7280"
+              tick={{ fill: '#6b7280' }}
+              label={{
+                value: yLabel,
+                angle: -90,
+                position: 'insideLeft',
+                style: { fill: '#6b7280' },
+              }}
+            />
+            <Tooltip content={<CustomTooltip metric={metric} />} />
+            <Legend
+              wrapperStyle={{ paddingTop: '20px' }}
+              iconType="square"
+              formatter={value => value}
+            />
+            <Bar dataKey="value" radius={[4, 4, 0, 0]}>
+              {chartData.map((item, index) => (
+                <Cell key={item.team} fill={getTeamColor(item.team, index)} />
+              ))}
+            </Bar>
+          </BarChart>
+        </ResponsiveContainer>
+
+        <LegendChips items={legendItems} className="mt-4" />
+      </ChartContainer>
+      <div className="mt-6 card-sporty">
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">
+          팀별 {metric} 목록
+        </h3>
+        <div className="overflow-x-auto">
+          <table className="w-full border-collapse">
+            <thead>
+              <tr className="bg-gray-100 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 text-sm text-gray-700 dark:text-gray-300">
+                <th className="px-4 py-3 text-left w-14">순위</th>
+                <th className="px-4 py-3 text-left">팀</th>
+                <th className="px-4 py-3 text-left">{metric}</th>
+                {previousYear !== undefined && (
+                  <th className="px-4 py-3 text-left">
+                    Δ ({previousYear} 대비)
+                  </th>
+                )}
+              </tr>
+            </thead>
+            <tbody>
+              {chartData.map((item, index) => (
+                <tr
+                  key={item.team}
+                  className={`border-b border-gray-100 dark:border-gray-800 ${
+                    index % 2 === 0
+                      ? 'bg-white dark:bg-gray-900/50'
+                      : 'bg-gray-50 dark:bg-gray-900/70'
+                  }`}
+                >
+                  <td className="px-4 py-3 text-sm font-semibold text-gray-900 dark:text-gray-100">
+                    {index + 1}
+                  </td>
+                  <td className="px-4 py-3 text-sm font-semibold text-gray-900 dark:text-gray-100">
+                    {item.team}
+                  </td>
+                  <td className="px-4 py-3 text-sm text-gray-800 dark:text-gray-200">
+                    {formatNumber(item.value, formatOptions)}
+                  </td>
+                  {previousYear !== undefined && (
+                    <td className="px-4 py-3">
+                      <DeltaBadge
+                        current={item.value}
+                        previous={item.previous}
+                        formatValue={value =>
+                          formatNumber(value, formatOptions)
+                        }
+                      />
+                    </td>
+                  )}
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
-      <LegendChips items={legendItems} className="mt-4" />
-    </ChartContainer>
+    </>
   )
 }

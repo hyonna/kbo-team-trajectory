@@ -9,6 +9,7 @@ import {
   getYears,
   loadTeamSeasons,
 } from '@/lib/dataset/loadTeamSeason'
+import { PageSkeleton } from '@/components/ui/Skeleton'
 
 // 차트 컴포넌트 동적 임포트
 const RankTrajectoryChart = dynamic(
@@ -90,7 +91,7 @@ async function TrajectoryContent({ searchParams }: TrajectoryContentProps) {
   )
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50/30 to-purple-50/30 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 p-8">
+    <div className="min-h-screen bg-linear-to-br from-gray-50 via-blue-50/30 to-purple-50/30 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 p-8">
       <div className="max-w-7xl mx-auto space-y-8">
         <div className="text-center mb-12 animate-fade-in">
           <h1 className="text-5xl font-extrabold gradient-text mb-4">
@@ -144,7 +145,7 @@ export default async function TrajectoryPage({
   const resolvedParams = await searchParams
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<PageSkeleton />}>
       <TrajectoryContent searchParams={resolvedParams} />
     </Suspense>
   )

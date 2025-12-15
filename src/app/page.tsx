@@ -3,6 +3,10 @@ import dynamic from 'next/dynamic'
 import teamSeasonData from '@/data/derived/team-season.json'
 import { buildTrajectoryData } from '@/lib/chart/transform'
 import type { TeamSeason } from '@/lib/chart/types'
+import { getTeamsByYear } from '@/lib/dataset/getTeamsByYear'
+import { getYears } from '@/lib/dataset/loadTeamSeason'
+import YearSelector from '@/components/home/YearSelector'
+import { PageSkeleton } from '@/components/ui/Skeleton'
 
 // 차트 컴포넌트 동적 임포트 (코드 스플리팅)
 const RankTrajectoryChart = dynamic(
@@ -42,17 +46,17 @@ const SnapshotBarChart = dynamic(
 )
 
 function ChartSection({
-  rankDataAll,
-  rankDataCurrent,
+  rankData,
   totalWarData,
   rows,
-  currentTeams,
+  selectedYear,
+  teamsForYear,
 }: {
-  rankDataAll: ReturnType<typeof buildTrajectoryData>
-  rankDataCurrent: ReturnType<typeof buildTrajectoryData>
+  rankData: ReturnType<typeof buildTrajectoryData>
   totalWarData: ReturnType<typeof buildTrajectoryData>
   rows: TeamSeason[]
-  currentTeams: string[]
+  selectedYear: number
+  teamsForYear: string[]
 }) {
   return (
     <>
@@ -63,17 +67,7 @@ function ChartSection({
           </div>
         }
       >
-        <RankTrajectoryChart data={rankDataAll} maxRank={10} />
-      </Suspense>
-
-      <Suspense
-        fallback={
-          <div className="card-sporty h-[500px] flex items-center justify-center">
-            <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
-          </div>
-        }
-      >
-        <RankTrajectoryChart data={rankDataCurrent} maxRank={10} />
+        <RankTrajectoryChart data={rankData} maxRank={10} />
       </Suspense>
 
       <Suspense
@@ -99,57 +93,56 @@ function ChartSection({
       >
         <SnapshotBarChart
           rows={rows}
-          year={2025}
+          year={selectedYear}
           metric="powerScore"
-          teams={currentTeams}
+          teams={teamsForYear}
         />
       </Suspense>
     </>
   )
 }
 
-export default function Home() {
+interface HomePageProps {
+  searchParams: Promise<{ year?: string }>
+}
+
+interface HomeContentProps {
+  searchParams: { year?: string }
+}
+
+async function HomeContent({ searchParams }: HomeContentProps) {
   const rows = teamSeasonData as TeamSeason[]
+  const availableYears = getYears()
 
-  // 모든 팀 목록 추출
-  const allTeams = Array.from(new Set(rows.map(r => r.team)))
-  // 2025년 기준 10개 팀
-  const currentTeams = [
-    'KIA',
-    'KT',
-    'LG',
-    'NC',
-    'SSG',
-    '두산',
-    '롯데',
-    '삼성',
-    '키움',
-    '한화',
-  ]
+  // 선택된 연도 (URL 파라미터 또는 최신 연도)
+  const selectedYear = searchParams.year
+    ? Number(searchParams.year)
+    : availableYears[availableYears.length - 1]
 
-  // 연도 범위
+  // 선택된 연도에 존재하는 팀 목록
+  const teamsForYear = getTeamsByYear(rows, selectedYear)
+
+  // 연도 범위 (전체)
   const allYears = { from: 1982, to: 2025 }
-  const recentYears = { from: 2010, to: 2025 }
 
-  // RankTrajectoryChart용 데이터
-  const rankDataAll = buildTrajectoryData(rows, allTeams, allYears, 'powerRank')
-  const rankDataCurrent = buildTrajectoryData(
+  // RankTrajectoryChart용 데이터 (선택된 연도에 존재하는 팀만 표시)
+  const rankData = buildTrajectoryData(
     rows,
-    currentTeams,
-    recentYears,
+    teamsForYear,
+    allYears,
     'powerRank'
   )
 
   // TrajectoryLineChart용 데이터
   const totalWarData = buildTrajectoryData(
     rows,
-    currentTeams,
-    recentYears,
+    teamsForYear,
+    allYears,
     'totalWar'
   )
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50/30 to-purple-50/30 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 p-8">
+    <main className="min-h-screen bg-linear-to-br from-gray-50 via-blue-50/30 to-purple-50/30 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 p-8">
       <div className="max-w-7xl mx-auto space-y-8">
         <div className="text-center mb-12 animate-fade-in">
           <h1 className="text-5xl font-extrabold gradient-text mb-4">
@@ -160,14 +153,29 @@ export default function Home() {
           </p>
         </div>
 
+        <YearSelector
+          availableYears={availableYears}
+          initialYear={selectedYear}
+        />
+
         <ChartSection
-          rankDataAll={rankDataAll}
-          rankDataCurrent={rankDataCurrent}
+          rankData={rankData}
           totalWarData={totalWarData}
           rows={rows}
-          currentTeams={currentTeams}
+          selectedYear={selectedYear}
+          teamsForYear={teamsForYear}
         />
       </div>
     </main>
+  )
+}
+
+export default async function Home({ searchParams }: HomePageProps) {
+  const resolvedParams = await searchParams
+
+  return (
+    <Suspense fallback={<PageSkeleton />}>
+      <HomeContent searchParams={resolvedParams} />
+    </Suspense>
   )
 }

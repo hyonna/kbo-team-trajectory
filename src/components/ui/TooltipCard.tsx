@@ -13,7 +13,8 @@ export default function TooltipCard({
 }: TooltipCardProps) {
   return (
     <div
-      className={`bg-white dark:bg-gray-900 p-4 border border-gray-300 dark:border-gray-700 rounded-xl shadow-xl ${className}`}
+      className={`bg-white dark:bg-gray-900 p-4 border border-gray-300 dark:border-gray-700 rounded-xl shadow-xl z-[9999] relative ${className}`}
+      style={{ zIndex: 9999 }}
     >
       <p className="font-bold text-gray-900 dark:text-gray-100 mb-3 gradient-text">
         {title}

@@ -18,6 +18,11 @@ export function formatNumber(
 ): string {
   const { decimals = 2, thousandSeparator = false, unit = '' } = options
 
+  // 결측/NaN 안전 처리
+  if (value === null || value === undefined || Number.isNaN(value)) {
+    return '-'
+  }
+
   let formatted = value.toFixed(decimals)
 
   // 천 단위 구분자

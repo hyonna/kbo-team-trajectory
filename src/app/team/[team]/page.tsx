@@ -5,6 +5,7 @@ import PlayerList from '@/components/team/PlayerList'
 import { loadTeamSeasons, getTeamSeasons } from '@/lib/dataset/loadTeamSeason'
 import { getTopBatters, getTopPitchers } from '@/lib/dataset/loadRawStats'
 import { buildTrajectoryData } from '@/lib/chart/transform'
+import { PageSkeleton } from '@/components/ui/Skeleton'
 
 // 차트 컴포넌트 동적 임포트
 const TrajectoryLineChart = dynamic(
@@ -101,7 +102,7 @@ async function TeamContent({ team, searchParams }: TeamContentProps) {
   )
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50/30 to-purple-50/30 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 p-8">
+    <div className="min-h-screen bg-linear-to-br from-gray-50 via-blue-50/30 to-purple-50/30 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 p-8">
       <div className="max-w-7xl mx-auto space-y-8">
         <div className="text-center mb-12 animate-fade-in">
           <h1 className="text-5xl font-extrabold gradient-text mb-4">{team}</h1>
@@ -175,7 +176,7 @@ export default async function TeamPage({
   const team = decodeURIComponent(resolvedParams.team)
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<PageSkeleton />}>
       <TeamContent team={team} searchParams={resolvedSearchParams} />
     </Suspense>
   )
